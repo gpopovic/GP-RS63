@@ -18,7 +18,7 @@ Documentation, code identifiers, comments, and docstrings use English. Conversat
 
 ## Layout
 
-Each workspace uses `01_Inputs`, `02_Work`, `03_Outputs`, `04_Evidence`, `05_Operations`, and `06_Learning_Exports`. Keep platform and system evidence in their respective workspaces. The existing source-code repositories remain in their current locations; no product source code was copied into these documentation folders.
+Each workspace uses `01_Inputs`, `02_Work`, `03_Outputs`, `04_Evidence`, `05_Operations`, and `06_Learning_Exports`. Keep platform and system evidence in their respective workspaces. The existing source-code repositories remain in their current locations; no product source code was copied into these documentation folders. Empty leaf directories contain `.gitkeep` placeholders so Git preserves the complete evidence structure.
 
 Configure TriCorp operations with:
 
