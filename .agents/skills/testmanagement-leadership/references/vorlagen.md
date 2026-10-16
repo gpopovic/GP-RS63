@@ -1,76 +1,76 @@
-# Operative Arbeitsvorlagen
+# Operational Templates
 
-Nur benötigte Abschnitte verwenden. Platzhalter sind keine erhobenen Daten. Ergebnis als Entwurf kennzeichnen und vorhandene Unternehmensvorlagen vorrangig verwenden.
+Use only the sections needed for the task. Placeholders are not collected evidence. Mark outputs as drafts and give existing company templates priority.
 
-## Gemeinsamer Dokumentkopf
+## Common document header
 
-- Produkt/Systemgrenze, Hardware-/Firmware-/Softwarestand, relevante Konfiguration:
-- Zweck, Betrachtungszeitraum und Datenstand:
-- Autor, Dokumentversion und Reviewstatus:
-- Quellen mit Dokumentversion/Fundstelle:
-- Fakten / Annahmen / offene Angaben:
+- Product/system boundary, hardware/firmware/software baseline, relevant configuration:
+- Purpose, reporting period, and data as-of time:
+- Author, document version, and review status:
+- Sources with document version/location:
+- Facts / assumptions / missing information:
 
-## Teststrategie und Testplan
+## Test strategy and test plan
 
-1. Testziele, Umfang und begründete Ausschlüsse einschließlich Auswirkungen.
-2. Priorisierung aus Anforderungen, Produktänderungen, Risikoanalyse und Fehlerhistorie.
-3. Teststufen und Verfahren: Reviews, statische Prüfungen, manuelle/automatisierte Tests, Regression, Verifikation/Validierung entsprechend Prozess.
-4. Testbasis mit Versionsbezug; Rückverfolgbarkeit und Konfigurationsmanagement.
-5. Testobjekte, Umgebungen, Simulatoren, Prüfmittelstatus, Testdaten und Reproduzierbarkeit.
-6. Ressourcen, Fähigkeiten, Aufwand, Abhängigkeiten und Meilensteine.
-7. Eintritts-, Unterbrechungs-, Wiederaufnahme- und Austrittskriterien mit überprüfbaren Nachweisen; fehlende Kriterien als Vorschlag ausweisen.
-8. Fehlerprozess, Berichtsrhythmus, Review- und Entscheidungsrollen.
+1. Objectives, scope, and justified exclusions, including their effects.
+2. Priorities from requirements, product changes, risk analysis, and defect history.
+3. Test levels and methods: reviews, static checks, manual/automated testing, regression, verification/validation according to the applicable process.
+4. Versioned test basis, traceability, and configuration management.
+5. Test objects, environments, simulators, equipment status, test data, and reproducibility.
+6. Resources, competencies, effort, dependencies, and milestones.
+7. Entry, suspension, resumption, and exit criteria with verifiable evidence; identify proposed criteria as proposals.
+8. Defect process, reporting cadence, review roles, and decision authority.
 
-| Arbeitspaket | Risiko/Priorität und Quelle | Ergebnis/Nachweis | Aufwand mit Unsicherheit | Verantwortlich | Termin | Abhängigkeit |
+| Work package | Risk/priority and source | Deliverable/evidence | Effort and uncertainty | Owner | Due date | Dependency |
 |---|---|---|---|---|---|---|
-| offen | offen | offen | offen | offen | offen | offen |
+| open | open | open | open | open | open | open |
 
-## Teststatus und Entscheidungsvorlage
+## Test status and decision brief
 
-Beginne mit Bewertung und Begründung. Status ohne vereinbarte Ampelkriterien als begründete Einschätzung kennzeichnen.
+Lead with the assessment and rationale. Without agreed traffic-light criteria, label status as a reasoned assessment.
 
-| Feld | Inhalt |
+| Field | Content |
 |---|---|
-| Produkt/Version, Datenstand, Quelle | siehe Dokumentkopf |
-| Testumfang | eindeutige geplante Fälle für diesen Stand; Änderungen seit letztem Bericht |
-| Ergebnisse | bestanden / fehlgeschlagen / blockiert / nicht ausgeführt |
-| Abdeckung | Anforderungen und Risikokontrollen mit Beleg; offene oder veraltete Nachweise |
-| Kritische Abweichungen | ID, Auswirkung, Einstufung mit Quelle, Status, fehlender Nachweis |
-| Plan und Kapazität | nächste Meilensteine, Engpässe, Prognose mit Annahmen |
-| Entscheidung | Empfehlung, offene Kriterien, zuständige Entscheidungsrolle |
-| Nächste Maßnahmen | Maßnahme, Verantwortlicher, Termin, Abschlussnachweis |
+| Product/version, data as-of time, source | common header |
+| Test scope | unique planned cases for this baseline; changes since the previous report |
+| Results | passed / failed / blocked / not executed |
+| Coverage | evidenced requirements and risk controls; missing or outdated evidence |
+| Critical deviations | ID, impact, sourced severity, status, missing evidence |
+| Plan and capacity | milestones, bottlenecks, forecast and assumptions |
+| Decision | recommendation, open criteria, responsible decision role |
+| Next actions | action, owner, due date, completion evidence |
 
-Kennzahlen nur bei passender Datenbasis:
+Metrics require a suitable data basis:
 
-- Gesamt = bestanden + fehlgeschlagen + blockiert + nicht ausgeführt.
-- Ausgeführt = bestanden + fehlgeschlagen. Ein begonnener, nicht bewertbarer Test bleibt blockiert.
-- Ausführungsquote = ausgeführt / Gesamt.
-- Bestehensquote der ausgeführten Fälle = bestanden / ausgeführt.
-- Bestanden bezogen auf Gesamt = bestanden / Gesamt.
-- Bei Nenner null: „nicht berechenbar“. Ergebnisquote ist keine Anforderungs-/Risikoabdeckung.
+- Total = passed + failed + blocked + not executed.
+- Executed = passed + failed. A started test without an assessable result remains blocked.
+- Execution rate = executed / total.
+- Pass rate among executed cases = passed / executed.
+- Passed as a proportion of total = passed / total.
+- For a zero denominator, report “not calculable.” Result ratios do not establish requirements/risk coverage.
 
-**Fiktives Rechenbeispiel:** 100 Fälle, davon 95 bestanden, 1 fehlgeschlagen, 0 blockiert und 4 nicht ausgeführt. Ausführungsquote 96/100 = 96 %, Bestehensquote der ausgeführten Fälle 95/96 ≈ 99,0 %, bestanden bezogen auf Gesamt 95/100 = 95 %. Ein fehlgeschlagener Deckelverriegelungstest erfordert Klärung und Nachweise vor einer positiven Empfehlung; die Quote entscheidet dies nicht.
+**Fictional example:** 100 cases: 95 passed, 1 failed, 0 blocked, and 4 not executed. Execution rate: 96/100 = 96%; pass rate among executed cases: 95/96 ≈ 99.0%; passed as a proportion of total: 95/100 = 95%. A failed lid-locking test requires investigation and evidence before a positive recommendation; the percentage does not decide release.
 
-## Kapazität und Aufwand
+## Capacity and effort
 
-| Rolle/Person | Arbeitstage im Zeitraum | Verfügbarkeitsanteil | Abwesenheit in PT | Andere Aufgaben in PT | Reserve in PT | Netto für geplante Tests in PT |
+| Role/person | Working days in period | Availability fraction | Absence in PD | Other commitments in PD | Reserve in PD | Net capacity for planned tests in PD |
 |---|---|---|---|---|---|---|
-| offen | offen | offen | offen | offen | offen | offen |
+| open | open | open | open | open | open | open |
 
-Brutto = Summe(Arbeitstage × Verfügbarkeitsanteil). Netto = Brutto − Abwesenheiten − andere Aufgaben − Reserve. Abzüge auf dieselbe verfügbare Arbeitszeit beziehen; Teilzeit und Urlaub nicht doppelt berücksichtigen. Feiertage im betrachteten Standortkalender berücksichtigen.
+Gross = sum(working days × availability fraction). Net = gross − absences − other commitments − reserve. Apply deductions to the same available time basis; do not count part-time availability or leave twice. Account for public holidays in the relevant location.
 
-**Fiktives Beispiel:** 3 Vollzeitpersonen × 10 Arbeitstage = 30 PT brutto; 3 PT Urlaub, 5 PT andere Aufgaben, 4 PT Reserve ergeben 18 PT für geplante Tests. Die Reserve umfasst hier Nachtests/ungeplante Arbeit. Für diese Tätigkeiten keinen zweiten Aufwandsposten abziehen.
+**Fictional example:** 3 full-time people × 10 working days = 30 PD gross; 3 PD leave, 5 PD other commitments, and 4 PD reserve leave 18 PD for planned tests. Here the reserve covers retests/unplanned work; do not deduct these activities again.
 
-Vergleiche Netto mit geschätztem Testaufwand als Bandbreite. Ohne Schätzung bleiben machbarer Umfang und Fertigstellung offen. Engpässe durch Prüfstände, Spezialkenntnisse und Lieferstände gesondert erfassen.
+Compare net capacity with estimated effort as a range. Without estimates, achievable scope and completion remain open. Record equipment, specialist knowledge, and delivery-baseline bottlenecks separately.
 
-## Rückverfolgbarkeit
+## Traceability
 
-| Anforderung-ID/Version | Risiko-/Kontroll-ID, falls vorhanden | Testfall-ID/Version | Testobjekt/Konfiguration | Ergebnis und Nachweis | Fehler/Nachtest | Lücke, Verantwortlicher, Termin |
+| Requirement ID/version | Risk/control ID, if available | Test case ID/version | Test object/configuration | Result and evidence | Defect/retest | Gap, owner, due date |
 |---|---|---|---|---|---|---|
-| offen | offen | offen | offen | offen | offen | offen |
+| open | open | open | open | open | open | open |
 
-## Fehlermanagement und Triage
+## Defect management and triage
 
-Erfasse ID, beobachtetes und erwartetes Verhalten mit Anforderungsquelle, Reproduktionsschritte, Testobjekt/Konfiguration, Nachweise und betroffene Varianten. Schweregrad beschreibt Auswirkungen, Priorität die Bearbeitungsreihenfolge; beide mit Begründung und nach internen Definitionen.
+Record ID, observed and expected behavior with requirement source, reproduction steps, test object/configuration, evidence, and affected variants. Severity describes impact; priority describes treatment order. Justify both using internal definitions.
 
-Triage dokumentiert Bewertung, Verantwortlichen, Zieltermin, nächste Entscheidung und betroffenen Testumfang. Abschluss benötigt Korrekturbezug, Nachtest und begründete Regression. Sicherheitsrelevante Befunde nach bestehendem Prozess an zuständige Entwicklung/QM/Risikomanagement eskalieren. Risikoakzeptanz bleibt bei den dafür autorisierten Rollen.
+Triage records the assessment, owner, due date, next decision, and affected test scope. Closure requires the correction reference, retest, and justified regression. Escalate safety-related findings through the existing process to development/QA/risk management. Risk acceptance remains with authorized roles.

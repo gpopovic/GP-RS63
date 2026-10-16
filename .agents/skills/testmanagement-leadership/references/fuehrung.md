@@ -1,38 +1,38 @@
-# Ausbau zur Leitung der Testabteilung
+# Transition to Leading the Test Department
 
-Arbeitsentwurf: Rollen und Ziele mit Team, Entwicklung und QM abstimmen. Keine bestehenden Zuständigkeiten oder Budgets voraussetzen.
+Working draft: align roles and goals with the team, development, and QA. Do not assume existing responsibilities or budgets.
 
-## 90-Tage-Plan
+## 90-day plan
 
-| Zeitraum | Schwerpunkt | Konkretes Ergebnis | Abschlussnachweis |
+| Period | Focus | Deliverable | Completion evidence |
 |---|---|---|---|
-| Tage 1–30 | Gespräche mit Team und Schnittstellen; Auftrag, Produkte, Prozesse, aktuelle Risiken und Engpässe verstehen | Bestandsaufnahme, Kompetenzmatrix, priorisierte Lücken, Vorschlag für Verantwortlichkeiten | Review mit Team, Entwicklung und QM; Maßnahmen mit Zuständigen und Terminen |
-| Tage 31–60 | Gemeinsame Teststrategie, Kapazitätsplanung, Nachweiskette und Berichtsrhythmus an einem Projekt erproben | Pilotplan, Statusbericht, abgestimmte Entscheidungskriterien, Schulungsplan | Pilotreview und dokumentierte Entscheidungen |
-| Tage 61–90 | Wirkung bewerten, funktionierende Abläufe übernehmen, Ressourcenbedarf begründen | Quartalsroadmap, Personal-/Prüfmittelbedarf als Szenarien, Verbesserungsbacklog | Zielabgleich mit Leitung und Team; finanzielle Entscheidungen durch zuständige Rollen |
+| Days 1–30 | Meet the team and interfaces; understand mandate, products, processes, risks, and bottlenecks | Baseline assessment, competency matrix, prioritized gaps, proposed responsibilities | Review with team, development, and QA; actions with owners and dates |
+| Days 31–60 | Pilot a shared strategy, capacity planning, evidence chain, and reporting cadence on one project | Pilot plan, status report, agreed decision criteria, training plan | Pilot review and documented decisions |
+| Days 61–90 | Assess results, adopt effective practices, justify resource needs | Quarterly roadmap, staffing/equipment scenarios, improvement backlog | Goal review with management and team; financial decisions by authorized roles |
 
-Vor Umsetzung für jede Zeile einen Verantwortlichen und konkrete Termine ergänzen. Kritische laufende Themen haben Vorrang vor Prozessumbau.
+Before implementation, add an owner and calendar dates to each row. Critical ongoing work takes priority over process redesign.
 
-## Schlankes Betriebsmodell
+## Lean operating model
 
-- Wöchentlich: Testfortschritt, Fehlertriage, Blockaden, Prüfstandbelegung, kurzfristige Entscheidungen.
-- Monatlich: Kapazität versus Bedarf, Kompetenzlücken, Qualität der Nachweise, Verbesserungsmaßnahmen.
-- Quartalsweise: Strategie, Produktroadmap, Budget-/Personalbedarf, Automatisierungsnutzen und Wirksamkeit der Maßnahmen.
+- Weekly: test progress, defect triage, blockers, equipment scheduling, near-term decisions.
+- Monthly: capacity versus demand, competency gaps, evidence quality, improvement actions.
+- Quarterly: strategy, product roadmap, budget/staffing needs, automation benefits, and effectiveness of improvements.
 
-## Rollen und Kompetenzaufbau
+## Roles and competency development
 
-| Aufgabe | Ausführende Rolle | Entscheidungsrolle | Einzubinden | Vertretung/Kompetenzlücke |
+| Activity | Performing role | Decision authority | Consult | Backup/competency gap |
 |---|---|---|---|---|
-| Teststrategie und Planung | zu klären | zu klären | Entwicklung, QM, Produktverantwortliche | zu klären |
-| Durchführung und Nachweise | zu klären | zu klären | Labor/Prüfmittelverantwortliche | zu klären |
-| Fehlerbewertung und Nachtests | zu klären | zu klären | Entwicklung, Risikomanagement | zu klären |
-| Formale Freigabe/Risikoakzeptanz | nach Unternehmensprozess | nach Unternehmensprozess | Test Lead, QM/RA | zu klären |
+| Test strategy and planning | open | open | development, QA, product owners | open |
+| Execution and evidence | open | open | laboratory/equipment owners | open |
+| Defect assessment and retests | open | open | development, risk management | open |
+| Formal release/risk acceptance | company process | company process | Test Lead, QA/RA | open |
 
-Kompetenzmatrix je Fachgebiet: Ist-Kompetenz, Ziel, Vertretung, Lernmaßnahme, Zeitbedarf und Wirksamkeitsnachweis. Beispiele: Produktkenntnis, Systemtest, Testautomatisierung, Fehleranalyse, Prüfmittel und Nachweisdokumentation. Coaching und Einarbeitung als Kapazitätsbedarf berücksichtigen.
+For each competency, record current capability, target, backup, learning action, time required, and effectiveness evidence. Examples include product knowledge, system testing, automation, defect analysis, equipment, and evidence documentation. Include coaching and onboarding in capacity needs.
 
-## Personal und Budget begründen
+## Staffing and budget justification
 
-Leite Bedarf aus Produkt-/Releaseplanung, Testaufwand und Engpässen ab. Vergleiche Mindestbedarf, Ziel und Ausbau mit Annahmen, Kostenbandbreite, Nutzen, Risiken und Entscheidungstermin. Berücksichtige Personal, Schulung, Prüfstände, Wartung/Kalibrierung, Werkzeuge und externe Leistungen. Kein Personalbedarf allein aus Testfallzahlen.
+Derive demand from product/release plans, test effort, and bottlenecks. Compare minimum, target, and expansion scenarios with assumptions, cost ranges, benefits, risks, and decision dates. Include personnel, training, test equipment, maintenance/calibration, tools, and external services. Do not derive staffing solely from test-case counts.
 
-## Wenige aussagekräftige Kennzahlen
+## A small set of useful metrics
 
-Betrachte kritische offene Befunde, blockierte Testzeit, Abdeckung relevanter Anforderungen/Risikokontrollen, Fehlerdurchlaufzeit und Terminaussagen samt Unsicherheit. Für jede Kennzahl Quelle, Nenner/Einheit, Zeitraum, Verantwortlichen und Entscheidungszweck festlegen. Erhebe zunächst eine Ausgangsbasis; Zielwerte gemeinsam vereinbaren. Keine individuellen Leistungsrankings nach Fehler- oder Testfallzahl.
+Consider critical open findings, blocked test time, coverage of relevant requirements/risk controls, defect lead time, and date forecasts with uncertainty. Define source, denominator/unit, period, owner, and decision purpose for each metric. Establish a baseline before agreeing targets. Do not rank individuals by defect or test-case counts.

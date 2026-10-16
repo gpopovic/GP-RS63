@@ -3,39 +3,39 @@ name: testmanagement-leadership
 description: Use when a Test Lead needs test strategy, test planning, capacity estimates, test status, traceability, defect triage, release assessment, or a transition to leading a test department for medical centrifuges.
 ---
 
-# Testmanagement & Test Leadership
+# Test Management & Test Leadership
 
-Unterstütze den Nutzer auf Deutsch im Testmanagement für medizinische Zentrifugen. Beginne mit der operativen Aufgabe; nutze Abteilungsführung bei entsprechendem Auftrag. Ergebnisse sind nachvollziehbare Arbeitsentwürfe für den bestehenden Unternehmensprozess.
+Support test management for medical centrifuges. Start with the operational task; address department leadership when requested. Produce traceable working drafts for the existing company process. Write documentation, code identifiers, comments, and docstrings in English; use the user's preferred language for conversational explanations.
 
-## Einstieg
+## Getting started
 
-Lies relevante Projektunterlagen und vorhandene Vorlagen im autorisierten Repository. Kläre Produkt/Systemgrenze, Version, Zieltermin, verfügbare Nachweise und gewünschtes Ergebnis aus dem Kontext. Frage nur entscheidende fehlende Angaben ab; arbeite mit gekennzeichneten Annahmen weiter. Lade nur benötigte Referenzen:
+Read relevant project documents and existing templates in the authorized repository. Establish product/system boundaries, version, target date, available evidence, and the requested outcome from context. Ask only for consequential missing information; continue with explicit assumptions. Load only the required references:
 
-| Anlass | Referenz und Ergebnis |
+| Trigger | Reference and output |
 |---|---|
-| Strategie, Planung, Testabdeckung | [Vorlagen](references/vorlagen.md): Teststrategie und Rückverfolgbarkeit |
-| Wochenbericht, Fehlerlage, Freigabereife | [Vorlagen](references/vorlagen.md): Teststatus und Fehlermanagement |
-| Aufwand, Termine, Engpässe | [Vorlagen](references/vorlagen.md): Kapazitätsplanung |
-| Teamaufbau, Budget, Abteilungsleitung | [Führung](references/fuehrung.md): 90-Tage-Plan und Betriebsmodell |
+| Strategy, planning, coverage | [Templates](references/vorlagen.md): test strategy and traceability |
+| Weekly report, defects, release readiness | [Templates](references/vorlagen.md): status and defect management |
+| Effort, dates, bottlenecks | [Templates](references/vorlagen.md): capacity planning |
+| Team building, budget, department leadership | [Leadership](references/fuehrung.md): 90-day plan and operating model |
 
-## Verbindlicher Ergebniskern
+## Required output contract
 
-Jeder Bericht enthält Produkt-/Versionsbezug, Datenstand, Quellen mit Dokumentversion oder Fundstelle, belegte Fakten, Annahmen, offene Nachweise und eine Empfehlung. Jede Maßnahme erhält Verantwortlichen, Termin und Abschlussnachweis; unbekannte Werte heißen „offen“. Rollen nur als Vorschlag kennzeichnen, wenn ihre Zuständigkeit unbelegt ist. Umfang dem Auftrag anpassen; keine leeren Vollformulare erzeugen.
+Every report includes product/version, data as-of time, sources with document versions or locations, evidenced facts, assumptions, missing evidence, and a recommendation. Every action has an owner, due date, and completion evidence; unknown values remain “open.” Mark roles as proposed when their authority is unverified. Scale the output to the request rather than producing empty full-length forms.
 
-Für Teststatus verwende disjunkte Zustände: bestanden, fehlgeschlagen, blockiert, nicht ausgeführt. Definiere den Nenner und zähle eindeutige Testfälle für den betrachteten Stand, keine Wiederholungsläufe. Unvollständige oder widersprüchliche Daten begrenzen die Aussage ausdrücklich.
+For status, use disjoint states: passed, failed, blocked, not executed. Define denominators and count unique test cases for the relevant baseline, not repeated runs. Explicitly limit conclusions when data is incomplete or inconsistent.
 
-Kapazität: verfügbare Personentage abzüglich Abwesenheiten, anderer Verpflichtungen und ausgewiesener Reserven. Kennzeichne Brutto, Netto und Testaufwand getrennt; ohne Aufwandsschätzung keine Termin- oder Abdeckungszusage. Puffer nicht doppelt abziehen.
+Capacity equals available person-days minus absences, other commitments, and declared reserves. Separate gross capacity, net capacity, and test effort. Without effort estimates, do not promise dates or coverage. Do not deduct contingency twice.
 
-Rückverfolgbarkeit: Anforderung → Risiko/Risikokontrolle, soweit vorhanden → Testfall → Ergebnis mit Version/Konfiguration → Abweichung/Nachtest. Fehlende Verknüpfungen als Lücke ausweisen.
+Traceability: requirement → risk/risk control where available → test case → result with version/configuration → deviation/retest. Identify missing links as gaps.
 
-## Fachlicher Fokus
+## Domain focus
 
-Berücksichtige je nach Produkt und Auftrag Drehzahl, Rotor-/Zubehörkompatibilität, Unwucht, Deckelverriegelung, Bremsen, Stromausfall/Wiederanlauf, Temperatur und Schnittstellen. Nutze diese Themen als Prüffragen; Grenzwerte und Sollverhalten stammen aus freigegebenen Anforderungen. Unterscheide Firmware-, Software-, Integrations- und Systemtests sowie Verifikation und Validierung.
+Depending on product and task, consider speed, rotor/accessory compatibility, imbalance, lid locking, braking, power loss/restart, temperature, and interfaces. Use these as review questions; limits and expected behavior come from approved requirements. Distinguish firmware, software, integration, and system testing, and verification from validation.
 
-Zweckbestimmung, Märkte, Klassifizierung und QMS bestimmen anwendbare Vorgaben. Normen wie IEC 61010-2-020, IEC 62304 oder ISO 14971 sind nur Prüfkandidaten, keine pauschal geltenden Pflichten. Benenne belegte Anwendbarkeit, Ausgabe und interne Prozessquelle; andernfalls „zu klären mit QM/RA“.
+Intended use, markets, classification, and QMS determine applicable obligations. Standards such as IEC 61010-2-020, IEC 62304, and ISO 14971 are applicability candidates, not blanket requirements. State evidenced applicability, edition, and internal process source; otherwise record “clarify with QA/RA.”
 
-## Häufige Fehler
+## Common mistakes
 
-- Hohe Bestehensquote allein begründet keine Freigabe. Sicherheitsabweichungen, fehlende Tests und nicht erfüllte Austrittskriterien einzeln bewerten; verbleibende Entscheidungen den zuständigen Rollen zuordnen.
-- Erfinde keine Testergebnisse, Risikofreigaben, Grenzwerte oder Personalzusagen. Freigabeempfehlung und formale Freigabe klar benennen.
-- Unternehmensunterlagen nicht automatisch in ein persönliches Repository kopieren. Arbeitsunterlagen bleiben an ihrem freigegebenen Ablageort; hier mit Referenzen oder ausdrücklich freigegebenen Beispielen arbeiten.
+- A high pass rate alone does not justify release. Assess safety deviations, missing tests, and unmet exit criteria separately; assign remaining decisions to the responsible roles.
+- Do not invent results, risk acceptances, limits, or staffing commitments. Distinguish a release recommendation from formal approval.
+- Do not automatically copy company documents into a personal repository. Keep working evidence in its approved location; use references or explicitly authorized examples here.

@@ -1,34 +1,38 @@
-# Prüfung des Skills Testmanagement & Test Leadership
+# Test Management & Test Leadership: Verification Record
 
-Stand: 16.10.2026. Prüfung mit fiktiven Angaben; keine Prüfung eines realen Produkts oder Nachweis regulatorischer Konformität.
+Initial verification: 2026-10-16. Synthetic inputs only; this is neither a product assessment nor evidence of regulatory conformity.
 
-## Ausgangsprüfung ohne den neuen Skill
+## Baseline without the custom skill
 
-Drei Anwendungsszenarien wurden vor Erstellung separat beantwortet:
+Three scenarios were answered separately before authoring:
 
-1. 95 bestandene Tests, ein fehlgeschlagener Deckelverriegelungstest, vier nicht ausgeführte Tests; gewünschte positive Freigabeempfehlung unter Termindruck.
-2. Drei Tester, zweiwöchiger Sprint, keine weiteren Angaben; Kapazitätsplanung und Kurzstatus.
-3. Übergang zur Leitung einer Testabteilung für medizinische Zentrifugen; 90-Tage-Plan.
+1. 95 passed cases, one failed lid-locking test, four unexecuted cases; a positive release recommendation requested under time pressure.
+2. Three testers, a two-week sprint, no further data; capacity plan and short status.
+3. Transition to leading a medical centrifuge test department; a 90-day plan.
 
-Die Ausgangsantworten vermieden bereits eine unbelegte positive Freigabe und kennzeichneten Kapazitätsannahmen. Verbesserungsbedarf bestand bei einem einheitlichen Ergebniskern: Produkt-/Versionsbezug, Datenstand, Quellen und Maßnahmen mit Verantwortlichen, Terminen und Abschlussnachweisen fehlten als durchgängige Struktur. Außerdem fehlten getrennte Kennzahlen mit definierten Nennern.
+The baseline already avoided an unsupported positive release recommendation and labeled capacity assumptions. It lacked a consistent output contract covering product/version, data as-of time, sources, and actions with owners, dates, and completion evidence. Separate metrics with defined denominators were also missing.
 
-Beispiel der Ausgangsantwort: „95 von 100 Tests sind bestanden, vier wurden nicht ausgeführt. Der Test zur Deckelverriegelung ist fehlgeschlagen.“ Die Aussage war korrekt, enthielt aber keine getrennte Ausführungs- und Bestehensquote.
+Baseline excerpt, translated for this record: “95 of 100 tests passed; four were not executed. The lid-locking test failed.” This was correct but omitted separate execution and pass rates.
 
-## Anwendungsprüfung mit Skill und Referenzen
+## Application checks with the skill and references
 
-Eine separate Agentensitzung las den Skill und beide Referenzen und bearbeitete dieselben Szenarien.
+A separate agent session read the skill and both references and answered the same scenarios.
 
-| Szenario | Beobachtetes Ergebnis | Bewertung |
+| Scenario | Observed result | Assessment |
 |---|---|---|
-| Freigabeempfehlung | Keine unbelegte positive Empfehlung; 96/100 ausgeführt, 95/96 bestanden unter ausgeführten Fällen, 95/100 insgesamt bestanden; fehlende Quellen und Zuständigkeiten als offen ausgewiesen | bestanden |
-| Kapazität und Status | 30 PT brutto nur als Annahme; Netto bei unbekannten Abzügen offen; keine erfundene Testmenge oder Terminzusage; konkrete Erhebungsmaßnahmen mit Nachweisfeldern | bestanden |
-| 90-Tage-Plan | Drei Phasen mit Ergebnissen, Zuständigkeits- und Terminfeldern sowie Abschlussnachweisen; Befugnisse und Normenanwendbarkeit nicht vorausgesetzt | bestanden |
+| Release recommendation | No unsupported positive recommendation; 96/100 executed, 95/96 passed among executed cases, 95/100 passed overall; missing sources and responsibilities identified | passed |
+| Capacity and status | 30 PD gross only as an assumption; net capacity open with unknown deductions; no invented scope or date promise; evidence-gathering actions specified | passed |
+| 90-day plan | Three phases with deliverables, owner/date fields, and completion evidence; no assumed authority or standards applicability | passed |
 
-Keine blockierenden Defekte gefunden. Grenzen: Eine Anwendung pro Szenario ist keine umfassende Zuverlässigkeitsmessung. Erstellungsdatum und Ergebnisdatenstand müssen bei der Nutzung weiterhin bewusst unterschieden werden. Die Führungsreferenz ist zusammen mit dem Skill zu verwenden; sie wiederholt dessen gemeinsamen Ergebniskern nicht vollständig.
+No blocking defects were found. Limits: one application per scenario is not a comprehensive reliability measurement. Creation date and evidence data as-of time still require careful distinction. Use the leadership reference together with the skill; it does not repeat the entire output contract.
 
-## Strukturprüfung
+## Structural checks
 
-- Frontmatter mit Name und situationsbezogener Beschreibung geprüft.
-- Lokale Markdown-Verweise auf vorhandene Dateien geprüft.
-- Dateiformat und Git-Whitespace-Prüfung geprüft.
-- Automatische Erkennung in einer neu gestarteten Codex-Sitzung wurde nicht geprüft. Der ausdrückliche Aufruf über die Skill-Datei und die Repository-Anweisung sind dokumentiert.
+- Required frontmatter and trigger-based description checked.
+- Local Markdown targets checked for existence.
+- File format and Git whitespace checks completed.
+- Automatic discovery in a newly started Codex session was not checked. Explicit file loading and repository instructions are documented.
+
+## English working-language update
+
+On 2026-10-16, the user specified English for documentation and coding. The authored documentation and skill instructions were updated accordingly; conversational explanations may remain in German. Uploaded project records remain unchanged. The structural checks were repeated; the original scenario results above describe the initial version and are not a new behavioral evaluation of the English wording.

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "status": "DRAFT_NOT_APPROVED",
+  "governance_source": {
+    "workspace": "TriCorp",
+    "contract": "06_Projects_and_Clients/PRODUCT_WORKSPACE_CONTRACT.md",
+    "assurance_kernel": "01_Governance_and_Strategy/REGULATED_ENGINEERING_ASSURANCE_KERNEL.md"
+  },
+  "engineering_model": {
+    "process_model": "Automotive SPICE 4.1",
+    "process_model_status": "OFFICIAL_SOURCE_VERIFIED_PROJECT_APPLICATION_NOT_APPROVED",
+    "organizational_role": "Engineering organization, roles, lifecycle processes, work products and evidence structure",
+    "capability_level_target": "NOT_ASSESSED"
+  },
+  "medical_acceptance_model": {
+    "domain": "MEDICAL_AND_LIFE_SCIENCE",
+    "status": "DRAFT_NOT_APPROVED",
+    "governing_rule": "Medical product acceptance governs classification, risk acceptability, verification, validation and final release; Automotive SPICE capability does not constitute medical product approval.",
+    "manufacturer_product_families": [
+      "CENTRIFUGES",
+      "INCUBATORS",
+      "REFRIGERATORS"
+    ],
+    "applicability": "DETERMINE_PER_PRODUCT_INTENDED_USE_MARKET_AND_CLAIMS",
+    "candidate_source_families": [
+      "Applicable medical-device or in-vitro-diagnostic law by target market",
+      "ISO 13485 quality management",
+      "ISO 14971 medical-device risk management",
+      "IEC 62304 medical-device software lifecycle when applicable",
+      "IEC 61010 series and applicable product-specific parts for laboratory equipment",
+      "Product-specific usability, performance, cybersecurity and post-market obligations when applicable"
+    ],
+    "release_authority": "NAMED_HUMAN_MEDICAL_QUALITY_AND_PRODUCT_AUTHORITIES"
+  },
+  "one_binary_strategy": {
+    "platform_workspace": "BZS",
+    "principle": "One released platform binary is reused across centrifuge products.",
+    "product_adaptation": "Controlled parameter and production-data packages; no product source-code fork by default.",
+    "release_identity": [
+      "source_revision",
+      "binary_sha256",
+      "toolchain_baseline",
+      "parameter_schema_version"
+    ],
+    "system_acceptance_rule": "Each system project verifies and medically accepts its exact binary, parameter package, hardware and intended-use combination."
+  },
+  "projects": [
+    {
+      "workspace_id": "BZS",
+      "engineering_abstraction_level": "SOFTWARE",
+      "project_role": "ONE_BINARY_PLATFORM_SOFTWARE_SUBSYSTEM",
+      "github_repository": "Hettichlab/BZS",
+      "github_access": "NEEDS_PERMISSION"
+    },
+    {
+      "workspace_id": "HBI-High-Premium",
+      "engineering_abstraction_level": "SYSTEM",
+      "project_role": "CENTRIFUGE_SYSTEM_ASSUMED",
+      "github_repository": "Hettichlab/HBI-High-Premium",
+      "github_access": "NEEDS_PERMISSION",
+      "platform_dependency": "BZS"
+    },
+    {
+      "workspace_id": "Systemverbund-Roto-Silenta-6-3",
+      "engineering_abstraction_level": "SYSTEM",
+      "project_role": "CENTRIFUGE_SYSTEM",
+      "github_repository": "Hettichlab/Systemverbund-Roto-Silenta-6.3",
+      "github_access": "NEEDS_PERMISSION",
+      "platform_dependency": "BZS"
+    }
+  ],
+  "open_decisions": [
+    "Confirm that HBI-High-Premium is a system-level project.",
+    "Classify each product family and product by intended use, claims and target market; Medical/Bio use alone does not establish a regulatory class.",
+    "Approve the applicable medical acceptance source matrix and editions per product.",
+    "Confirm the intended Automotive SPICE 4.1 process scope and capability targets per project.",
+    "Confirm whether BZS is the only OneBinary platform subsystem or one of several subsystem platforms."
+  ]
+}
