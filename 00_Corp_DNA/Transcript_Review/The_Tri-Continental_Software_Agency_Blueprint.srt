@@ -1,0 +1,1635 @@
+1
+00:00:00,000 --> 00:00:05,680
+Imagine scaling your freelance tech business into an international software agency,
+
+2
+00:00:05,680 --> 00:00:10,520
+working completely normal hours, but netting over 30.000 euros a month.
+
+3
+00:00:10,520 --> 00:00:14,480
+Yeah, I mean, that sounds exactly like a late-night internet marketing scam, doesn't it?
+
+4
+00:00:14,480 --> 00:00:20,680
+It really does, but today, we actually have the exact legal and operational blueprint to pull this off.
+
+5
+00:00:20,680 --> 00:00:25,880
+And honest, it sounds unbelievable until you start looking at the actual architecture of the business.
+
+6
+00:00:26,160 --> 00:00:30,960
+Because we are looking at a very real, highly tactical set of sources today
+
+7
+00:00:30,960 --> 00:00:34,080
+that outline this tri-continental setup.
+
+8
+00:00:34,080 --> 00:00:35,040
+Tri-continental setup?
+
+9
+00:00:35,040 --> 00:00:39,400
+Yeah, so you have a German client interface and execution team over in India,
+
+10
+00:00:39,400 --> 00:00:42,000
+and then a strategic backup hub in Serbia.
+
+11
+00:00:42,000 --> 00:00:43,240
+Exactly.
+
+12
+00:00:43,240 --> 00:00:45,360
+So that is the mission for today's deep dive.
+
+13
+00:00:45,360 --> 00:00:48,600
+We're going to unpack this specific business model,
+
+14
+00:00:48,600 --> 00:00:51,400
+explore the mutual risk matrix for both sides,
+
+15
+00:00:51,400 --> 00:00:54,000
+and break down the actual profit margins.
+
+16
+00:00:54,000 --> 00:00:56,560
+Especially on the Indian side, which is super important.
+
+17
+00:00:56,560 --> 00:01:00,080
+Yeah, because that determines if this even survives long-term.
+
+18
+00:01:00,080 --> 00:01:04,400
+And we'll also map out the exact steps you need to get this operation running securely.
+
+19
+00:01:04,400 --> 00:01:05,800
+Okay, let's unpack this.
+
+20
+00:01:05,800 --> 00:01:08,800
+Because before we look at those massive profit margins,
+
+21
+00:01:08,800 --> 00:01:11,440
+we need to understand the legal skeleton here.
+
+22
+00:01:11,440 --> 00:01:13,800
+Right, the legal foundation is everything.
+
+23
+00:01:13,800 --> 00:01:17,920
+Yeah, and the sources are very clear that the most obvious way to set this up
+
+24
+00:01:17,920 --> 00:01:20,160
+is actually a massive tax trap.
+
+25
+00:01:20,160 --> 00:01:20,840
+It really is.
+
+26
+00:01:20,840 --> 00:01:23,880
+I mean, the instinct for most freelance engineers in Germany
+
+27
+00:01:23,880 --> 00:01:27,440
+is to just find developers in India or Serbia
+
+28
+00:01:27,440 --> 00:01:29,320
+and directly pass the work along.
+
+29
+00:01:29,320 --> 00:01:30,160
+Like a middleman.
+
+30
+00:01:30,160 --> 00:01:30,680
+Exactly.
+
+31
+00:01:30,680 --> 00:01:33,800
+You act as the single point of contact in Germany,
+
+32
+00:01:33,800 --> 00:01:35,600
+interfacing with the client.
+
+33
+00:01:35,600 --> 00:01:37,800
+And then in India, you find a counterpart,
+
+34
+00:01:37,800 --> 00:01:41,840
+let's just call him Praveen, who manages the developers locally.
+
+35
+00:01:41,840 --> 00:01:44,840
+I look at that and think, okay, so I'm just a middleman.
+
+36
+00:01:44,840 --> 00:01:46,440
+If I want to optimize this,
+
+37
+00:01:46,440 --> 00:01:49,240
+the classic near-shore strategy kind of comes to mind.
+
+38
+00:01:49,240 --> 00:01:50,080
+Oh, absolutely.
+
+39
+00:01:50,080 --> 00:01:52,960
+Like the sources mentioned setting up a company in Serbia
+
+40
+00:01:52,960 --> 00:01:54,400
+to handle the Indian team.
+
+41
+00:01:54,400 --> 00:01:57,400
+So why wouldn't I just create a Serbian shell company
+
+42
+00:01:57,400 --> 00:02:01,040
+route all my invoices through this low tax European hub
+
+43
+00:02:01,040 --> 00:02:02,880
+and just take the profits there?
+
+44
+00:02:02,880 --> 00:02:05,560
+Because the German tax authority, the Finans umpt,
+
+45
+00:02:05,560 --> 00:02:07,520
+they anticipate that exact move.
+
+46
+00:02:07,520 --> 00:02:08,080
+Oh, really?
+
+47
+00:02:08,080 --> 00:02:08,600
+Yeah.
+
+48
+00:02:08,600 --> 00:02:10,800
+If you live in Munich or Berlin
+
+49
+00:02:10,800 --> 00:02:13,960
+and you run a Serbian paper company from your home office
+
+50
+00:02:13,960 --> 00:02:18,440
+just to route invoices to India,
+
+51
+00:02:18,440 --> 00:02:20,040
+they apply the Foreign Tax Act.
+
+52
+00:02:20,040 --> 00:02:21,960
+Right, the Hinser-Reknoom's besturing.
+
+53
+00:02:21,960 --> 00:02:22,880
+Exactly, that one.
+
+54
+00:02:22,880 --> 00:02:24,480
+Meaning they just see right through the shell company.
+
+55
+00:02:24,480 --> 00:02:25,520
+Pretty much.
+
+56
+00:02:25,520 --> 00:02:28,920
+They look for the place of effective management.
+
+57
+00:02:28,920 --> 00:02:29,240
+Okay.
+
+58
+00:02:29,240 --> 00:02:31,480
+So if your IP address is in Germany
+
+59
+00:02:31,480 --> 00:02:33,720
+and you are making all the strategic decisions
+
+60
+00:02:33,720 --> 00:02:35,000
+from your German desk,
+
+61
+00:02:35,000 --> 00:02:39,360
+they legally treat that Serbian company as a German company.
+
+62
+00:02:39,360 --> 00:02:39,720
+Wow.
+
+63
+00:02:39,720 --> 00:02:42,360
+Yeah, they will demand full corporate taxes,
+
+64
+00:02:42,360 --> 00:02:45,000
+completely wiping out any near-shore tax benefits
+
+65
+00:02:45,000 --> 00:02:45,800
+you thought you had.
+
+66
+00:02:45,800 --> 00:02:47,040
+That's brutal.
+
+67
+00:02:47,080 --> 00:02:48,720
+And on top of that, you have now created
+
+68
+00:02:48,720 --> 00:02:50,760
+this administrative nightmare,
+
+69
+00:02:50,760 --> 00:02:52,880
+you know, paying accountants in two different countries
+
+70
+00:02:52,880 --> 00:02:54,480
+for a tax break you aren't even getting.
+
+71
+00:02:54,480 --> 00:02:57,480
+Right, so setting up a shell company abroad is a hard no.
+
+72
+00:02:57,480 --> 00:02:58,320
+Definite no.
+
+73
+00:02:58,320 --> 00:03:00,800
+But that leaves me with a different problem then.
+
+74
+00:03:00,800 --> 00:03:03,200
+Because as a freelancer in Germany,
+
+75
+00:03:03,200 --> 00:03:05,720
+I have a specific tax status.
+
+76
+00:03:05,720 --> 00:03:08,440
+If I start buying other people's labor in India
+
+77
+00:03:08,440 --> 00:03:10,760
+and selling it to German clients at a markup,
+
+78
+00:03:11,880 --> 00:03:14,320
+I'm basically acting like a commercial business.
+
+79
+00:03:14,320 --> 00:03:15,160
+Yeah, you are.
+
+80
+00:03:15,160 --> 00:03:17,640
+So don't I lose my freelance tax privileges?
+
+81
+00:03:17,640 --> 00:03:20,440
+You do, and it is a very painful mistake to make.
+
+82
+00:03:20,440 --> 00:03:22,840
+It's called trade tax infection
+
+83
+00:03:22,840 --> 00:03:25,440
+or Gerva Storer Infizierung.
+
+84
+00:03:25,440 --> 00:03:28,360
+Trade tax infection sounds nasty.
+
+85
+00:03:28,360 --> 00:03:29,360
+It is.
+
+86
+00:03:29,360 --> 00:03:31,240
+If you mix your personal consulting work
+
+87
+00:03:31,240 --> 00:03:33,600
+with this pass-through agency work,
+
+88
+00:03:33,600 --> 00:03:37,720
+your entire income suddenly becomes subject to trade tax.
+
+89
+00:03:37,720 --> 00:03:38,480
+Ouch.
+
+90
+00:03:38,480 --> 00:03:40,400
+So how do we bypass that trap then?
+
+91
+00:03:40,400 --> 00:03:42,720
+Well, the sources outline a very specific solution.
+
+92
+00:03:42,720 --> 00:03:45,240
+You set up a separate German UG.
+
+93
+00:03:45,240 --> 00:03:46,400
+An entrepreneur gazelle.
+
+94
+00:03:46,400 --> 00:03:48,600
+Exactly, which is essentially a mini LLC.
+
+95
+00:03:48,600 --> 00:03:52,120
+And you use this UG strictly for the outsourcing business.
+
+96
+00:03:52,120 --> 00:03:52,640
+Oh, I see.
+
+97
+00:03:52,640 --> 00:03:55,520
+So the UG becomes the legal container for the agency
+
+98
+00:03:55,520 --> 00:03:58,520
+completely shielding your personal freelance status
+
+99
+00:03:58,520 --> 00:03:59,600
+from the trade tax.
+
+100
+00:03:59,600 --> 00:04:00,120
+Right.
+
+101
+00:04:00,120 --> 00:04:02,440
+And then your new UG contracts directly
+
+102
+00:04:02,440 --> 00:04:04,560
+with Preven's legal entity in India.
+
+103
+00:04:04,560 --> 00:04:07,120
+Okay, so the UG basically acts as a firewall
+
+104
+00:04:07,120 --> 00:04:10,040
+between my solo freelance work and my new agency business.
+
+105
+00:04:10,040 --> 00:04:10,800
+Exactly.
+
+106
+00:04:10,800 --> 00:04:13,360
+So that creates a really solid legal foundation.
+
+107
+00:04:13,360 --> 00:04:15,360
+But I mean, the firewall isn't much use
+
+108
+00:04:15,360 --> 00:04:17,160
+if there's no treasure to protect, right?
+
+109
+00:04:17,160 --> 00:04:17,920
+Fair point.
+
+110
+00:04:17,920 --> 00:04:19,120
+Let's look at the cash flow
+
+111
+00:04:19,120 --> 00:04:23,160
+because the margins detailed in these sources are just wild.
+
+112
+00:04:23,160 --> 00:04:24,440
+They really are.
+
+113
+00:04:24,440 --> 00:04:26,240
+Let's break down the German revenues first.
+
+114
+00:04:26,240 --> 00:04:27,080
+Okay.
+
+115
+00:04:27,080 --> 00:04:28,840
+As the German UG,
+
+116
+00:04:28,840 --> 00:04:32,480
+you are not offering the client a discount offshore rate.
+
+117
+00:04:32,480 --> 00:04:35,480
+You charge what's called a blended or dual rate.
+
+118
+00:04:35,480 --> 00:04:36,320
+Right.
+
+119
+00:04:36,320 --> 00:04:37,760
+So for your architecture and lead work,
+
+120
+00:04:37,760 --> 00:04:42,760
+you build roughly maybe 110 to 125 euros an hour.
+
+121
+00:04:43,800 --> 00:04:46,080
+And then for the senior developer working under you
+
+122
+00:04:46,080 --> 00:04:50,080
+in India, you build the client 70 to 85 euros an hour.
+
+123
+00:04:50,080 --> 00:04:52,560
+See, I'm looking at the spread here and it's crazy
+
+124
+00:04:52,560 --> 00:04:54,960
+because the sources say you buy that in-neam capacity
+
+125
+00:04:54,960 --> 00:04:59,240
+from Preven for just 33 to 35 euros an hour.
+
+126
+00:04:59,240 --> 00:05:03,680
+So if I scale this to say three concurrent projects,
+
+127
+00:05:03,680 --> 00:05:05,320
+I'm working about 135 hours a month,
+
+128
+00:05:05,320 --> 00:05:07,400
+which is a totally normal full-time schedule.
+
+129
+00:05:07,800 --> 00:05:10,360
+But because of that markup on the developer hours,
+
+130
+00:05:10,360 --> 00:05:14,440
+the UG nets around 33,600 euros monthly
+
+131
+00:05:14,440 --> 00:05:15,720
+before corporate taxes.
+
+132
+00:05:15,720 --> 00:05:18,160
+Yeah, that is the power of decoupling your income
+
+133
+00:05:18,160 --> 00:05:19,000
+from your personal time.
+
+134
+00:05:19,000 --> 00:05:19,840
+It's massive.
+
+135
+00:05:19,840 --> 00:05:22,440
+You earn a margin on the execution capacity
+
+136
+00:05:22,440 --> 00:05:25,600
+of the entire team, not just your own fingers on a keyboard.
+
+137
+00:05:25,600 --> 00:05:27,400
+I have a massive problem with this though.
+
+138
+00:05:27,400 --> 00:05:28,240
+Oh.
+
+139
+00:05:28,240 --> 00:05:30,760
+Yeah, I'm looking at this 45-year-old hour spread.
+
+140
+00:05:31,640 --> 00:05:34,520
+If I charge the German client 80 euros an hour
+
+141
+00:05:34,600 --> 00:05:38,560
+for a developer, but I'm only paying Preven 35 me,
+
+142
+00:05:39,600 --> 00:05:41,840
+won't the client eventually figure that out?
+
+143
+00:05:41,840 --> 00:05:42,680
+Well.
+
+144
+00:05:42,680 --> 00:05:44,800
+Like if I'm a German client and I realize the code
+
+145
+00:05:44,800 --> 00:05:46,760
+is actually coming from India,
+
+146
+00:05:46,760 --> 00:05:48,200
+I'm going to feel kind of ripped off.
+
+147
+00:05:48,200 --> 00:05:50,760
+Why wouldn't they just fire me and go to a platform
+
+148
+00:05:50,760 --> 00:05:53,160
+like Upwork to hire an India directly?
+
+149
+00:05:53,160 --> 00:05:55,320
+Ah, but see, that assumes the client
+
+150
+00:05:55,320 --> 00:05:57,240
+is only buying raw code.
+
+151
+00:05:57,240 --> 00:06:00,240
+The sources refer to this as the hybrid delivery model.
+
+152
+00:06:00,240 --> 00:06:03,280
+The client isn't paying a premium for lines of code.
+
+153
+00:06:03,280 --> 00:06:06,320
+They are actually paying for a German liability shield.
+
+154
+00:06:06,320 --> 00:06:07,240
+Oh, interesting.
+
+155
+00:06:07,240 --> 00:06:08,720
+Yeah, they are paying for compliance
+
+156
+00:06:08,720 --> 00:06:11,200
+with the BGB, the German civil code.
+
+157
+00:06:11,200 --> 00:06:14,760
+Meaning if the project totally fails or the code breaks,
+
+158
+00:06:14,760 --> 00:06:16,880
+they want a local entity they can actually hold
+
+159
+00:06:16,880 --> 00:06:18,720
+accountable under local laws.
+
+160
+00:06:18,720 --> 00:06:19,640
+Exactly.
+
+161
+00:06:19,640 --> 00:06:22,000
+Rather than trying to sue some phantom company
+
+162
+00:06:22,000 --> 00:06:23,520
+halfway across the globe.
+
+163
+00:06:23,520 --> 00:06:24,960
+Exactly that.
+
+164
+00:06:24,960 --> 00:06:28,360
+Furthermore, they are paying for compliance with the DSGVO,
+
+165
+00:06:28,360 --> 00:06:29,880
+the European privacy laws.
+
+166
+00:06:29,880 --> 00:06:30,960
+Oh, right, GDPR instead.
+
+167
+00:06:30,960 --> 00:06:34,600
+Yeah, they're paying for zero recruiting time.
+
+168
+00:06:34,600 --> 00:06:38,400
+And most importantly, they're buying your technical guarantee.
+
+169
+00:06:38,400 --> 00:06:39,040
+Makes sense.
+
+170
+00:06:39,040 --> 00:06:41,080
+Because a mid-sized German company usually
+
+171
+00:06:41,080 --> 00:06:43,920
+fails at direct offshore hiring
+
+172
+00:06:43,920 --> 00:06:46,000
+since they lack a technical lead who can bridge
+
+173
+00:06:46,000 --> 00:06:47,840
+the cultural and time zone gaps.
+
+174
+00:06:47,840 --> 00:06:49,400
+So you absorb all that friction.
+
+175
+00:06:49,400 --> 00:06:50,360
+Right.
+
+176
+00:06:50,360 --> 00:06:53,640
+The execution happening in India is just an implementation detail.
+
+177
+00:06:53,640 --> 00:06:55,520
+To the client, you are a German system
+
+178
+00:06:55,520 --> 00:06:58,240
+house delivering guaranteed German quality.
+
+179
+00:06:58,240 --> 00:07:00,760
+OK, framing it as an insurance policy
+
+180
+00:07:00,760 --> 00:07:03,400
+and a management service really makes
+
+181
+00:07:03,400 --> 00:07:05,960
+that 80 euros an hour totally justified.
+
+182
+00:07:05,960 --> 00:07:07,000
+Yeah it does.
+
+183
+00:07:07,000 --> 00:07:10,560
+But charging that premium only works if the code is actually good.
+
+184
+00:07:10,560 --> 00:07:11,240
+Of course.
+
+185
+00:07:11,240 --> 00:07:12,840
+And to give good code, you can't just
+
+186
+00:07:12,840 --> 00:07:15,040
+pay someone pennies and expect them to care.
+
+187
+00:07:15,040 --> 00:07:16,040
+Yeah.
+
+188
+00:07:16,040 --> 00:07:18,080
+What does the math look like for Preven,
+
+189
+00:07:18,080 --> 00:07:20,320
+the guy actually managing the build in India?
+
+190
+00:07:20,320 --> 00:07:22,560
+The sources provide a really granular breakdown
+
+191
+00:07:22,560 --> 00:07:23,840
+of the Indian profitability.
+
+192
+00:07:23,840 --> 00:07:26,800
+And honestly, it is vital to the model success.
+
+193
+00:07:26,800 --> 00:07:29,440
+Out of the 35 euros an hour, you pay Preven,
+
+194
+00:07:29,440 --> 00:07:32,560
+which comes out to about 5,600 a month for one full time
+
+195
+00:07:32,560 --> 00:07:33,920
+developer.
+
+196
+00:07:33,920 --> 00:07:36,760
+Preven obviously has his own local costs.
+
+197
+00:07:36,760 --> 00:07:37,600
+Right.
+
+198
+00:07:37,600 --> 00:07:41,160
+He pays the actual senior developer a highly competitive local
+
+199
+00:07:41,160 --> 00:07:44,960
+salary around 2,500 a month.
+
+200
+00:07:44,960 --> 00:07:49,080
+He has overhead for things like software licenses, high speed
+
+201
+00:07:49,080 --> 00:07:51,320
+internet, and his local accountant, which
+
+202
+00:07:51,320 --> 00:07:53,080
+adds maybe another 700.
+
+203
+00:07:53,080 --> 00:07:55,920
+So subtracting all that, Preven is left with a net margin
+
+204
+00:07:55,920 --> 00:07:58,920
+of around 2,400 euros a month per developer.
+
+205
+00:07:58,920 --> 00:07:59,920
+Exactly.
+
+206
+00:07:59,920 --> 00:08:03,480
+And that is a phenomenal margin for a management role in India.
+
+207
+00:08:03,480 --> 00:08:04,480
+Wow.
+
+208
+00:08:04,480 --> 00:08:07,440
+It's highly lucrative and crucially sustainable.
+
+209
+00:08:07,440 --> 00:08:09,360
+It gives Preven the financial breathing room
+
+210
+00:08:09,360 --> 00:08:13,400
+to involve a deputy, perhaps his wife, or a trusted colleague,
+
+211
+00:08:13,400 --> 00:08:16,440
+to handle HR and admin, so he doesn't just burn out.
+
+212
+00:08:16,440 --> 00:08:19,000
+Which means we aren't just running some digital sweatshop.
+
+213
+00:08:19,000 --> 00:08:20,000
+No.
+
+214
+00:08:20,000 --> 00:08:22,080
+We are building a real B2B partnership.
+
+215
+00:08:22,080 --> 00:08:23,080
+Yes.
+
+216
+00:08:23,080 --> 00:08:25,320
+And showing Preven the sustainable fair margin
+
+217
+00:08:25,320 --> 00:08:28,200
+during your kickoff is highly recommended in the sources.
+
+218
+00:08:29,200 --> 00:08:30,200
+Yeah.
+
+219
+00:08:30,200 --> 00:08:32,200
+You want him to see the long-term value.
+
+220
+00:08:32,200 --> 00:08:37,200
+He has a highly profitable, risk-free business running underneath your German umbrella.
+
+221
+00:08:37,200 --> 00:08:41,200
+Well, a high margin business only survives if it's protected against catastrophic failure, though.
+
+222
+00:08:41,200 --> 00:08:42,200
+Very true.
+
+223
+00:08:42,200 --> 00:08:47,200
+Reading through the sources, there is a heavy emphasis on a mutual risk matrix.
+
+224
+00:08:47,200 --> 00:08:52,200
+So let's look at the worst case scenario, starting with the German side.
+
+225
+00:08:52,200 --> 00:08:56,200
+What happens if the client just doesn't pay?
+
+226
+00:08:56,200 --> 00:09:01,200
+Well, for a sole proprietor, client non-payment is basically the ultimate nightmare.
+
+227
+00:09:01,200 --> 00:09:03,200
+It can lead directly to personal bankruptcy.
+
+228
+00:09:03,200 --> 00:09:04,200
+Yes.
+
+229
+00:09:04,200 --> 00:09:07,200
+But because you set up that German UG, you have a corporate liability shield.
+
+230
+00:09:07,200 --> 00:09:08,200
+Ah.
+
+231
+00:09:08,200 --> 00:09:11,200
+So the UG acts like a financial airlock on a spaceship.
+
+232
+00:09:11,200 --> 00:09:12,200
+I love that.
+
+233
+00:09:12,200 --> 00:09:15,200
+If the agency project blows up and depressurizes the door seal,
+
+234
+00:09:15,200 --> 00:09:19,200
+and it doesn't just vent my personal savings into the vacuum of space.
+
+235
+00:09:19,200 --> 00:09:21,200
+That is a perfect way to visualize it.
+
+236
+00:09:21,200 --> 00:09:25,200
+And operationally, you reinforce that airlock by implementing back-to-back milestone payments.
+
+237
+00:09:25,200 --> 00:09:29,200
+The standard blueprint is 30% upfront to start the project,
+
+238
+00:09:29,200 --> 00:09:32,200
+40% after delivering a working demo,
+
+239
+00:09:32,200 --> 00:09:34,200
+and then the final 30% on delivery.
+
+240
+00:09:34,200 --> 00:09:35,200
+Yeah.
+
+241
+00:09:35,200 --> 00:09:39,200
+You never allow the financial exposure to stretch out over months of unpaid work.
+
+242
+00:09:39,200 --> 00:09:42,200
+That definitely protects me from the client.
+
+243
+00:09:42,200 --> 00:09:43,200
+But what protects me from prevent?
+
+244
+00:09:43,200 --> 00:09:44,200
+What do you mean?
+
+245
+00:09:44,200 --> 00:09:48,200
+Like what if he takes my clients, or just disappears with all the code we built?
+
+246
+00:09:48,200 --> 00:09:52,200
+Ah. You mitigate that through absolute structural control.
+
+247
+00:09:52,200 --> 00:09:53,200
+Okay.
+
+248
+00:09:53,200 --> 00:09:57,200
+The German UG retains 100% control of the intellectual property.
+
+249
+00:09:57,200 --> 00:10:00,200
+The GitHub repositories where the code lives,
+
+250
+00:10:00,200 --> 00:10:03,200
+the geribords where the tasks are tracked,
+
+251
+00:10:03,200 --> 00:10:06,200
+the AWS cloud servers where everything is hosted.
+
+252
+00:10:06,200 --> 00:10:07,200
+Everything.
+
+253
+00:10:07,200 --> 00:10:11,200
+Yeah. They are all set up by the UG and paid for with your corporate credit card.
+
+254
+00:10:11,200 --> 00:10:14,200
+Meaning preventative team only get access credentials.
+
+255
+00:10:14,200 --> 00:10:16,200
+They don't actually hold the keys to the building.
+
+256
+00:10:16,200 --> 00:10:17,200
+Exactly.
+
+257
+00:10:17,200 --> 00:10:21,200
+If the relationship deteriorates, you simply revoke access.
+
+258
+00:10:21,200 --> 00:10:24,200
+All the code, the project history, and the infrastructure.
+
+259
+00:10:24,200 --> 00:10:25,200
+The business continues.
+
+260
+00:10:25,200 --> 00:10:28,200
+That makes perfect sense for protecting the German side.
+
+261
+00:10:28,200 --> 00:10:33,200
+But the source is highlight that prevent takes on massive systemic risks in India as well.
+
+262
+00:10:33,200 --> 00:10:34,200
+Oh yeah.
+
+263
+00:10:34,200 --> 00:10:36,200
+The vulnerability on the Indian side is fascinating,
+
+264
+00:10:36,200 --> 00:10:39,200
+particularly regarding administrative and cash flow threats.
+
+265
+00:10:39,200 --> 00:10:40,200
+Like what?
+
+266
+00:10:40,200 --> 00:10:46,200
+Well, for example, India enforces an 18% goods and services tax, or GST.
+
+267
+00:10:46,200 --> 00:10:47,200
+Right.
+
+268
+00:10:47,200 --> 00:10:52,200
+If Praveen just generates a standard invoice and sends to your German UG,
+
+269
+00:10:52,200 --> 00:10:57,200
+the Indian tax authorities might step in and demand 18% of his total revenue.
+
+270
+00:10:57,200 --> 00:11:03,200
+Wow. Taking 18% right off the top would completely obliterate that 2400 margin we just talked about.
+
+271
+00:11:03,200 --> 00:11:04,200
+It would ruin it.
+
+272
+00:11:04,200 --> 00:11:06,200
+So how does he avoid that trap?
+
+273
+00:11:06,200 --> 00:11:08,200
+It requires a specific legal mechanism.
+
+274
+00:11:08,200 --> 00:11:13,200
+Praveen must ensure his contracts use a status called the letter of undertaking or LUT.
+
+275
+00:11:13,200 --> 00:11:14,200
+LUT.
+
+276
+00:11:14,200 --> 00:11:18,200
+This classifies his work specifically as an export of services.
+
+277
+00:11:18,200 --> 00:11:24,200
+Under Indian tax law, filing with an LUT legally drops his GST liability to 0%.
+
+278
+00:11:24,200 --> 00:11:25,200
+Oh wow.
+
+279
+00:11:25,200 --> 00:11:29,200
+Yeah, and it's your responsibility to structure the B2B contract.
+
+280
+00:11:29,200 --> 00:11:33,200
+So his local accountant has all the proof needed to claim this exact status.
+
+281
+00:11:33,200 --> 00:11:37,200
+That is a vital detail for keeping the partnership viable.
+
+282
+00:11:37,200 --> 00:11:38,200
+Absolutely.
+
+283
+00:11:38,200 --> 00:11:39,200
+Then there's the currency risk, right?
+
+284
+00:11:39,200 --> 00:11:42,200
+Because the rupee fluctuates constantly against Western currencies.
+
+285
+00:11:42,200 --> 00:11:47,200
+Which is exactly why the blueprint is adamant that Praveen must bill you strictly in euros.
+
+286
+00:11:47,200 --> 00:11:48,200
+Just keeping it simple.
+
+287
+00:11:48,200 --> 00:11:55,200
+Yeah, that seemingly small detail shifts the inflation and currency risk entirely away from his daily operations.
+
+288
+00:11:55,200 --> 00:11:57,200
+It gives him total financial predictability.
+
+289
+00:11:57,200 --> 00:11:59,200
+We also need to talk about payroll.
+
+290
+00:11:59,200 --> 00:12:00,200
+Right.
+
+291
+00:12:00,200 --> 00:12:10,200
+Because Praveen's developers expect their 2500 salary on the first of the month regardless of whether our German client is dragging their feet on paying an invoice.
+
+292
+00:12:10,200 --> 00:12:13,200
+Yeah, Cashlow crunches destroy offshore agencies.
+
+293
+00:12:13,200 --> 00:12:14,200
+I bet.
+
+294
+00:12:14,200 --> 00:12:25,200
+To prevent Praveen from dipping into his personal savings to make payroll, you actually pass along a portion of that initial 30% client deposit as a mobilization fee to India.
+
+295
+00:12:25,200 --> 00:12:26,200
+Oh smart.
+
+296
+00:12:26,200 --> 00:12:33,200
+When you ensure Praveen has the cash to pay his developers on time, you are directly protecting your own delivery timeline.
+
+297
+00:12:33,200 --> 00:12:41,200
+So we have the UG shielding our assets, the LUT status protecting Praveen's taxes and euro billing stabilizing the cash flow.
+
+298
+00:12:41,200 --> 00:12:43,200
+It's a tight system.
+
+299
+00:12:43,200 --> 00:12:45,200
+The structure is incredibly solid.
+
+300
+00:12:45,200 --> 00:12:50,200
+But how do you actually execute and scale this without working, you know, 80 hour weeks?
+
+301
+00:12:50,200 --> 00:12:52,200
+That is the big question.
+
+302
+00:12:52,200 --> 00:12:56,200
+Which brings us to the operational strategy and that relies on a two pronged approach.
+
+303
+00:12:56,200 --> 00:13:01,200
+AI integration and surprisingly bringing Serbia back into the picture.
+
+304
+00:13:01,200 --> 00:13:08,200
+Yeah, Serbia is incredibly valuable here, but not as a tax dodge middleman, but rather as a dual hub redundancy.
+
+305
+00:13:08,200 --> 00:13:10,200
+Wait, I need to push back on this.
+
+306
+00:13:10,200 --> 00:13:14,200
+How does one guy in Serbia act as a backup for a whole team in India?
+
+307
+00:13:14,200 --> 00:13:22,200
+If a project with three Indian developers falls behind, does the Serbia and Teckley just step in and code 247 to catch up?
+
+308
+00:13:22,200 --> 00:13:24,200
+Because that doesn't seem physically possible.
+
+309
+00:13:24,200 --> 00:13:26,200
+No, no, he doesn't write all the code himself.
+
+310
+00:13:26,200 --> 00:13:30,200
+He acts as an escalation and quality assurance layer in your time zone.
+
+311
+00:13:30,200 --> 00:13:33,200
+Serbia has an exceptional talent pool.
+
+312
+00:13:33,200 --> 00:13:42,200
+So if Provence team gets overwhelmed by a sudden rush of complex client requests or if Proven faces an emergency and goes offline,
+
+313
+00:13:42,200 --> 00:13:51,200
+the Serbian Teck lid steps in to review poll requests, unblock the Indian developers and maintain the delivery cadence.
+
+314
+00:13:51,200 --> 00:13:52,200
+Got it.
+
+315
+00:13:52,200 --> 00:13:56,200
+You are never left entirely dependent on a single geographic point of failure.
+
+316
+00:13:56,200 --> 00:13:59,200
+Okay, so it's structural insurance like a peak load buffer.
+
+317
+00:13:59,200 --> 00:14:00,200
+Exactly.
+
+318
+00:14:00,200 --> 00:14:04,200
+But the real scaling multiplier the sources focus on is AI.
+
+319
+00:14:04,200 --> 00:14:05,200
+Oh, absolutely.
+
+320
+00:14:05,200 --> 00:14:09,200
+The blueprint says you don't just hire more coders, you build an AI factory.
+
+321
+00:14:09,200 --> 00:14:13,200
+You use tools like Langrath, Kurser, Claude, and Deepseek.
+
+322
+00:14:13,200 --> 00:14:17,200
+Can we walk through what that actually looks like in a typical Tuesday morning for Provence?
+
+323
+00:14:17,200 --> 00:14:23,200
+Sure. So in a traditional setup, Proven gets a feature request and spends eight hours manually typing out the code.
+
+324
+00:14:23,200 --> 00:14:27,200
+In an AI factory setup, Proven is no longer a manual laborer.
+
+325
+00:14:28,200 --> 00:14:29,200
+Okay, I like that.
+
+326
+00:14:29,200 --> 00:14:35,200
+You use a spec writer agent perhaps powered by Claude to turn messy client notes into highly structured, juridicates.
+
+327
+00:14:35,200 --> 00:14:45,200
+Then Provence feeds that ticket into an orchestration tool like Langrath, which breaks the feature down and assigns sub tasks to different AI agents to write the draft code.
+
+328
+00:14:45,200 --> 00:14:51,200
+So the AI writes the rough draft and Provence role shifts entirely to supervision.
+
+329
+00:14:51,200 --> 00:14:52,200
+Yes.
+
+330
+00:14:52,200 --> 00:14:56,200
+He opens that draft code in an AI native workspace like Kurser.
+
+331
+00:14:56,200 --> 00:14:58,200
+His job is now code review.
+
+332
+00:14:58,200 --> 00:15:05,200
+He checks the logic, uses Kurser to fix any AI hallucinations, runs the tests, and pushes the final product.
+
+333
+00:15:05,200 --> 00:15:07,200
+That's incredibly efficient.
+
+334
+00:15:07,200 --> 00:15:08,200
+It is.
+
+335
+00:15:08,200 --> 00:15:14,200
+A single senior developer in India armed with these workflows can comfortably output the work of three to four traditional developers.
+
+336
+00:15:14,200 --> 00:15:20,200
+I hear multiple AI agents talking to each other, and I immediately think of runaway API bills, though.
+
+337
+00:15:20,200 --> 00:15:21,200
+Everyone does.
+
+338
+00:15:21,200 --> 00:15:27,200
+If I have Langrath orchestrating deep seeking claw to generate and review code all day, couldn't that get overwhelmingly expensive?
+
+339
+00:15:27,200 --> 00:15:34,200
+The fear of runaway API costs paralyzes a lot of founders, but you control it by looking at microunit economics.
+
+340
+00:15:34,200 --> 00:15:35,200
+Microunit economics.
+
+341
+00:15:35,200 --> 00:15:38,200
+Think of it like a manufacturing assembly line.
+
+342
+00:15:38,200 --> 00:15:44,200
+It's like paying two cents for a robotic arm to stamp a car door that you turn around and sell for 200 euros.
+
+343
+00:15:44,200 --> 00:15:50,200
+You don't agonize over the electricity bill of the robotic arm because the margin per unit is astronomical.
+
+344
+00:15:50,200 --> 00:15:52,200
+So we apply that same logic to the ticket level.
+
+345
+00:15:52,200 --> 00:15:53,200
+Exactly.
+
+346
+00:15:53,200 --> 00:16:02,200
+If an AI agent task costs you, say, a Euro 50 in API tokens, and it requires 15 minutes of human review from Proven,
+
+347
+00:16:02,200 --> 00:16:07,200
+but you are billing the German client 120 euros for that finished feature.
+
+348
+00:16:07,200 --> 00:16:10,200
+Well, the API cost is a rounding error.
+
+349
+00:16:10,200 --> 00:16:12,200
+Yeah, the decision is basically made for you at that point.
+
+350
+00:16:12,200 --> 00:16:13,200
+Right.
+
+351
+00:16:13,200 --> 00:16:17,200
+But what about the horror stories where an AI gets stuck in a loop, talks to itself all weekend,
+
+352
+00:16:17,200 --> 00:16:20,200
+and you wake up to a 5,000 euro bill from OpenAI.
+
+353
+00:16:20,200 --> 00:16:26,200
+You prevent that mechanically by setting hard API limits in the provider dashboards.
+
+354
+00:16:26,200 --> 00:16:32,200
+During phase one, you set a hard cap of maybe $30 a month on your Anthropic or OpenAI accounts.
+
+355
+00:16:32,200 --> 00:16:36,200
+If an agent loops and hits the limit, the system just stops.
+
+356
+00:16:36,200 --> 00:16:39,200
+The code halts, but your bank account is safe.
+
+357
+00:16:39,200 --> 00:16:44,200
+Okay, let's bring this all together for the listener because if someone wants to implement this blueprint tomorrow,
+
+358
+00:16:44,200 --> 00:16:47,200
+what are the immediate practical steps?
+
+359
+00:16:47,200 --> 00:16:50,200
+Well, the source has mapped out a very clear three step roadmap.
+
+360
+00:16:50,200 --> 00:16:51,200
+Okay, step one.
+
+361
+00:16:51,200 --> 00:16:52,200
+Step one.
+
+362
+00:16:52,200 --> 00:16:58,200
+Set up your German UG, do not sign a single contract, or spin up a single server as a freelancer.
+
+363
+00:16:58,200 --> 00:17:00,200
+Right, avoid that tax trap.
+
+364
+00:17:00,200 --> 00:17:01,200
+Step two.
+
+365
+00:17:01,200 --> 00:17:02,200
+Step two.
+
+366
+00:17:02,200 --> 00:17:05,200
+Define your phase one hiring policy with Proven.
+
+367
+00:17:05,200 --> 00:17:09,200
+You must instruct him to hire strictly senior full stack developers.
+
+368
+00:17:09,200 --> 00:17:10,200
+No juniors.
+
+369
+00:17:11,200 --> 00:17:14,200
+And absolutely no courtesy hires of friends or family.
+
+370
+00:17:14,200 --> 00:17:19,200
+You need experienced engineers who can independently supervise AI tools right from day one.
+
+371
+00:17:19,200 --> 00:17:23,200
+And step three involves the legal framework, specifically something called SCCs.
+
+372
+00:17:23,200 --> 00:17:30,200
+Yeah, step three is drafting the B2B framework prioritizing explicit IP transfer and GDPR compliance.
+
+373
+00:17:30,200 --> 00:17:32,200
+So SCC stands for what?
+
+374
+00:17:32,200 --> 00:17:33,200
+Standard contractual clauses.
+
+375
+00:17:33,200 --> 00:17:36,200
+These are pre-approved legal templates created by the EU.
+
+376
+00:17:36,200 --> 00:17:37,200
+Okay.
+
+377
+00:17:37,200 --> 00:17:45,200
+When you insert them into your contract with Proven, they legally force the Indian entity to handle user data as strictly as if they were sitting in Munich.
+
+378
+00:17:45,200 --> 00:17:51,200
+Yeah, without SCCs in place, out simply cannot guarantee data compliance to your German clients.
+
+379
+00:17:51,200 --> 00:17:55,200
+It really is a masterclass in structural engineering, just applied to a business.
+
+380
+00:17:55,200 --> 00:17:56,200
+Really is.
+
+381
+00:17:56,200 --> 00:18:02,200
+So to summarize the blueprint, you use a German UG for liability protection and to shield your freelance tax status.
+
+382
+00:18:02,200 --> 00:18:03,200
+Right.
+
+383
+00:18:03,200 --> 00:18:11,200
+You contract a single point of contact in India offering fair, euro-based margins so they are deeply incentivized to protect your business.
+
+384
+00:18:11,200 --> 00:18:15,200
+You utilize Serbia as a near-shore escalation layer.
+
+385
+00:18:15,200 --> 00:18:24,200
+And finally, you deploy an AI agent workflow, evaluating the API costs through microunit economics to ensure massive profitability.
+
+386
+00:18:24,200 --> 00:18:28,200
+The model is incredibly resilient, provided you stick rigidly to the structural rules.
+
+387
+00:18:28,200 --> 00:18:32,200
+It highlights a real superpower for any founder, I think.
+
+388
+00:18:32,200 --> 00:18:37,200
+Creating the business structure in your personal relationships is two separate highly structured systems.
+
+389
+00:18:37,200 --> 00:18:38,200
+Isn't cold, it's professional.
+
+390
+00:18:38,200 --> 00:18:39,200
+Absolutely.
+
+391
+00:18:39,200 --> 00:18:40,200
+It protects everyone involved.
+
+392
+00:18:40,200 --> 00:18:51,200
+You don't need to be best friends with your offshore team, you need airtight contracts, the LUT tax exemptions in place, clear communication windows and shared financial incentives.
+
+393
+00:18:51,200 --> 00:18:56,200
+That structural clarity is what allows the business to scale without burning you out.
+
+394
+00:18:56,200 --> 00:19:01,200
+But looking at these sources, it raises an important question about the future of this entire industry.
+
+395
+00:19:01,200 --> 00:19:05,200
+Something for you to ponder as you start planning your setup.
+
+396
+00:19:05,200 --> 00:19:08,200
+Oh, what's the looming question?
+
+397
+00:19:08,200 --> 00:19:16,200
+Well, as these AI agents become faster, cheaper and closer to zero error coding, the fundamental value of an offshore team ships.
+
+398
+00:19:16,200 --> 00:19:17,200
+True.
+
+399
+00:19:17,200 --> 00:19:27,200
+Right now, you are outsourcing the execution of code, but in five years as AI handles 99% of the drafting, will you still be outsourcing development to India?
+
+400
+00:19:27,200 --> 00:19:28,200
+That's a good point.
+
+401
+00:19:28,200 --> 00:19:33,200
+Or will you simply be outsourcing the supervision of your own German owned AI agents?
+
+402
+00:19:33,200 --> 00:19:37,200
+Wow. From outsourcing manual code to outsourcing AI factory management.
+
+403
+00:19:37,200 --> 00:19:38,200
+Exactly.
+
+404
+00:19:38,200 --> 00:19:41,200
+That completely changes how we value human capital and tech.
+
+405
+00:19:41,200 --> 00:19:42,200
+It really does.
+
+406
+00:19:42,200 --> 00:19:43,200
+Something to definitely chew on.
+
+407
+00:19:43,200 --> 00:19:45,200
+Well, thank you for joining us on this deep dive.
+
+408
+00:19:45,200 --> 00:19:48,200
+Start mapping out your phase one hiring criteria today.
+
+409
+00:19:48,200 --> 00:19:54,200
+And remember, you aren't just laying bricks anymore, you are designing the entire system.

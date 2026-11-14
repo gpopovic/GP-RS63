@@ -1,0 +1,28 @@
+{
+  "workspace_id": "EXTERNAL-SOFTWARE-WORKSPACE",
+  "work_item_id": "PLUGIN-VAL-001",
+  "candidate_version": "2.0.0",
+  "source_revision": "0123456789abcdef",
+  "artifact_sha256": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "executed_at_utc": "2099-01-01T10:00:00Z",
+  "test_environment": "isolated controlled workstation",
+  "fixture_set": "fixture-set-v1",
+  "requirements_p0": {"total": 4, "passed": 4},
+  "blocking_tests": {"total": 8, "passed": 8},
+  "protected_state": {"checked": 5, "unchanged": 5, "unexpected_mutations": 0},
+  "workflow_checks": [
+    {"id": "save_reopen", "applicable": true, "total": 2, "passed": 2, "evidence_reference": "EV-SAVE"},
+    {"id": "undo_redo", "applicable": true, "total": 2, "passed": 2, "evidence_reference": "EV-UNDO"},
+    {"id": "export_determinism", "applicable": true, "total": 2, "passed": 2, "evidence_reference": "EV-EXPORT"},
+    {"id": "ambiguity_safety", "applicable": false, "total": 0, "passed": 0, "not_applicable_rationale": "No ambiguous-input path in this bounded candidate."}
+  ],
+  "clean_build": {"total": 2, "passed": 2},
+  "live_observation": {"required": true, "status": "PASSED", "evidence_reference": "EV-LIVE"},
+  "claim_derivation": "MACHINE_DERIVED",
+  "evidence_references": ["EV-MANIFEST", "EV-LIVE"],
+  "raw_log_references": ["LOG-COMPILE", "LOG-TEST"],
+  "rollback_reference": "BACKUP-001",
+  "independent_reviewer": "Code_Validator",
+  "limitations": ["Approval applies only to this candidate hash and environment."],
+  "decision": "READY_FOR_RELEASE_REVIEW"
+}

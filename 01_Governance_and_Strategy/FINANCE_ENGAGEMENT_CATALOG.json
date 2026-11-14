@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Select the smallest applicable finance cell without granting financial approval or transaction authority.",
+  "engagements": [
+    {
+      "id": "finance_intake_and_routing",
+      "mode": "CORE_ROUTER",
+      "trigger_flags": ["finance_question"],
+      "preparers": [],
+      "challengers": ["Finance_and_Risk_Controller"],
+      "outputs": ["selected_engagement_ids", "missing_context", "decision_owner_needed"],
+      "prohibited_actions": ["financial_conclusion", "approval", "transaction", "source_record_change"]
+    },
+    {
+      "id": "liquidity_treasury_fx",
+      "mode": "ON_DEMAND",
+      "trigger_flags": ["cash_or_reserve", "bank_or_funding", "foreign_currency"],
+      "preparers": ["Banking_and_Treasury_Manager"],
+      "challengers": ["Finance_and_Risk_Controller"],
+      "outputs": ["cash_range", "liquidity_headroom", "bank_and_currency_exposure", "decision_options"],
+      "prohibited_actions": ["payment", "investment_execution", "bank_account_change", "risk_acceptance"]
+    },
+    {
+      "id": "forecast_project_economics",
+      "mode": "ON_DEMAND",
+      "trigger_flags": ["offer_or_project", "forecast_or_variance"],
+      "preparers": ["Unit_Economics_and_Financial_Planning_Analyst"],
+      "challengers": ["Finance_and_Risk_Controller"],
+      "outputs": ["revenue_and_cost_range", "contribution_range", "cash_timing", "assumption_register"],
+      "prohibited_actions": ["customer_commitment", "price_approval", "scope_change", "journal_posting"]
+    },
+    {
+      "id": "accounting_tax_readiness",
+      "mode": "TRIGGERED_SPECIALIST",
+      "trigger_flags": ["accounting_or_close", "tax_or_filing", "related_party"],
+      "preparers": ["Bookkeeping_and_Financial_Operations_Manager", "Tax_Readiness_and_Accounting_Assurance_Officer"],
+      "challengers": ["Finance_and_Risk_Controller"],
+      "outputs": ["reconciliation_status", "evidence_index", "tax_or_accounting_questions", "exceptions"],
+      "prohibited_actions": ["binding_tax_position", "filing", "journal_approval", "related_party_approval"]
+    },
+    {
+      "id": "capital_allocation",
+      "mode": "DORMANT_UNTIL_TRIGGER",
+      "trigger_flags": ["surplus_or_capital_commitment"],
+      "preparers": ["Capital_Allocation_and_Investment_Analyst"],
+      "challengers": ["Banking_and_Treasury_Manager", "Investment_and_Counterparty_Risk_Auditor"],
+      "outputs": ["allocation_options", "liquidity_impact", "downside_range", "monitoring_and_exit_conditions"],
+      "prohibited_actions": ["investment_approval", "order_placement", "limit_change", "product_endorsement"]
+    },
+    {
+      "id": "payment_integrity_counterparty_control",
+      "mode": "TRIGGERED_CONTROL",
+      "trigger_flags": ["new_or_changed_recipient", "payment_anomaly", "counterparty_or_sanctions", "bank_detail_change"],
+      "preparers": ["Bookkeeping_and_Financial_Operations_Manager", "Financial_Crime_and_Sanctions_Compliance_Officer"],
+      "challengers": ["Investment_and_Counterparty_Risk_Auditor"],
+      "outputs": ["verification_status", "red_flags", "evidence_gaps", "approval_route"],
+      "prohibited_actions": ["recipient_creation", "payment_approval", "payment_execution", "sanctions_clearance_claim"]
+    },
+    {
+      "id": "independent_finance_assurance",
+      "mode": "RISK_TRIGGERED",
+      "trigger_flags": ["material_financial_decision", "control_exception", "conflict_or_repeat_error"],
+      "preparers": ["Investment_and_Counterparty_Risk_Auditor"],
+      "challengers": [],
+      "outputs": ["finding", "evidence_scope", "limit_or_control_exception", "corrective_criteria"],
+      "prohibited_actions": ["proposal_authorship", "self_approval", "transaction", "finding_closure_without_evidence"]
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Authoritative index of Triton_AI_Corp configuration items; product delivery work stays in separate external workspaces.",
+  "configuration_items": [
+    {
+      "id": "feature_investment_review_template",
+      "source": "01_Governance_and_Strategy/FEATURE_INVESTMENT_REVIEW_TEMPLATE.md",
+      "owner": "Product_Owner"
+    },
+    {
+      "id": "human_employee_handbook",
+      "source": "05_Human_Interface_and_Ops/Human_Employee_Documents/HUMAN_EMPLOYEE_HANDBOOK.md",
+      "derived_document": "05_Human_Interface_and_Ops/Human_Employee_Documents/Triton_AI_Corp_Human_Employee_Handbook.docx",
+      "owner": "Learning_and_Transfer_Coach"
+    },
+    {
+      "id": "company_os_activation_gate",
+      "source": "05_Human_Interface_and_Ops/Manual_Quality_Gates/COMPANY_OS_ACTIVATION_GATE.md",
+      "owner": "Founder_Operating_System_Advisor"
+    },
+    {
+      "id": "company_baseline_runner",
+      "source": "04_Execution_Engine/run_company_baseline.py",
+      "owner": "Configuration_Manager"
+    },
+    {
+      "id": "codex_self_correction_execution_profile",
+      "source": "01_Governance_and_Strategy/CODEX_SELF_CORRECTION_AND_EXECUTION_PROFILE.md",
+      "runtime_rules": "AGENTS.md",
+      "validation": "04_Execution_Engine/test_codex_execution_profile.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "external_review_change_intake",
+      "source": "01_Governance_and_Strategy/EXTERNAL_REVIEW_CHANGE_INTAKE_POLICY.md",
+      "registry": "05_Human_Interface_and_Ops/External_Review_Intake/ANTIGRAVITY_DISPOSITION_REGISTER_2026-08-21.json; 05_Human_Interface_and_Ops/External_Review_Intake/ANTIGRAVITY_SNAPSHOT_DISPOSITION_REGISTER_2026-08-28.json; 05_Human_Interface_and_Ops/External_Review_Intake/ANTIGRAVITY_FULL_DAY_CAPABILITY_DISPOSITION_REGISTER_2026-08-28.json; 05_Human_Interface_and_Ops/External_Review_Intake/ANTIGRAVITY_INCREMENTAL_CAPABILITY_DISPOSITION_REGISTER_2026-08-29.json; 05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_AUTOSAR_DISPOSITION_REGISTER_2026-08-21.json; 05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_CROSS_DOMAIN_EQUIVALENTS_DISPOSITION_REGISTER_2026-08-21.json; 05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_AI_AUDIT_TRAIL_DISPOSITION_REGISTER_2026-08-21.json; 05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_ENGINEERING_LOGISTICS_DISPOSITION_REGISTER_2026-08-21.json; 05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_TASK_INVESTMENT_DISPOSITION_REGISTER_2026-08-21.json",
+      "source_manifest": "05_Human_Interface_and_Ops/External_Review_Intake/ANTIGRAVITY_SOURCE_SNAPSHOT_MANIFEST_2026-08-28.json; 05_Human_Interface_and_Ops/External_Review_Intake/ANTIGRAVITY_INCREMENT_MANIFEST_2026-08-29.json",
+      "runtime": "04_Execution_Engine/external_review_disposition.py; 04_Execution_Engine/external_snapshot_manifest.py",
+      "validation": "04_Execution_Engine/test_external_review_disposition.py; 04_Execution_Engine/test_external_snapshot_manifest.py",
+      "owner": "Configuration_Manager"
+    },
+    {
+      "id": "open_control_gap_register",
+      "source": "05_Human_Interface_and_Ops/Manual_Quality_Gates/OPEN_CONTROL_GAPS_REGISTER.json",
+      "runtime": "04_Execution_Engine/open_control_gaps.py",
+      "validation": "04_Execution_Engine/test_open_control_gaps.py",
+      "owner": "Quality_Manager"
+    },
+    {
+      "id": "active_role_profiles",
+      "source": "01_Governance_and_Strategy/ACTIVE_ROLE_PROFILES.json",
+      "runtime": "04_Execution_Engine/harness_router.py",
+      "validation": "04_Execution_Engine/test_harness_router.py",
+      "owner": "Founder_Operating_System_Advisor"
+    },
+    {
+      "id": "adaptive_harness_and_information_flow",
+      "source": "01_Governance_and_Strategy/ADAPTIVE_HARNESS_AND_INFORMATION_FLOW.md",
+      "catalog": "01_Governance_and_Strategy/ADAPTIVE_HARNESS_CATALOG.json",
+      "runtime": "04_Execution_Engine/adaptive_harness.py",
+      "validation": "04_Execution_Engine/test_adaptive_harness.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "lean_assurance_and_process_tailoring",
+      "source": "01_Governance_and_Strategy/LEAN_ASSURANCE_AND_PROCESS_TAILORING_POLICY.md",
+      "catalog": "01_Governance_and_Strategy/ADAPTIVE_HARNESS_CATALOG.json",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "process_strength_observation_and_evolution",
+      "source": "01_Governance_and_Strategy/PROCESS_STRENGTH_OBSERVATION_AND_EVOLUTION_POLICY.md",
+      "kpis": "01_Governance_and_Strategy/ENTERPRISE_KPI_CATALOG.md; 01_Governance_and_Strategy/ROLE_KPI_MATRIX.json",
+      "runtime": "04_Execution_Engine/process_strength_observer.py",
+      "validation": "04_Execution_Engine/test_process_strength_observer.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "model_classification_and_benchmark_policy",
+      "source": "01_Governance_and_Strategy/MODEL_CLASSIFICATION_AND_BENCHMARK_POLICY.md",
+      "registry": "01_Governance_and_Strategy/MODEL_CLASS_REGISTRY.json",
+      "runtime": "04_Execution_Engine/model_class_router.py",
+      "validation": "04_Execution_Engine/test_model_class_router.py",
+      "owner": "Model_Quality_Observer"
+    },
+    {
+      "id": "indo_german_handoff_contract",
+      "source": "06_Projects_and_Clients/INDO_GERMAN_HANDOFF_CONTRACT.md",
+      "runtime": "04_Execution_Engine/indo_german_handoff.py",
+      "validation": "04_Execution_Engine/test_indo_german_handoff.py",
+      "owner": "Cross_Border_Delivery_Manager"
+    },
+    {
+      "id": "roles",
+      "source": "02_Organization_and_Roles",
+      "registry": "01_Governance_and_Strategy/ROLE_REGISTRY.json",
+      "validation": "04_Execution_Engine/validate_role_registry.py",
+      "owner": "Role_Skill_Evolution_Manager"
+    },
+    {
+      "id": "role_human_work_identities",
+      "source": "01_Governance_and_Strategy/ROLE_HUMAN_NAME_REGISTRY.json",
+      "runtime_rules": "00_Corp_DNA/AGENT_PERSONA_RUNTIME_RULES.md",
+      "validation": "04_Execution_Engine/validate_role_human_names.py",
+      "owner": "Communication_Operations_and_Effectiveness_Manager"
+    },
+    {
+      "id": "role_communication_signatures",
+      "source": "01_Governance_and_Strategy/ROLE_COMMUNICATION_SIGNATURE_REGISTRY.json",
+      "runtime_rules": "00_Corp_DNA/AGENT_PERSONA_RUNTIME_RULES.md",
+      "validation": "04_Execution_Engine/validate_role_communication_signatures.py",
+      "owner": "Communication_Operations_and_Effectiveness_Manager"
+    },
+    {
+      "id": "code_of_integrity",
+      "source": "00_Corp_DNA/CODE_OF_INTEGRITY.md",
+      "owner": "Ethics_and_Responsible_Business_Officer"
+    },
+    {
+      "id": "role_engagements",
+      "source": "01_Governance_and_Strategy/ROLE_ENGAGEMENT_MODEL.md",
+      "owner": "Role_Skill_Evolution_Manager"
+    },
+    {
+      "id": "meetings",
+      "source": "01_Governance_and_Strategy/VIRTUAL_MEETING_CATALOG.json",
+      "engagement_policy": "01_Governance_and_Strategy/MEETING_ROLE_ENGAGEMENTS.json",
+      "engagement_guidance": "01_Governance_and_Strategy/MEETING_ENGAGEMENT_GUIDANCE.md",
+      "runtime": "04_Execution_Engine/LangGraph_Pipelines/governance_meeting_graph.py",
+      "validation": "04_Execution_Engine/LangGraph_Pipelines/test_governance_meeting.py",
+      "owner": "Communication_Operations_and_Effectiveness_Manager"
+    },
+    {
+      "id": "kpis",
+      "source": "01_Governance_and_Strategy/ENTERPRISE_KPI_CATALOG.md",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "alm_and_communication",
+      "source": "01_Governance_and_Strategy/ALM_AND_COMMUNICATION_GOVERNANCE.md",
+      "owner": "ALM_and_Jira_Product_Administrator"
+    },
+    {
+      "id": "alm_shadow_backlog_protocol",
+      "source": "05_Human_Interface_and_Ops/ALM_SHADOW_BACKLOG_PROTOCOL.md",
+      "template": "05_Human_Interface_and_Ops/ALM_Shadow_Backlog_Template.csv",
+      "import_mapping": "05_Human_Interface_and_Ops/ALM_SHADOW_BACKLOG_IMPORT_MAPPING.example.json",
+      "runtime": "04_Execution_Engine/shadow_backlog.py",
+      "validation": "04_Execution_Engine/test_shadow_backlog.py",
+      "owner": "ALM_and_Jira_Product_Administrator"
+    },
+    {
+      "id": "feature_teams",
+      "source": "01_Governance_and_Strategy/FEATURE_TEAM_OPERATING_MODEL.md",
+      "owner": "Cross_Border_Delivery_Manager"
+    },
+    {
+      "id": "workforce_delivery_scaling",
+      "source": "01_Governance_and_Strategy/WORKFORCE_AND_DELIVERY_SCALING_MODEL.md",
+      "owner": "Cross_Border_Delivery_Manager"
+    },
+    {
+      "id": "commercial_pricing_policy",
+      "source": "01_Governance_and_Strategy/COMMERCIAL_PRICING_POLICY.md",
+      "owner": "Commercial_and_Pricing_Manager"
+    },
+    {
+      "id": "finance_operating_model",
+      "source": "01_Governance_and_Strategy/FINANCE_OPERATING_MODEL.md",
+      "catalog": "01_Governance_and_Strategy/FINANCE_ENGAGEMENT_CATALOG.json",
+      "registry": "01_Governance_and_Strategy/FINANCE_DECISION_RIGHTS.json",
+      "runtime_rules": "04_Execution_Engine/Skills/finance-scenario-control/SKILL.md",
+      "template": "05_Human_Interface_and_Ops/Finance_Control/FINANCE_SCENARIO_RECORD.example.json",
+      "runtime": "04_Execution_Engine/finance_scenario.py",
+      "finance_control_modules": "04_Execution_Engine/finance_control/",
+      "validation": [
+        "04_Execution_Engine/test_finance_scenario.py",
+        "04_Execution_Engine/test_finance_control.py"
+      ],
+      "owner": "Finance_and_Risk_Controller"
+    },
+    {
+      "id": "responsible_innovation_public_affairs_impact",
+      "source": "01_Governance_and_Strategy/RESPONSIBLE_INNOVATION_AND_PUBLIC_AFFAIRS_GOVERNANCE.md",
+      "owner": "Research_and_Product_Innovation_Director"
+    },
+    {
+      "id": "legal_regulatory_change_control",
+      "source": "01_Governance_and_Strategy/LEGAL_AND_REGULATORY_CHANGE_CONTROL.md",
+      "watch_register": "03_Knowledge_Base_RAG/REGULATORY_WATCH_REGISTER.md",
+      "owner": "General_Counsel_and_Legal_Department_Lead"
+    },
+    {
+      "id": "regulatory_change_log",
+      "source": "01_Governance_and_Strategy/REGULATORY_CHANGE_LOG.csv",
+      "governance": "01_Governance_and_Strategy/LEGAL_AND_REGULATORY_CHANGE_CONTROL.md",
+      "owner": "General_Counsel_and_Legal_Department_Lead"
+    },
+    {
+      "id": "regulatory_watch_record_contract",
+      "source": "03_Knowledge_Base_RAG/Regulatory_Watch_Records/REGULATORY_WATCH_RECORD_TEMPLATE.md",
+      "runtime": "04_Execution_Engine/regulatory_watch.py",
+      "validation": "04_Execution_Engine/test_regulatory_watch.py",
+      "owner": "General_Counsel_and_Legal_Department_Lead"
+    },
+    {
+      "id": "skills_models_mcps",
+      "source": "04_Execution_Engine/Skills",
+      "owner": "Role_Skill_Evolution_Manager"
+    },
+    {
+      "id": "opencode_local_routing",
+      "source": "04_Execution_Engine/Local_Model_Operations/OPENCODE_ROUTING.md",
+      "owner": "Model_Quality_Observer"
+    },
+    {
+      "id": "ai_dependency_resilience",
+      "source": "01_Governance_and_Strategy/AI_DEPENDENCY_AND_RESILIENCE_POLICY.md",
+      "owner": "Security_Operations_and_Incident_Response_Engineer"
+    },
+    {
+      "id": "local_transcription",
+      "source": "04_Execution_Engine/Local_Transcription/README.md",
+      "owner": "Privacy_and_Data_Protection_Officer"
+    },
+    {
+      "id": "human_ai_apprenticeship",
+      "source": "01_Governance_and_Strategy/HUMAN_AI_APPRENTICESHIP_POLICY.md",
+      "owner": "Learning_and_Transfer_Coach"
+    },
+    {
+      "id": "agent_persona_audio_interaction",
+      "source": "01_Governance_and_Strategy/AGENT_PERSONA_AND_AUDIO_INTERACTION_POLICY.md",
+      "owner": "Communication_Operations_and_Effectiveness_Manager"
+    },
+    {
+      "id": "agent_persona_registry",
+      "source": "01_Governance_and_Strategy/AGENT_PERSONA_REGISTRY.json",
+      "runtime_rules": "00_Corp_DNA/AGENT_PERSONA_RUNTIME_RULES.md",
+      "owner": "Communication_Operations_and_Effectiveness_Manager"
+    },
+    {
+      "id": "human_agent_stewardship_reliability",
+      "source": "01_Governance_and_Strategy/HUMAN_AGENT_STEWARDSHIP_AND_RELIABILITY_POLICY.md",
+      "owner": "Quality_Manager"
+    },
+    {
+      "id": "human_ai_company_academy",
+      "source": "05_Human_Interface_and_Ops/Human_Employee_Documents/HUMAN_AI_COMPANY_ACADEMY.md",
+      "owner": "Learning_and_Transfer_Coach"
+    },
+    {
+      "id": "organisation_chart_hybrid_model",
+      "source": "01_Governance_and_Strategy/ORG_CHART_AND_HYBRID_OPERATING_MODEL.md",
+      "owner": "Founder_Operating_System_Advisor"
+    },
+    {
+      "id": "corp_builder_control_board",
+      "source": "01_Governance_and_Strategy/CORP_BUILDER_CONTROL_BOARD.md",
+      "model_lanes": "01_Governance_and_Strategy/CORP_BUILDER_CONTROL_BOARD.json",
+      "runtime": "04_Execution_Engine/LangGraph_Pipelines/corp_builder_control.py",
+      "validation": "04_Execution_Engine/LangGraph_Pipelines/test_corp_builder_control.py",
+      "owner": "Founder_Operating_System_Advisor"
+    },
+    {
+      "id": "project_governance_scaling",
+      "source": "01_Governance_and_Strategy/PROJECT_GOVERNANCE_SCALING_POLICY.md",
+      "runtime": "04_Execution_Engine/LangGraph_Pipelines/meeting_scaler.py",
+      "validation": "04_Execution_Engine/LangGraph_Pipelines/test_meeting_scaler.py",
+      "owner": "Scrum_Master_and_Agile_Facilitator"
+    },
+    {
+      "id": "mcp_capability_management",
+      "source": "04_Execution_Engine/MCP_Registry/MCP_ADMISSION_AND_CAPABILITY_POLICY.md",
+      "catalog": "04_Execution_Engine/MCP_Registry/MCP_CATALOG.json",
+      "alm_strategy": "04_Execution_Engine/MCP_Registry/ALM_CONNECTION_STRATEGY.md",
+      "owner": "Role_Skill_Evolution_Manager"
+    },
+    {
+      "id": "kpi_measurement_and_cost_control",
+      "source": "01_Governance_and_Strategy/KPI_MEASUREMENT_AND_COST_CONTROL.md",
+      "role_matrix": "01_Governance_and_Strategy/ROLE_KPI_MATRIX.json",
+      "cost_rate_card_template": "05_Human_Interface_and_Ops/Cost_Accounting/ROLE_COST_RATE_CARD.example.json",
+      "runtime": "04_Execution_Engine/kpi_cost_engine.py",
+      "validation": "04_Execution_Engine/test_kpi_cost_engine.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "collaboration_health_and_evolution",
+      "source": "01_Governance_and_Strategy/COLLABORATION_HEALTH_AND_EVOLUTION_POLICY.md",
+      "matrix": "01_Governance_and_Strategy/COLLABORATION_KPI_MATRIX.json",
+      "runtime": "04_Execution_Engine/Skills/collaboration_observer.py",
+      "validation": "04_Execution_Engine/Skills/test_collaboration_observer.py",
+      "owner": "Communication_Operations_and_Effectiveness_Manager"
+    },
+    {
+      "id": "product_workspace_boundary",
+      "source": "06_Projects_and_Clients/PRODUCT_WORKSPACE_CONTRACT.md",
+      "runtime": "04_Execution_Engine/project_workspace.py",
+      "validation": "04_Execution_Engine/test_project_workspace.py; 04_Execution_Engine/project_workspace.py validate <workspace_id>",
+      "owner": "Product_and_Inventory_Operations_Manager"
+    },
+    {
+      "id": "product_execution_evidence",
+      "source": "06_Projects_and_Clients/PRODUCT_WORKSPACE_CONTRACT.md",
+      "runtime": "04_Execution_Engine/execution_evidence.py",
+      "validation": "04_Execution_Engine/test_execution_evidence.py",
+      "owner": "Code_Validator"
+    },
+    {
+      "id": "software_change_release_evidence",
+      "source": "01_Governance_and_Strategy/SOFTWARE_CHANGE_RELEASE_EVIDENCE_PROFILE.md",
+      "template": "05_Human_Interface_and_Ops/Release_Evidence/SOFTWARE_RELEASE_EVIDENCE.example.json",
+      "runtime": "04_Execution_Engine/software_release_evidence.py",
+      "validation": "04_Execution_Engine/test_software_release_evidence.py",
+      "owner": "Code_Validator"
+    },
+    {
+      "id": "project_to_corp_learning_kpis",
+      "source": "01_Governance_and_Strategy/PROJECT_TO_CORP_LEARNING_KPI_FRAMEWORK.md",
+      "template": "05_Human_Interface_and_Ops/Learning_Export_Templates/KPI_Export.example.json",
+      "runtime": "04_Execution_Engine/project_learning_export.py",
+      "validation": "04_Execution_Engine/test_project_learning_export.py",
+      "owner": "Role_Skill_Evolution_Manager"
+    },
+    {
+      "id": "built_environment_delivery_framework",
+      "source": "01_Governance_and_Strategy/BUILT_ENVIRONMENT_DELIVERY_FRAMEWORK.md",
+      "catalog": "01_Governance_and_Strategy/ADAPTIVE_HARNESS_CATALOG.json",
+      "runtime": "04_Execution_Engine/adaptive_harness.py",
+      "validation": "04_Execution_Engine/test_adaptive_harness.py",
+      "owner": "Built_Environment_Architect"
+    },
+    {
+      "id": "bim_information_management_harness",
+      "source": "01_Governance_and_Strategy/BIM_INFORMATION_MANAGEMENT_HARNESS.md",
+      "catalog": "01_Governance_and_Strategy/ADAPTIVE_HARNESS_CATALOG.json",
+      "owner": "Built_Environment_Architect"
+    },
+    {
+      "id": "daily_founder_brief",
+      "source": "01_Governance_and_Strategy/DAILY_FOUNDER_BRIEF_PROTOCOL.md",
+      "owner": "Executive_Steward_and_Operations_Guard"
+    },
+    {
+      "id": "meeting_request_and_founder_notification",
+      "source": "01_Governance_and_Strategy/MEETING_REQUEST_AND_FOUNDER_NOTIFICATION_POLICY.md",
+      "template": "05_Human_Interface_and_Ops/Meeting_Requests/MEETING_REQUEST_REGISTER.example.json",
+      "runtime": "04_Execution_Engine/meeting_request.py",
+      "validation": "04_Execution_Engine/test_meeting_request.py",
+      "owner": "Executive_Steward_and_Operations_Guard"
+    },
+    {
+      "id": "online_escalation_capsule_contract",
+      "source": "05_Human_Interface_and_Ops/Approved_Data_Capsules/APPROVED_DATA_CAPSULE_TEMPLATE.md",
+      "runtime": "04_Execution_Engine/online_escalation.py",
+      "validation": "04_Execution_Engine/test_online_escalation.py",
+      "owner": "Privacy_and_Data_Protection_Officer"
+    },
+    {
+      "id": "information_access_and_minimisation",
+      "source": "01_Governance_and_Strategy/INFORMATION_ACCESS_AND_MINIMISATION_POLICY.md",
+      "template": "05_Human_Interface_and_Ops/Access_Requests/ACCESS_REQUEST_TEMPLATE.json",
+      "runtime": "04_Execution_Engine/information_access.py",
+      "validation": "04_Execution_Engine/test_information_access.py",
+      "owner": "Privacy_and_Data_Protection_Officer"
+    },
+    {
+      "id": "ai_processing_and_assurance_flow",
+      "source": "01_Governance_and_Strategy/AI_PROCESSING_AND_ASSURANCE_FLOW.md",
+      "template": "05_Human_Interface_and_Ops/Project_Assurance_Templates/AI_PROCESSING_ENVELOPE.example.json",
+      "runtime": "04_Execution_Engine/ai_processing_envelope.py",
+      "validation": "04_Execution_Engine/test_ai_processing_envelope.py; 04_Execution_Engine/test_p0_assurance_pilot.py; 04_Execution_Engine/test_local_assurance_runtime.py",
+      "assurance_pilot": "04_Execution_Engine/p0_assurance_pilot.py",
+      "operational_runtime": "04_Execution_Engine/local_assurance_runtime.py",
+      "authorised_source_manifest": "03_Knowledge_Base_RAG/Authorised_Source_Manifests/COMPANY_OS_LOCAL_ASSURANCE_SOURCES.json",
+      "owner": "Chief_Engineer_and_Systems_Architect"
+    },
+    {
+      "id": "ai_engineering_evidence_and_tool_reliance",
+      "source": "01_Governance_and_Strategy/AI_ENGINEERING_EVIDENCE_AND_TOOL_RELIANCE_POLICY.md",
+      "template": "05_Human_Interface_and_Ops/Project_Assurance_Templates/AI_ENGINEERING_DECISION_RECORD.example.json",
+      "runtime": "04_Execution_Engine/ai_engineering_evidence.py",
+      "validation": "04_Execution_Engine/test_ai_engineering_evidence.py",
+      "owner": "Safety_and_Compliance_Engineer"
+    },
+    {
+      "id": "task_granularity_and_parallelisation",
+      "source": "01_Governance_and_Strategy/TASK_GRANULARITY_AND_PARALLELISATION_POLICY.md",
+      "runtime": "04_Execution_Engine/task_granularity.py",
+      "validation": "04_Execution_Engine/test_task_granularity.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "process_maturity_evidence_review",
+      "source": "05_Human_Interface_and_Ops/Manual_Quality_Gates/PROCESS_MATURITY_EVIDENCE_TEMPLATE.md",
+      "runtime": "04_Execution_Engine/process_maturity.py",
+      "validation": "04_Execution_Engine/test_process_maturity.py",
+      "owner": "Quality_Manager"
+    },
+    {
+      "id": "evidence_backed_corporate_pulse",
+      "source": "01_Governance_and_Strategy/EVIDENCE_BACKED_CORPORATE_PULSE.md",
+      "runtime": "04_Execution_Engine/corporate_pulse.py",
+      "validation": "04_Execution_Engine/test_corporate_pulse.py",
+      "owner": "Executive_Steward_and_Operations_Guard"
+    },
+    {
+      "id": "built_environment_automation_capability_contract",
+      "source": "01_Governance_and_Strategy/BUILT_ENVIRONMENT_AUTOMATION_CAPABILITY_CONTRACT.md",
+      "runtime": "04_Execution_Engine/built_environment_capability.py",
+      "validation": "04_Execution_Engine/test_built_environment_capability.py",
+      "owner": "Built_Environment_Architect"
+    },
+    {
+      "id": "regulated_engineering_assurance_kernel",
+      "source": "01_Governance_and_Strategy/REGULATED_ENGINEERING_ASSURANCE_KERNEL.md",
+      "catalog": "01_Governance_and_Strategy/DOMAIN_ASSURANCE_PROFILE_CATALOG.json",
+      "template": "05_Human_Interface_and_Ops/Project_Assurance_Templates/PROJECT_ASSURANCE_PROFILE.example.json; 05_Human_Interface_and_Ops/Project_Assurance_Templates/APPLICABILITY_RECORD_TEMPLATE.md",
+      "runtime": "04_Execution_Engine/domain_assurance_profile.py",
+      "validation": "04_Execution_Engine/test_domain_assurance_profile.py",
+      "owner": "Safety_and_Compliance_Engineer"
+    },
+    {
+      "id": "autosar_assurance_adapter",
+      "source": "03_Knowledge_Base_RAG/Domain_Assurance_Profiles/Automotive/AUTOSAR_ASSURANCE_ADAPTER.md",
+      "owner": "System_Architect"
+    },
+    {
+      "id": "model_driven_engineering_adapter_taxonomy",
+      "source": "03_Knowledge_Base_RAG/Domain_Assurance_Profiles/MODEL_DRIVEN_ENGINEERING_ADAPTER_TAXONOMY.md",
+      "owner": "System_Architect"
+    },
+    {
+      "id": "industrial_automation_assurance_adapter",
+      "source": "03_Knowledge_Base_RAG/Domain_Assurance_Profiles/Industrial_Automation/INDUSTRIAL_AUTOMATION_ASSURANCE_ADAPTER.md",
+      "owner": "System_Architect"
+    },
+    {
+      "id": "engineering_flow_logistics",
+      "source": "01_Governance_and_Strategy/ENGINEERING_FLOW_LOGISTICS_POLICY.md",
+      "template": "05_Human_Interface_and_Ops/Project_Assurance_Templates/ENGINEERING_FLOW_PLAN.example.json",
+      "registry": "05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_ENGINEERING_LOGISTICS_DISPOSITION_REGISTER_2026-08-21.json",
+      "runtime": "04_Execution_Engine/engineering_flow_plan.py",
+      "validation": "04_Execution_Engine/test_engineering_flow_plan.py",
+      "owner": "Release_and_Integration_Manager"
+    },
+    {
+      "id": "task_investment_and_sourcing",
+      "source": "01_Governance_and_Strategy/TASK_INVESTMENT_AND_SOURCING_POLICY.md",
+      "template": "05_Human_Interface_and_Ops/Project_Assurance_Templates/TASK_INVESTMENT_DECISION.example.json",
+      "registry": "05_Human_Interface_and_Ops/External_Review_Intake/GEMINI_TASK_INVESTMENT_DISPOSITION_REGISTER_2026-08-21.json",
+      "runtime": "04_Execution_Engine/task_investment.py",
+      "validation": "04_Execution_Engine/test_task_investment.py",
+      "owner": "Product_Owner"
+    },
+    {
+      "id": "logistics_evolutionary_optimization",
+      "source": "01_Governance_and_Strategy/ENGINEERING_FLOW_LOGISTICS_POLICY.md; 01_Governance_and_Strategy/PROCESS_STRENGTH_OBSERVATION_AND_EVOLUTION_POLICY.md",
+      "template": "05_Human_Interface_and_Ops/Project_Assurance_Templates/LOGISTICS_EVOLUTION_EXPERIMENT.example.json",
+      "runtime": "04_Execution_Engine/logistics_evolution.py",
+      "validation": "04_Execution_Engine/test_logistics_evolution.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "creative_option_exploration",
+      "source": "01_Governance_and_Strategy/CREATIVE_OPTION_EXPLORATION_POLICY.md",
+      "runtime": "04_Execution_Engine/creative_option_analysis.py",
+      "validation": "04_Execution_Engine/test_creative_option_analysis.py; 04_Execution_Engine/test_synthetic_company_workflow.py",
+      "owner": "Product_Owner"
+    },
+    {
+      "id": "evidence_bound_dashboard",
+      "source": "01_Governance_and_Strategy/KPI_MEASUREMENT_AND_COST_CONTROL.md",
+      "template": "05_Human_Interface_and_Ops/Reporting/Dashboards/EVIDENCE_DASHBOARD_DEMONSTRATION.json",
+      "runtime": "04_Execution_Engine/evidence_dashboard.py",
+      "validation": "04_Execution_Engine/test_evidence_dashboard.py; 04_Execution_Engine/test_synthetic_company_workflow.py",
+      "owner": "Continuous_Improvement_Architect"
+    },
+    {
+      "id": "corporate_capital_investment_analysis",
+      "source": "01_Governance_and_Strategy/FINANCE_OPERATING_MODEL.md",
+      "runtime": "04_Execution_Engine/capital_investment.py",
+      "validation": "04_Execution_Engine/test_capital_investment.py",
+      "owner": "Capital_Allocation_and_Investment_Analyst"
+    },
+    {
+      "id": "admitted_tool_capability_routing",
+      "source": "04_Execution_Engine/MCP_Registry/MCP_ADMISSION_AND_CAPABILITY_POLICY.md",
+      "catalog": "04_Execution_Engine/MCP_Registry/MCP_CATALOG.json",
+      "runtime": "04_Execution_Engine/admitted_tool_router.py",
+      "validation": "04_Execution_Engine/test_admitted_tool_router.py",
+      "owner": "Role_Skill_Evolution_Manager"
+    },
+    {
+      "id": "commercial_change_and_exception_control",
+      "source": "01_Governance_and_Strategy/COMMERCIAL_CHANGE_AND_EXCEPTION_CONTROL.md",
+      "runtime": "04_Execution_Engine/commercial_change_control.py",
+      "validation": "04_Execution_Engine/test_commercial_change_control.py",
+      "owner": "Commercial_and_Pricing_Manager"
+    },
+    {
+      "id": "customer_onboarding_and_value_realisation",
+      "source": "01_Governance_and_Strategy/CUSTOMER_ONBOARDING_AND_VALUE_REALISATION_PLAYBOOK.md",
+      "owner": "Business_Development_and_Account_Director"
+    },
+    {
+      "id": "security_incident_response_control",
+      "source": "01_Governance_and_Strategy/SECURITY_INCIDENT_RESPONSE_CONTROL.md",
+      "owner": "Security_Operations_and_Incident_Response_Engineer"
+    },
+    {
+      "id": "enterprise_risk_transfer_and_insurance_control",
+      "source": "01_Governance_and_Strategy/ENTERPRISE_RISK_TRANSFER_AND_INSURANCE_CONTROL.md",
+      "owner": "Finance_and_Risk_Controller"
+    }
+  ]
+}

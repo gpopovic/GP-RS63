@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "register_id": "MEETING-REQUESTS-EXAMPLE",
+  "source_of_truth": "APPROVED_ALM_OR_CONTROLLED_FALLBACK",
+  "requests": [
+    {
+      "request_id": "MR-001",
+      "requested_by_role": "System_Architect",
+      "created_at_utc": "2099-01-01T07:00:00Z",
+      "decision_question": "Select one approved integration option for the declared baseline.",
+      "reason_async_insufficient": "Two evidence-backed architecture positions remain contradictory after the bounded asynchronous review.",
+      "urgency": "NEXT_7_DAYS",
+      "decision_deadline_utc": "2099-01-05T15:00:00Z",
+      "evidence_references": ["ARCH-DECISION-001", "RISK-REVIEW-001"],
+      "proposed_meeting_id": "event_triggered_change_control_board",
+      "proposed_chair": "System_Architect",
+      "minimum_participants": ["System_Architect", "Quality_Manager"],
+      "observers": ["Executive_Steward_and_Operations_Guard"],
+      "duration_minutes_cap": 30,
+      "model_call_cap": 4,
+      "consequence_if_deferred": "The integration baseline remains blocked.",
+      "founder_attention_required": false,
+      "status": "PROPOSED",
+      "calendar_reference": "NOT_SCHEDULED",
+      "alm_reference": "ALM-MR-001",
+      "data_classification": "INTERNAL"
+    }
+  ]
+}

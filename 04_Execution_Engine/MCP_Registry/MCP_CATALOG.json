@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Controlled intake catalog for free or open-source MCP capabilities. Entries are not active connections.",
+  "candidates": [
+    {
+      "id": "openproject_native_mcp",
+      "status": "PREFERRED_ALM_CANDIDATE",
+      "cost_model": "OpenProject Community Edition is free and open source; self-hosting remains an operational cost.",
+      "provider": "OpenProject",
+      "source": "https://www.openproject.org/docs/api/",
+      "capability": "ALM work-package, project, sprint, and API operations through the instance's MCP/API surface",
+      "owners": ["ALM_and_Jira_Product_Administrator", "Product_Owner"],
+      "required_before_trial": ["self-hosted sandbox or approved tenant", "least-privilege service account", "data classification", "audit and rollback check"],
+      "data_scope": "Synthetic or approved non-production data during trial",
+      "activation": "manual after sandbox selection"
+    },
+    {
+      "id": "atlassian_rovo_mcp",
+      "status": "OPTIONAL_JIRA_CONNECTOR",
+      "cost_model": "Depends on the user's Atlassian plan; do not classify as free without tenant verification.",
+      "provider": "Atlassian",
+      "endpoint": "https://mcp.atlassian.com/v1/mcp/authv2",
+      "source": "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/",
+      "capability": "Jira, Jira Service Management, Confluence, and Bitbucket search and work-item operations through OAuth 2.1",
+      "owners": ["ALM_and_Jira_Product_Administrator", "Privacy_and_Data_Protection_Officer"],
+      "required_before_trial": ["user-initiated OAuth sign-in", "tenant permission review", "approved data route", "read-only test first"],
+      "data_scope": "Only content permitted by the connected Atlassian account and approved route",
+      "activation": "manual after user authentication"
+    },
+    {
+      "id": "playwright_mcp",
+      "status": "INTAKE",
+      "cost_model": "Open-source Apache-2.0 server; browser runtime and target-site terms still apply.",
+      "provider": "Microsoft",
+      "package": "@playwright/mcp",
+      "source": "https://github.com/microsoft/playwright-mcp",
+      "capability": "Structured browser testing and controlled public-web research",
+      "owners": ["Software_Test_Engineer", "Security_Assurance_Auditor"],
+      "required_before_trial": ["isolated browser profile", "approved host allow-list", "no production credentials", "test plan"],
+      "data_scope": "Public or synthetic data only by default",
+      "activation": "manual after test approval"
+    },
+    {
+      "id": "official_filesystem_mcp",
+      "status": "HOLD_SECURITY_REVIEW",
+      "cost_model": "MIT-licensed reference server.",
+      "provider": "Model Context Protocol project",
+      "package": "@modelcontextprotocol/server-filesystem",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "capability": "Local file read/write/search",
+      "owners": ["Configuration_Manager", "Security_Assurance_Auditor"],
+      "required_before_trial": ["isolated workspace", "read-only mode where possible", "path and prompt-injection review", "no broad host access"],
+      "data_scope": "Explicitly allow-listed workspace only",
+      "activation": "blocked pending security review"
+    }
+  ]
+}

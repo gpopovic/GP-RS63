@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Audit (Trial)"
+  short_description: "Evidence-led secure code review"
+  default_prompt: "Use $security-audit to review this change for security risks."

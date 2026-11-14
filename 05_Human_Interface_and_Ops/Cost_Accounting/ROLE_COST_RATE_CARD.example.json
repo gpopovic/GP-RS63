@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "currency": "EUR",
+  "default_reserve_rate": 0.20,
+  "cost_classes": {
+    "founder_or_employee": {"fully_loaded_hourly_cost_eur": null, "note": "Enter a reviewed internal rate; do not use salary alone."},
+    "contractor_or_supplier": {"fully_loaded_hourly_cost_eur": null, "note": "Enter contracted rate plus managed overhead where applicable."},
+    "local_ai_runtime": {"allocated_compute_hourly_cost_eur": null, "note": "Include depreciation, electricity, software and operational allocation."},
+    "cloud_ai_runtime": {"input_eur_per_million_tokens": null, "output_eur_per_million_tokens": null, "note": "Use the approved provider rate card only."}
+  },
+  "role_cost_class_overrides": {
+    "Founder_Operating_System_Advisor": "founder_or_employee",
+    "Code_Executor": "local_ai_runtime",
+    "ROLE_Korrektor": "local_ai_runtime",
+    "Code_Validator": "local_ai_runtime"
+  }
+}

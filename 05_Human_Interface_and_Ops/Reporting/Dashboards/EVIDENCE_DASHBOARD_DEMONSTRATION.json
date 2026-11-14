@@ -1,0 +1,49 @@
+{
+  "dashboard_id": "creative-option-demonstration",
+  "title": "Creative Option Analysis Demonstration",
+  "evidence_state": "DEMONSTRATION",
+  "as_of": "2026-08-28T21:00:00+02:00",
+  "owner": "Continuous_Improvement_Architect",
+  "decision_use": "Demonstrate accessible KPI explanations and evidence fields; no operational decision may rely on these synthetic values.",
+  "metrics": [
+    {
+      "metric_id": "admissible-options",
+      "label": "Admissible options",
+      "value": "3",
+      "unit": "options",
+      "formula": "count(options satisfying every required hard constraint)",
+      "source_reference": "synthetic://creative-option-demonstration/admissibility",
+      "owner": "Product_Owner",
+      "population": "four synthetic options",
+      "confidence": "deterministic demonstration fixture",
+      "data_quality_state": "SYNTHETIC",
+      "decision_use": "Demonstrate fail-closed admissibility reporting."
+    },
+    {
+      "metric_id": "pareto-options",
+      "label": "Non-dominated options",
+      "value": "2",
+      "unit": "options",
+      "formula": "count(admissible options not dominated across all declared objectives)",
+      "source_reference": "synthetic://creative-option-demonstration/pareto",
+      "owner": "Product_Owner",
+      "population": "three admissible synthetic options",
+      "confidence": "deterministic demonstration fixture",
+      "data_quality_state": "SYNTHETIC",
+      "decision_use": "Show trade-off candidates for a later human decision."
+    },
+    {
+      "metric_id": "human-decision",
+      "label": "Human decision status",
+      "value": "REQUIRED",
+      "unit": "state",
+      "formula": "fixed boundary: analysis never selects a binding winner",
+      "source_reference": "01_Governance_and_Strategy/CREATIVE_OPTION_EXPLORATION_POLICY.md",
+      "owner": "Product_Owner",
+      "population": "this demonstration decision",
+      "confidence": "policy-enforced",
+      "data_quality_state": "SYNTHETIC",
+      "decision_use": "Prevent automatic activation or design selection."
+    }
+  ]
+}

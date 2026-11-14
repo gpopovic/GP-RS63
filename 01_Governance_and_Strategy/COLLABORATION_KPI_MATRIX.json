@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "common_metric_ids": ["interface_acceptance_rate", "clarification_loop_rate", "coordination_rework_ratio", "decision_lead_time", "constructive_dissent_resolution", "cross_role_defect_escape_rate", "sustainable_capacity_signal", "meeting_decision_yield"],
+  "interpretation_rules": ["Evaluate at team, interface, or process level by default.", "Use role-pair drill-down only for a defined improvement question with evidence and no individual surveillance.", "No aggregate score substitutes for quality, safety, security, privacy, legal, customer-value, or workforce guardrails."],
+  "evolution_thresholds": {"micro_trial_min_comparable_observations": 3, "major_redesign_min_comparable_periods": 3, "major_redesign_min_signal_categories": 2, "major_redesign_min_independent_signals": 3, "severe_failure_action": "CONTAIN_AND_STRICT_MODE"}
+}

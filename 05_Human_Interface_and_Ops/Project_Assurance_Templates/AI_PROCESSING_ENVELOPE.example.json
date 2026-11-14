@@ -1,0 +1,47 @@
+{
+  "request_id": "AI-REQ-001",
+  "workspace_id": "EXTERNAL-REGULATED-PROJECT",
+  "domain_profile_id": "AUTOMOTIVE",
+  "purpose": "Bounded analysis against approved project sources",
+  "task_class": "COMPLEX",
+  "consequence": "MATERIAL",
+  "data_classification": "CONFIDENTIAL",
+  "source_references": [
+    {
+      "source_id": "SRC-001",
+      "sha256": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "classification": "CONFIDENTIAL",
+      "authorisation_reference": "ACCESS-001"
+    }
+  ],
+  "retrieval_boundary": "LOCAL_APPROVED",
+  "applicability_record_reference": "01_Inputs/Assurance/APPLICABILITY_RECORD.md",
+  "sanitisation": {
+    "required": true,
+    "status": "PASSED",
+    "profile_reference": "SANITISE-PROFILE-001",
+    "token_map_location": "LOCAL_CONTROLLED"
+  },
+  "permitted_routes": ["EU_EEA_APPROVED"],
+  "selected_route": "EU_EEA_APPROVED",
+  "route_approval_reference": "ROUTE-GATE-001",
+  "model_class": "FLAGSHIP",
+  "model_identifier": "approved exact model and version",
+  "provider": "approved provider",
+  "logging": {
+    "mode": "METADATA_ONLY",
+    "content_logging": false,
+    "retention_reference": "RETENTION-001"
+  },
+  "output_schema_reference": "SCHEMA-001",
+  "deterministic_validators": ["TRACEABILITY-CHECK-001", "DOMAIN-RULE-CHECK-001"],
+  "human_gate": {
+    "required": true,
+    "owner": "Named accountable human",
+    "status": "PENDING"
+  },
+  "access_decision_reference": "ACCESS-001",
+  "cost_cap_reference": "COST-CAP-001",
+  "stop_conditions": ["source conflict", "validation failure", "cost cap reached", "unapproved data detected"],
+  "decision_status": "READY_FOR_EXECUTION_REVIEW"
+}

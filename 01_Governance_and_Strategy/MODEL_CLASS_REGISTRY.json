@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Benchmark-led admission bands for Triton_AI_Corp models. A class is not an approval to process any data.",
+  "benchmark_sources": [
+    {
+      "id": "artificial_analysis",
+      "purpose": "Comparable general, coding or agentic capability indices plus price and latency context.",
+      "url": "https://artificialanalysis.ai/methodology/capability-indices"
+    },
+    {
+      "id": "lm_arena",
+      "purpose": "Human-preference signal from blinded pairwise comparisons; not a safety or task-specific quality guarantee.",
+      "url": "https://lmarena.ai/"
+    },
+    {
+      "id": "hugging_face_evaluations",
+      "purpose": "Reproducible open-model evaluation evidence and disclosed benchmark provenance.",
+      "url": "https://huggingface.co/docs/leaderboards/main/index"
+    },
+    {
+      "id": "triton_acceptance_suite",
+      "purpose": "Data-safe representative tasks, deterministic checks, human assessment, latency and actual cost for Triton's intended use.",
+      "url": "internal"
+    }
+  ],
+  "classes": {
+    "FLAGSHIP": {
+      "permitted_work": ["complex reasoning", "architecture alternatives", "high-consequence synthesis", "final review after independent evidence"],
+      "external_evidence": "At least two current independent public signals, including a general-capability or human-preference signal and a task-relevant capability signal. The version must rank in the current top quartile for every relevant signal used.",
+      "triton_acceptance": "At least 10 representative, data-safe cases; mean quality at least 0.90; no unresolved critical failure; reviewed latency and cost cap.",
+      "routing_rule": "Use only when complexity or consequence justifies it. Material or sensitive work also needs an approved data route and the applicable human gate."
+    },
+    "STANDARD": {
+      "permitted_work": ["normal analysis", "code review", "structured drafting", "independent validation", "approved fallback"],
+      "external_evidence": "At least two current independent public signals, including one task-relevant signal. The version must rank in the current top half for every relevant signal used.",
+      "triton_acceptance": "At least 10 representative, data-safe cases; mean quality at least 0.80; no unresolved critical failure; reviewed latency and cost cap.",
+      "routing_rule": "Default for non-trivial work once a Worker result needs independent review. It is not a substitute for a Flagship model on high-consequence reasoning."
+    },
+    "WORKER": {
+      "permitted_work": ["grammar and style checks", "format conversion", "bounded extraction", "classification", "test-case drafts", "routine code and documentation scaffolding"],
+      "external_evidence": "Use a current task-relevant public signal where one exists. General leaderboard rank alone is insufficient for admission.",
+      "triton_acceptance": "At least 10 representative, data-safe cases; mean quality at least 0.75; deterministic checks pass; no autonomous release, safety, legal, architectural, financial, or final quality decision.",
+      "routing_rule": "Use for bounded, reversible work with a concise context capsule. Escalate contradictions, uncertainty, failed checks, or out-of-scope requests to STANDARD or FLAGSHIP."
+    }
+  },
+  "candidate_models": [
+    {
+      "id": "local_gemma3_4b",
+      "model_identifier": "gemma3:4b",
+      "model_origin": "Google / United States",
+      "processing_route": "LOCAL_DEVICE_ONLY",
+      "proposed_class": "WORKER",
+      "admission_status": "CANDIDATE_NOT_ADMITTED",
+      "declared_strengths": ["multilingual text drafting", "summarisation", "image-to-text understanding when the local runtime supports it", "short bounded question answering"],
+      "declared_limits": ["not a final reviewer", "not a substitute for a coding specialist", "do not use large contexts on the 4 GB laptop GPU", "no autonomous consequential decision"],
+      "benchmark_evidence": ["https://huggingface.co/google/gemma-3-4b-it"],
+      "required_next_evidence": ["10 Triton Worker cases", "measured local latency and VRAM impact", "approved data-class and cost record"]
+    },
+    {
+      "id": "local_qwen3_4b",
+      "model_identifier": "qwen3:4b",
+      "model_origin": "Qwen / China",
+      "processing_route": "LOCAL_DEVICE_ONLY",
+      "proposed_class": "WORKER",
+      "admission_status": "CANDIDATE_NOT_ADMITTED",
+      "declared_strengths": ["multilingual structured drafting", "routine code and documentation scaffolding", "bounded tool-oriented work", "switchable efficient non-thinking mode for simple tasks"],
+      "declared_limits": ["not a final reviewer", "not a substitute for a large coding or reasoning model", "thinking mode and long context are unsuitable for routine work on the 4 GB laptop GPU", "no autonomous consequential decision"],
+      "benchmark_evidence": ["https://huggingface.co/Qwen/Qwen3-4B", "https://qwenlm.github.io/blog/qwen3/"],
+      "required_next_evidence": ["10 Triton Worker cases", "measured local latency and VRAM impact", "approved data-class and cost record"]
+    }
+  ],
+  "processing_route_labels": {
+    "LOCAL_DEVICE_ONLY": "The model may originate anywhere, but inference remains on the local device. Model origin is not a data-transfer destination.",
+    "EU_EEA_APPROVED": "Preferred online route after provider, contract, data-processing region, capsule, price cap, and human approval are recorded.",
+    "US_EXCEPTION": "US-hosted route; use only as an approved exception with a minimised data capsule. No model is preselected.",
+    "CN_EXCEPTION": "China-hosted route; use only as an approved exception with a minimised data capsule. No model is preselected."
+  },
+  "admission_rule": "A candidate needs exact model/version, provider and processing region, benchmark snapshot date and rank denominator, Triton acceptance evidence, allowed data classes, price-card reference, owner, approval record, and rollback route before it is assigned to a class."
+}

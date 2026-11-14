@@ -1,0 +1,18 @@
+{
+  "request_id": "ACCESS-YYYY-NNN",
+  "resource_scope": "Exact repository, folder, record set, or service scope",
+  "data_classification": "CONFIDENTIAL",
+  "requester": "Named human or service identity",
+  "purpose": "Specific approved business purpose",
+  "processing_context": "Named local workspace, approved provider, MCP, or service",
+  "minimum_fields": [
+    "Exact field or artefact required"
+  ],
+  "data_owner": "Named accountable data owner",
+  "requested_at_utc": "2099-01-01T09:00:00Z",
+  "expires_at_utc": "2099-01-01T12:00:00Z",
+  "status": "REQUESTED",
+  "approvals": [],
+  "decision_reference": "Pending",
+  "revocation_owner": "Named identity or role"
+}

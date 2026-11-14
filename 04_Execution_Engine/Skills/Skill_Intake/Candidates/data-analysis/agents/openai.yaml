@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Analysis (Trial)"
+  short_description: "Produce reproducible decision evidence"
+  default_prompt: "Use $data-analysis to analyse this dataset and report evidence."

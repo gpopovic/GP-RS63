@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Department-level KPI profiles inherited by every canonical role in the role registry, with a common integrity scorecard.",
+  "common_metric_ids": ["evidence_completeness", "independent_acceptance_rate", "escaped_defect_rate", "rework_ratio", "handoff_completeness", "forecast_accuracy", "control_adherence"],
+  "department_profiles": {
+    "executive_strategy": ["strategy_decision_quality", "improvement_effect_realisation", "process_strength_effectiveness", "capability_coverage"],
+    "business_growth": ["risk_adjusted_contribution_margin", "qualified_pipeline_conversion", "commercial_forecast_accuracy"],
+    "communication_agility_alm": ["decision_latency", "alm_data_completeness", "meeting_decision_yield"],
+    "delivery_engineering": ["accepted_increment_lead_time", "dependency_age", "delivery_forecast_accuracy"],
+    "built_environment_delivery": ["inspection_conformity", "approved_work_package_progress", "construction_rework_ratio"],
+    "quality_assurance": ["pre_release_defect_detection", "critical_escape_rate", "remediation_cycle_time"],
+    "legal_governance": ["obligation_traceability", "material_review_timeliness", "control_exception_age"],
+    "research_public_affairs_responsible_impact": ["validated_learning_rate", "intervention_effectiveness", "impact_risk_closure"],
+    "finance_treasury": ["cash_forecast_accuracy", "cost_performance_index", "supplier_or_counterparty_risk_coverage"],
+    "procurement_product_operations": ["supplier_conformance", "purchase_variance", "fulfilment_or_inventory_accuracy"],
+    "ai_systems_embodied_intelligence": ["validated_learning_rate", "benchmark_reproducibility", "quality_constrained_resource_efficiency"]
+  },
+  "evaluation_rules": [
+    "Every role receives the common scorecard plus its department profile.",
+    "A role may assess peers only within an assigned review or governance engagement and must expose evidence, scope, uncertainty, and conflicts of interest.",
+    "No automated KPI result may decide employment, compensation, discipline, contract termination, release, legal position, or financial commitment."
+  ]
+}

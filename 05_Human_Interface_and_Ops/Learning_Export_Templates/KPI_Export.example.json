@@ -1,0 +1,21 @@
+{
+  "workspace_id": "Ralja_House",
+  "period_start": "2026-08-16",
+  "period_end": "2026-08-16",
+  "data_classification": "ANONYMISED_AGGREGATE",
+  "owner": "Project Lead",
+  "aggregation_method": "One independently reviewed CAD-baseline decision package.",
+  "evidence_references": ["RALJA-CAD-BASELINE-001"],
+  "metrics": [
+    {
+      "id": "evidence_to_decision_completeness",
+      "definition": "Reviewed decisions with all required evidence fields divided by reviewed decisions.",
+      "value": 0.0,
+      "unit": "ratio",
+      "sample_size": 0,
+      "comparison_scope": "CAD baseline decision package, harness version 1.0",
+      "guardrail_status": "NOT_YET_BASELINED",
+      "action": "Collect three comparable accepted packages before setting a target."
+    }
+  ]
+}

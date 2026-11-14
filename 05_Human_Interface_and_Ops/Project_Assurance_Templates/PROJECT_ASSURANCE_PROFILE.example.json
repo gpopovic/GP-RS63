@@ -1,0 +1,28 @@
+{
+  "workspace_id": "EXTERNAL-REGULATED-PROJECT",
+  "profile_version": "0.1-DRAFT",
+  "domain_profile_id": "AUTOMOTIVE",
+  "profile_status": "DRAFT_NOT_APPROVED",
+  "intended_use": "Bounded description of the product and intended operational use",
+  "product_boundary": "Included and excluded systems, services, interfaces and lifecycle stages",
+  "jurisdictions_and_markets": ["VERIFY_AND_RECORD"],
+  "applicability_record_reference": "01_Inputs/Assurance/APPLICABILITY_RECORD.md",
+  "source_register_references": ["PROJECT-SOURCE-REGISTER"],
+  "assurance_classification": {
+    "scheme": "PROJECT_DEFINED_UNTIL_VERIFIED",
+    "level": "UNCLASSIFIED",
+    "rationale_reference": "Pending"
+  },
+  "required_independence": ["Independent verification role or person to be named"],
+  "human_approval_authorities": ["Accountable project human to be named"],
+  "prohibited_ai_decisions": [
+    "final safety or compliance classification",
+    "waiver or residual-risk acceptance",
+    "release, certification, permit or construction approval"
+  ],
+  "toolchain_and_qualification_reference": "Pending",
+  "data_flow_reference": "01_Inputs/Assurance/DATA_FLOW_AND_AI_PROCESSING_REGISTER",
+  "configuration_baseline_reference": "Pending",
+  "quality_manager_review": "Pending",
+  "domain_human_approval": "Pending"
+}

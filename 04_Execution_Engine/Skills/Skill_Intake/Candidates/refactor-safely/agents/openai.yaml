@@ -1,0 +1,4 @@
+interface:
+  display_name: "Safe Refactoring (Trial)"
+  short_description: "Improve structure with protected behavior"
+  default_prompt: "Use $refactor-safely to prepare a small verified refactoring."

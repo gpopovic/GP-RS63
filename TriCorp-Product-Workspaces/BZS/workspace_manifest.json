@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "workspace_id": "BZS",
+  "purpose": "BZS OneBinary platform software subsystem",
+  "company_os_boundary": "Product work remains outside TRITON_ROOT; only approved aggregate KPI and lessons exports return.",
+  "required_learning_exports": [
+    "KPI_Export.json",
+    "Lessons_Learned.json"
+  ]
+}

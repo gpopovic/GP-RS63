@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "record_id": "AI-ENG-DEC-001",
+  "workspace_id": "EXTERNAL-REGULATED-PROJECT",
+  "work_item_id": "WORK-001",
+  "evidence_profile": "E1_TRACEABLE_CANDIDATE",
+  "record_status": "DRAFT",
+  "intended_use": "Create a quarantined candidate test case for independent verification",
+  "affected_process": "Software verification planning",
+  "domain_profile_reference": "PROJECT_ASSURANCE_PROFILE.json",
+  "assurance_classification_reference": "PROJECT-CLASSIFICATION-001",
+  "tool_reliance": {
+    "can_introduce_or_miss_error": true,
+    "independent_error_detection": "COMPLETE",
+    "reduces_or_replaces_required_process": false,
+    "decision": "NO_QUALIFICATION_INDEPENDENT_VERIFICATION",
+    "assessment_reference": "TOOL-RELIANCE-ASSESSMENT-001",
+    "qualification_or_validation_reference": "NOT_REQUIRED_FOR_DECLARED_CANDIDATE_USE"
+  },
+  "execution_identity": {
+    "execution_id": "EXEC-001",
+    "provider": "approved provider",
+    "model_identifier": "exact exposed model identifier",
+    "model_version_reference": "MODEL-ADMISSION-001",
+    "weights_identity_mode": "PROVIDER_VERSION",
+    "weights_identity_value": "provider-version-reference",
+    "runtime_reference": "RUNTIME-001",
+    "tokenizer_reference": "TOKENIZER-001",
+    "embedding_model_reference": "EMBEDDING-001",
+    "provider_request_reference": "PROVIDER-REQUEST-001"
+  },
+  "inference_configuration": {
+    "temperature": "0",
+    "top_p": "1",
+    "seed": "NOT_EXPOSED",
+    "context_window": "provider-declared context limit",
+    "retrieval_configuration_reference": "RAG-CONFIG-001",
+    "reproducibility_limitations": "Provider weights and serving infrastructure are not locally controlled; this record supports decision review, not bit-identical replay."
+  },
+  "capture_records": [
+    {"category":"SYSTEM_PROMPT","capture_mode":"HASH_AND_CONTROLLED_REFERENCE","reference":"PROMPT-SYSTEM-001","sha256":"sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","classification":"INTERNAL","retention_reference":"RETENTION-001","rationale":"Controlled prompt version retained by reference."},
+    {"category":"USER_INSTRUCTION","capture_mode":"HASH_AND_CONTROLLED_REFERENCE","reference":"PROMPT-USER-001","sha256":"sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","classification":"CONFIDENTIAL","retention_reference":"RETENTION-001","rationale":"Instruction retained inside the project evidence boundary."},
+    {"category":"RETRIEVAL_MANIFEST","capture_mode":"HASH_AND_CONTROLLED_REFERENCE","reference":"RETRIEVAL-MANIFEST-001","sha256":"sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","classification":"CONFIDENTIAL","retention_reference":"RETENTION-001","rationale":"Manifest identifies exact authorised sources and selected elements without duplicating licensed content."},
+    {"category":"RAW_MODEL_OUTPUT","capture_mode":"ENCRYPTED_CONTROLLED_REFERENCE","reference":"RAW-OUTPUT-001","sha256":"sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd","classification":"CONFIDENTIAL","retention_reference":"RETENTION-001","rationale":"Raw output retained in the classified project evidence store."},
+    {"category":"VALIDATION_LOG","capture_mode":"HASH_AND_CONTROLLED_REFERENCE","reference":"VALIDATION-LOG-001","sha256":"sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","classification":"INTERNAL","retention_reference":"RETENTION-001","rationale":"Deterministic validation events retained."},
+    {"category":"FINAL_DIFF","capture_mode":"HASH_AND_CONTROLLED_REFERENCE","reference":"FINAL-DIFF-001","sha256":"sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","classification":"CONFIDENTIAL","retention_reference":"RETENTION-001","rationale":"Candidate-to-final diff supports review evidence."}
+  ],
+  "token_map_reference": "SEPARATE_PROTECTED_VAULT:TOKEN-MAP-001",
+  "deterministic_verification_references": ["TEST-EVIDENCE-001", "TRACE-CHECK-001"],
+  "human_review": {
+    "required": true,
+    "status": "PENDING",
+    "reviewer_id": "Named qualified reviewer",
+    "competence_reference": "COMPETENCE-001",
+    "independence_reference": "INDEPENDENCE-001",
+    "review_scope_reference": "REVIEW-PLAN-001",
+    "decision_reference": "PENDING",
+    "reviewed_artifact_reference": "CANDIDATE-ARTIFACT-001"
+  },
+  "limitations": ["Candidate use only; no release or qualification claim."],
+  "record_owner": "Safety_and_Compliance_Engineer"
+}

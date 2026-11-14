@@ -1,0 +1,45 @@
+name: triton-ai-corp
+
+x-triton-environment: &triton-environment
+  env_file:
+    - path: ../LangGraph_Pipelines/.env
+      required: false
+    - path: ../../.env
+      required: false
+  environment:
+    PYTHONPATH: /app/04_Execution_Engine:/app/04_Execution_Engine/LangGraph_Pipelines
+  read_only: true
+  tmpfs:
+    - /tmp
+  security_opt:
+    - no-new-privileges:true
+
+services:
+  triton-smoke:
+    <<: *triton-environment
+    build:
+      context: ../..
+      dockerfile: 04_Execution_Engine/Docker_Environments/Dockerfile
+    command:
+      - python
+      - 04_Execution_Engine/LangGraph_Pipelines/master_graph.py
+      - --demo
+      - Validate the containerized Triton master graph.
+    environment:
+      PYTHONPATH: /app/04_Execution_Engine:/app/04_Execution_Engine/LangGraph_Pipelines
+      LANGCHAIN_TRACING_V2: "false"
+    profiles: ["smoke"]
+
+  triton-live:
+    <<: *triton-environment
+    build:
+      context: ../..
+      dockerfile: 04_Execution_Engine/Docker_Environments/Dockerfile
+    command:
+      - python
+      - 04_Execution_Engine/LangGraph_Pipelines/master_graph.py
+    environment:
+      PYTHONPATH: /app/04_Execution_Engine:/app/04_Execution_Engine/LangGraph_Pipelines
+      # `localhost` would point into this container. Reach the host's Ollama service instead.
+      OPENAI_API_BASE: ${TRITON_DOCKER_API_BASE:-http://host.docker.internal:11434/v1}
+    profiles: ["live"]

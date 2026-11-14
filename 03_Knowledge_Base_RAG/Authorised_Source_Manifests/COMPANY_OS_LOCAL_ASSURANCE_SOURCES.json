@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "COMPANY-OS-LOCAL-ASSURANCE-2026-08-28",
+  "declared_use": "Local retrieval of Triton-owned controlled Company OS policies on the founder workstation; no customer or licensed standards content.",
+  "tenant": "triton-company-os",
+  "purpose": "company-os-assurance",
+  "classification": "INTERNAL",
+  "authorisation_basis": "Controlled files in the Triton repository selected for the founder-requested local assurance implementation.",
+  "lifecycle_rule": "A source is admitted only while its current SHA-256 matches the runtime index. A changed or missing source blocks retrieval until the index is rebuilt and verified.",
+  "sources": [
+    {
+      "source_id": "TRITON-POLICY-INFORMATION-ACCESS",
+      "edition": "repository-controlled",
+      "path": "01_Governance_and_Strategy/INFORMATION_ACCESS_AND_MINIMISATION_POLICY.md",
+      "sha256": "f5ad42c3c1db3f1d840d600b7db72dfffe67846d7c2d2ae2ca75ae133c630021",
+      "applicability": "APPLICABLE"
+    },
+    {
+      "source_id": "TRITON-POLICY-AI-PROCESSING",
+      "edition": "repository-controlled",
+      "path": "01_Governance_and_Strategy/AI_PROCESSING_AND_ASSURANCE_FLOW.md",
+      "sha256": "6d78a8755bdcfa33332b75f1bf226d69540685a8317a19139d4bcf694f3ab7ce",
+      "applicability": "APPLICABLE"
+    },
+    {
+      "source_id": "TRITON-POLICY-AI-EVIDENCE",
+      "edition": "repository-controlled",
+      "path": "01_Governance_and_Strategy/AI_ENGINEERING_EVIDENCE_AND_TOOL_RELIANCE_POLICY.md",
+      "sha256": "fa4300e8e84759b6b1da82ba3a3d88bfeee817f7898e538200fa3d80626122e2",
+      "applicability": "APPLICABLE"
+    }
+  ]
+}

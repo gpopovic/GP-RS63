@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "record_id": "TASK-INVESTMENT-EXAMPLE-001",
+  "project_workspace_reference": "EXTERNAL-PROJECT-WORKSPACE-REFERENCE",
+  "task_reference": "PROJECT-WORK-ITEM-001",
+  "flow_plan_reference": "FLOW-EXAMPLE-001",
+  "comparison_scope": "ONE-COMPARABLE-PROJECT-PORTFOLIO",
+  "decision_owner": "Product_Owner",
+  "independent_reviewer": "Finance_and_Risk_Controller",
+  "obligation_class": "OPTIONAL_IMPROVEMENT",
+  "protected_priority": false,
+  "readiness_status": "READY",
+  "priority_method": "RELATIVE_WSJF",
+  "relative_wsjf": {
+    "business_value": 8,
+    "time_criticality": 7,
+    "risk_reduction_or_opportunity": 5,
+    "relative_job_size": 5,
+    "scale_max": 10,
+    "scoring_session_reference": "PORTFOLIO-SCORING-SESSION-001",
+    "evidence_reference": "VALUE-EVIDENCE-001"
+  },
+  "monetary_cost_of_delay": null,
+  "network_position": {
+    "criticality": "NEAR_CRITICAL_PATH",
+    "total_float_working_days": 2.0,
+    "calculation_reference": "PROJECT-NETWORK-BASELINE-001",
+    "dependency_unlock_references": ["DEPENDENT-WORK-ITEM-002"],
+    "resource_constraint_references": ["PROJECT-TEST-RESOURCE"]
+  },
+  "estimate": {
+    "effort_low_person_days": 3.0,
+    "effort_base_person_days": 5.0,
+    "effort_high_person_days": 8.0,
+    "duration_low_working_days": 2.0,
+    "duration_base_working_days": 4.0,
+    "duration_high_working_days": 7.0,
+    "confidence": "MEDIUM",
+    "basis_reference": "ESTIMATE-BASIS-001"
+  },
+  "sourcing": {
+    "analysis_required": true,
+    "selected_mode": "HYBRID",
+    "horizon_months": 36,
+    "alternatives": [
+      {
+        "mode": "MAKE",
+        "tco_low": 40000.0,
+        "tco_high": 70000.0,
+        "currency": "EUR",
+        "included_cost_families": ["development", "integration", "operation", "maintenance", "security", "exit"],
+        "evidence_reference": "MAKE-TCO-001",
+        "exit_reference": "MAKE-RETIREMENT-001"
+      },
+      {
+        "mode": "BUY",
+        "tco_low": 30000.0,
+        "tco_high": 85000.0,
+        "currency": "EUR",
+        "included_cost_families": ["licence", "integration", "validation", "operation", "supplier_risk", "switching"],
+        "evidence_reference": "BUY-TCO-001",
+        "exit_reference": "VENDOR-EXIT-001"
+      },
+      {
+        "mode": "HYBRID",
+        "tco_low": 35000.0,
+        "tco_high": 65000.0,
+        "currency": "EUR",
+        "included_cost_families": ["adapter", "licence", "integration", "operation", "maintenance", "exit"],
+        "evidence_reference": "HYBRID-TCO-001",
+        "exit_reference": "ADAPTER-EXIT-001"
+      }
+    ],
+    "selection_rationale": "Retain the domain adapter and assurance boundary internally while using a replaceable commodity component.",
+    "approval_reference": "NOT_APPROVED"
+  },
+  "decision": "DISCOVERY",
+  "decision_rationale": "Validate the supplier and integration TCO ranges before committing delivery capacity.",
+  "guardrail_references": ["QUALITY-GUARDRAIL-001", "SECURITY-GUARDRAIL-001"],
+  "evidence_references": ["PRIORITY-EVIDENCE-001"],
+  "review_date": "2099-01-15",
+  "invalidation_triggers": ["material dependency change", "resource capacity change", "supplier price or licence change"],
+  "status_note": "Example decision-support record only; no capacity, purchase or release is approved."
+}

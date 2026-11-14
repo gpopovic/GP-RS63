@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "record_id": "FIN-SCENARIO-SYNTHETIC-001",
+  "as_of_date": "2026-08-27",
+  "reporting_currency": "EUR",
+  "workspace_reference": "SYNTHETIC_FINANCE_FIXTURE",
+  "data_classification": "INTERNAL",
+  "input_status": "SYNTHETIC",
+  "decision_question": "Can the synthetic company preserve its declared operating-liquidity policy under the selected stresses?",
+  "prepared_by": "Unit_Economics_and_Financial_Planning_Analyst",
+  "independent_reviewer": "Finance_and_Risk_Controller",
+  "source_references": ["SYNTHETIC-CASH-OPENING-001", "SYNTHETIC-FORECAST-001"],
+  "opening_cash": 100000.0,
+  "protected_reserves": [
+    {
+      "reserve_id": "TAX-ESTIMATE",
+      "reserve_type": "TAX",
+      "amount": 20000.0,
+      "source_reference": "SYNTHETIC-TAX-ESTIMATE-001",
+      "approval_status": "NOT_APPROVED"
+    },
+    {
+      "reserve_id": "VAT-LIABILITY",
+      "reserve_type": "VAT_GST",
+      "amount": 10000.0,
+      "source_reference": "SYNTHETIC-VAT-ESTIMATE-001",
+      "approval_status": "NOT_APPROVED"
+    }
+  ],
+  "minimum_operating_liquidity": {
+    "amount": 30000.0,
+    "policy_reference": "SYNTHETIC-LIQUIDITY-POLICY-001",
+    "approval_status": "NOT_APPROVED",
+    "approval_reference": "NOT_APPROVED"
+  },
+  "periods": [
+    {
+      "period": "2026-09",
+      "inflows": {"base": 50000.0, "bear": 35000.0, "worst": 10000.0},
+      "outflows": {"base": 45000.0, "bear": 50000.0, "worst": 60000.0}
+    },
+    {
+      "period": "2026-10",
+      "inflows": {"base": 60000.0, "bear": 40000.0, "worst": 0.0},
+      "outflows": {"base": 50000.0, "bear": 55000.0, "worst": 65000.0}
+    }
+  ],
+  "assumptions": [
+    {
+      "assumption_id": "A-001",
+      "description": "The worst case assumes the principal synthetic customer pays nothing during the horizon.",
+      "owner": "Unit_Economics_and_Financial_Planning_Analyst",
+      "effect_reference": "periods[*].inflows.worst",
+      "validation_reference": "SYNTHETIC-CUSTOMER-STRESS-001",
+      "expiry_date": "2026-10-31"
+    }
+  ],
+  "stress_event_references": ["SYNTHETIC-CUSTOMER-NONPAYMENT"],
+  "data_confidence": "LOW",
+  "decision_status": "NOT_APPROVED",
+  "decision_reference": "NOT_DECIDED"
+}

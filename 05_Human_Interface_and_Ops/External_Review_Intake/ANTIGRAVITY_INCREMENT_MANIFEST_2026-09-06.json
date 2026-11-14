@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "ANTIGRAVITY-INCREMENT-2026-09-06-BOUNDED",
+  "generated_at_utc": "2026-09-06T11:18:22Z",
+  "source_repository": "C:\\git\\Triton_AI_Corp_Antigravity_Audit_Package_2026-08-15",
+  "source_repository_kind": "GIT_REPOSITORY",
+  "source_remote_at_reverification": "https://gitlab.com/g.popovic.triton/triton_ai_corp_audit_package_2026-08-15.git",
+  "source_head_at_review": "6321998e18ddd2069791b9471089b8560f5849ce",
+  "source_worktree_status": "DIRTY_UNCOMMITTED_INCREMENT",
+  "scope_rule": "Files with source last-write timestamps on 2026-09-06, independently enumerated after the prior 2026-08-29 reconciliation",
+  "changed_path_count": 4,
+  "files": [
+    {
+      "path": "01_Governance_and_Strategy/TOOL_AND_MCP_ORCHESTRATION_POLICY.md",
+      "sha256": "beb689e2d6414f0040351da1be1dc015046d768619738094fffce2d4cb625cd1",
+      "last_write_utc": "2026-09-06T11:00:26.7564331Z",
+      "length_bytes": 5531
+    },
+    {
+      "path": "01_Governance_and_Strategy/AI_PROCESSING_AND_ASSURANCE_FLOW.md",
+      "sha256": "1ce6ab98dacd25e077c4f527fa968343e72055effa869e4a242b67ce97c18eed",
+      "last_write_utc": "2026-09-06T11:00:34.0853297Z",
+      "length_bytes": 6755
+    },
+    {
+      "path": "05_Human_Interface_and_Ops/Manual_Quality_Gates/ANTIGRAVITY_RESPONSE_AND_PROGRESS_NOTE_2026-09-06.md",
+      "sha256": "8c5b01bb107a769c4de9410611b7cc7fecb18eb982df658f33a0b027f2736cde",
+      "last_write_utc": "2026-09-06T11:07:32.2634376Z",
+      "length_bytes": 5931
+    },
+    {
+      "path": "05_Human_Interface_and_Ops/CORPORATE_PULSE_STATE.json",
+      "sha256": "9a2b0db9d4975122affd34118eea68f15a220efc53c2700ea677b3be5bddf36d",
+      "last_write_utc": "2026-09-06T11:07:38.6751207Z",
+      "length_bytes": 7195
+    }
+  ],
+  "limitations": [
+    "Correction recorded on 2026-09-06: the initial NON_GIT_DIRECTORY classification was false. Reverification established Git metadata, main tracking origin/main, commit history, and the recorded remote.",
+    "The reviewed file hashes identify a dirty working-tree snapshot above source HEAD 6321998e18ddd2069791b9471089b8560f5849ce; they are not represented by a source commit. The clean-tree claim in the response note was therefore false.",
+    "The response note declares three modified files, while independent enumeration found a fourth same-day state file; the manifest therefore uses observed file evidence rather than the note's declaration."
+  ]
+}

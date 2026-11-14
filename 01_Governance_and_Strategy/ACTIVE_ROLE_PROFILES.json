@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Lean activation profiles for Triton_AI_Corp; the role registry remains the complete capability catalog.",
+  "profiles": {
+    "lean_delivery": ["Product_Owner", "Requirements_Engineer", "Code_Executor", "Code_Validator"],
+    "standard_delivery": ["Product_Owner", "Requirements_Engineer", "Software_Architect", "Code_Executor", "Code_Validator", "Software_Test_Engineer", "Quality_Manager"],
+    "discovery_delivery": ["Product_Owner", "Requirements_Engineer", "Software_Architect", "Proposal_and_Solution_Estimator"],
+    "architecture_delivery": ["Requirements_Engineer", "System_Architect", "Security_Assurance_Auditor", "Privacy_and_Data_Protection_Officer", "Release_and_Integration_Manager"],
+    "built_environment_delivery": ["Built_Environment_Architect", "Civil_Engineer", "Structural_Engineer", "Interior_and_Exterior_Design_Manager", "Proposal_and_Solution_Estimator", "Procurement_and_Sourcing_Manager", "Construction_Site_Quality_Inspector"],
+    "service_operation_delivery": ["Product_Owner", "DevOps_Engineer", "Quality_Manager", "Client_Success_and_Change_Manager", "Release_and_Integration_Manager"],
+    "indo_german_delivery_cell": ["Product_Owner", "Cross_Border_Delivery_Manager", "India_Delivery_Lead", "System_Architect", "Code_Executor", "Release_and_Integration_Manager", "Quality_Manager"],
+    "controlled_change": ["Executive_Steward_and_Operations_Guard", "Chief_Engineer_and_Systems_Architect", "Configuration_Manager", "Quality_Manager", "Privacy_and_Data_Protection_Officer", "Security_Assurance_Auditor", "Founder_Operating_System_Advisor"],
+    "executive_technical_stewardship": ["Executive_Steward_and_Operations_Guard", "Chief_Engineer_and_Systems_Architect", "Founder_Operating_System_Advisor", "Quality_Manager", "Configuration_Manager"]
+  },
+  "activation_rule": "Start with the smallest applicable profile. Pepper and Jarvis are activated for a named operating or cross-cutting technical decision, risk, or evidence gap; they are not automatic contributors to every delivery slice."
+}

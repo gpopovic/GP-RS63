@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Per-meeting engagement modes. Unlisted participants contribute within their role; observers consume minutes without an AI call.",
+  "default_participant_mode": "CONTRIBUTOR",
+  "meetings": {
+    "biweekly_feature_investment_review": {"Unit_Economics_and_Financial_Planning_Analyst": "EVALUATOR", "Commercial_Strategy_Auditor": "OPPOSITION"},
+    "monthly_agility_communication_alm_review": {"Quality_Manager": "EVALUATOR", "Role_Skill_Evolution_Manager": "OBSERVER"},
+    "weekly_executive_business_review": {"Finance_and_Risk_Controller": "EVALUATOR", "Business_Model_and_Venture_Architect": "OPPOSITION"},
+    "weekly_delivery_quality_review": {"Quality_Manager": "EVALUATOR", "Configuration_Manager": "OPPOSITION"},
+    "monthly_legal_risk_compliance_review": {"Process_and_Quality_Auditor": "EVALUATOR", "Ethics_and_Responsible_Business_Officer": "OPPOSITION"},
+    "event_triggered_regulatory_change_review": {"Privacy_and_Data_Protection_Officer": "EVALUATOR", "Security_Operations_and_Incident_Response_Engineer": "EVALUATOR", "Public_Affairs_and_Policy_Manager": "OPPOSITION"},
+    "monthly_treasury_capital_review": {"Investment_and_Counterparty_Risk_Auditor": "EVALUATOR", "Commercial_Strategy_Auditor": "OPPOSITION"},
+    "monthly_marketing_sales_review": {"Commercial_and_Pricing_Manager": "EVALUATOR", "Portfolio_and_Offer_Manager": "OPPOSITION"},
+    "monthly_procurement_product_operations_review": {"Supplier_and_Partner_Auditor": "EVALUATOR", "Bookkeeping_and_Financial_Operations_Manager": "OBSERVER"},
+    "quarterly_capability_and_technology_review": {"Model_Quality_Observer": "EVALUATOR", "Security_Assurance_Auditor": "EVALUATOR", "Process_and_Quality_Auditor": "OPPOSITION"},
+    "event_triggered_corp_builder_control_board": {"Model_Quality_Observer": "EVALUATOR", "Quality_Manager": "EVALUATOR", "Security_Assurance_Auditor": "EVALUATOR", "Privacy_and_Data_Protection_Officer": "EVALUATOR", "Process_and_Quality_Auditor": "OPPOSITION"},
+    "quarterly_portfolio_governance_review": {"Commercial_Strategy_Auditor": "EVALUATOR", "Strategic_Red_Team": "OPPOSITION"},
+    "feature_team_sprint_planning": {"Software_Test_Engineer": "EVALUATOR", "Quality_Manager": "EVALUATOR"},
+    "feature_team_sprint_review": {"Quality_Manager": "EVALUATOR", "Scrum_Master_and_Agile_Facilitator": "OBSERVER"},
+    "feature_team_retrospective": {"Quality_Manager": "EVALUATOR", "Communication_Operations_and_Effectiveness_Manager": "EVALUATOR"},
+    "customer_delivery_steering": {"Quality_Manager": "EVALUATOR", "Finance_and_Risk_Controller": "OBSERVER"},
+    "event_triggered_sow_review": {"Commercial_Contracts_Counsel": "EVALUATOR", "Finance_and_Risk_Controller": "EVALUATOR", "Privacy_and_Data_Protection_Officer": "EVALUATOR", "Security_Assurance_Auditor": "EVALUATOR"},
+    "event_triggered_change_control_board": {"Quality_Manager": "EVALUATOR", "Security_Assurance_Auditor": "EVALUATOR", "Privacy_and_Data_Protection_Officer": "EVALUATOR", "General_Counsel_and_Legal_Department_Lead": "EVALUATOR", "Finance_and_Risk_Controller": "EVALUATOR"},
+    "nexus_integration_review": {"Quality_Manager": "EVALUATOR", "Configuration_Manager": "EVALUATOR", "ALM_and_Jira_Product_Administrator": "OBSERVER"},
+    "event_triggered_crisis_command": {"Security_Operations_and_Incident_Response_Engineer": "EVALUATOR", "Privacy_and_Data_Protection_Officer": "EVALUATOR", "General_Counsel_and_Legal_Department_Lead": "EVALUATOR", "Finance_and_Risk_Controller": "OBSERVER"}
+  }
+}

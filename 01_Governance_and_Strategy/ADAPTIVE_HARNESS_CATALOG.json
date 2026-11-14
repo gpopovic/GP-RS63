@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Configured, cost-bounded information flows for Triton_AI_Corp. Product and client work remains in its separate product workspace.",
+  "global_controls": {
+    "single_source_of_truth": "The approved ALM work item or its CSV fallback is the status source; chat is never a second backlog.",
+    "process_tailoring": "Apply the Lean Assurance and Process Tailoring Policy: identify binding obligations and the quality contract, then select the smallest sufficient LEAN, STANDARD, or ASSURANCE route. Agents may not waive binding controls or silently reduce routing.",
+    "engineering_flow_logistics": "For multi-artifact, supplier-dependent, AI-candidate, controlled-release or scarce-resource work, validate an Engineering Flow Plan in the external project workspace. Pull only ready work, preserve real dependency edges, use bounded parallel lanes, and never infer that validation reserves a resource or approves a release.",
+    "task_investment": "Before material capacity is committed, use the Task Investment and Sourcing record to separate protected obligations from comparable economic priority, check readiness and dependency leverage, and evaluate lifecycle make-buy-hybrid evidence. A relative score never commits capacity or spend.",
+    "max_parallel_lanes": 3,
+    "max_model_calls_per_lane": 2,
+    "synthesis_model_calls": 1,
+    "cost_preflight": "Before an external-model lane starts, record its approved provider, data class, token or monetary cap, and stop condition in the work item.",
+    "stop_conditions": [
+      "acceptance evidence is missing or contradictory",
+      "the approved cost or token cap is exhausted",
+      "a privacy, security, safety, legal, or material delivery risk is discovered",
+      "a dependency is blocked beyond its agreed review point",
+      "a required constrained resource has no authorised capacity or reservation evidence"
+    ]
+  },
+  "workflows": {
+    "discovery": {
+      "role_profile": "discovery_delivery",
+      "outcome": "A bounded option decision, not an implied delivery commitment.",
+      "stages": [
+        {"id": "frame", "mode": "sequential", "accountable_role": "Product_Owner", "outputs": ["customer outcome", "decision question", "success and stop criteria", "data class"]},
+        {"id": "evidence_lanes", "mode": "parallel", "lanes": [{"id": "need", "roles": ["Requirements_Engineer"], "output": "source-backed problem and acceptance evidence"}, {"id": "feasibility", "roles": ["Software_Architect"], "output": "feasible options, assumptions, and dependencies"}, {"id": "economics", "roles": ["Proposal_and_Solution_Estimator"], "output": "timebox, cost range, and value hypothesis"}]},
+        {"id": "option_decision", "mode": "gate", "accountable_role": "Product_Owner", "outputs": ["A-discovery, B-commit, or C-defer-stop", "task investment and sourcing record when material capacity is requested", "owner", "next gate"]}
+      ]
+    },
+    "coding": {
+      "role_profile": "standard_delivery",
+      "outcome": "A small, reviewable and rollback-capable software increment.",
+      "stages": [
+        {"id": "ready", "mode": "sequential", "accountable_role": "Product_Owner", "outputs": ["acceptance criteria", "definition of done", "testable slice", "artifact readiness and constrained-resource plan when applicable"]},
+        {"id": "build_lanes", "mode": "parallel", "lanes": [{"id": "implementation", "roles": ["Code_Executor"], "output": "small implementation change"}, {"id": "test_design", "roles": ["Software_Test_Engineer"], "output": "independent test cases and fixtures"}, {"id": "architecture_check", "roles": ["Software_Architect"], "output": "interface and rollback review when the change crosses an architectural boundary"}]},
+        {"id": "integrate", "mode": "sequential", "accountable_role": "Code_Executor", "outputs": ["integrated change", "linked evidence"]},
+        {"id": "quality_gate", "mode": "gate", "accountable_role": "Code_Validator", "outputs": ["RESULT: PASS or rework", "release evidence", "learning export"]}
+      ]
+    },
+    "architecture": {
+      "role_profile": "architecture_delivery",
+      "outcome": "A traceable, review-ready architecture decision; no unsupported production commitment.",
+      "stages": [
+        {"id": "constraints", "mode": "sequential", "accountable_role": "Requirements_Engineer", "outputs": ["requirements", "quality attributes", "constraints", "decision deadline", "artifact provenance and constrained-resource plan when applicable"]},
+        {"id": "design_lanes", "mode": "parallel", "lanes": [{"id": "solution", "roles": ["System_Architect"], "output": "two or more feasible options and interfaces"}, {"id": "assurance", "roles": ["Security_Assurance_Auditor", "Privacy_and_Data_Protection_Officer"], "output": "risk and data-flow constraints when applicable"}, {"id": "delivery", "roles": ["Release_and_Integration_Manager"], "output": "integration, operability, and rollback implications"}]},
+        {"id": "decision_record", "mode": "gate", "accountable_role": "System_Architect", "outputs": ["selected option", "rationale", "open assumptions", "verification plan", "required human approval"]}
+      ]
+    },
+    "regulated_engineering": {
+      "role_profile": "architecture_delivery",
+      "outcome": "A domain-tailored, traceable engineering increment with objective assurance evidence and a named human decision; no AI-generated certification or release.",
+      "stages": [
+        {"id": "profile_and_intent", "mode": "sequential", "accountable_role": "Safety_and_Compliance_Engineer", "outputs": ["approved domain and jurisdiction profile or explicit block", "intended use and product boundary", "assurance classification", "data and AI-processing boundary", "named human authorities"]},
+        {"id": "requirements_and_assurance_lanes", "mode": "parallel", "lanes": [{"id": "system", "roles": ["Requirements_Engineer", "System_Architect"], "output": "requirements, interfaces, allocation and acceptance evidence"}, {"id": "safety_quality", "roles": ["Safety_and_Compliance_Engineer", "Quality_Manager"], "output": "hazards or risks, assurance plan, independence and gate criteria"}, {"id": "security_privacy_operations", "roles": ["Security_Assurance_Auditor", "Privacy_and_Data_Protection_Officer", "Release_and_Integration_Manager"], "output": "security, privacy, operability, data-flow and recovery constraints"}]},
+        {"id": "baseline_gate", "mode": "gate", "accountable_role": "Configuration_Manager", "outputs": ["requirements and risk baseline", "architecture and verification baseline", "source applicability status", "open assumptions and stop conditions", "validated engineering flow plan when applicable"]},
+        {"id": "implementation_and_verification_lanes", "mode": "parallel", "lanes": [{"id": "implementation", "roles": ["Code_Executor"], "output": "controlled implementation or engineering increment"}, {"id": "independent_test_design", "roles": ["Software_Test_Engineer"], "output": "independent verification cases, fixtures and acceptance logic"}, {"id": "traceability_and_change", "roles": ["Configuration_Manager"], "output": "baseline, bidirectional traceability, change impact and rollback evidence"}]},
+        {"id": "integration_and_validation", "mode": "sequential", "accountable_role": "Release_and_Integration_Manager", "outputs": ["integrated candidate baseline", "verification and validation evidence", "anomaly and deviation disposition", "operational limitations"]},
+        {"id": "independent_release_assurance", "mode": "gate", "accountable_role": "Quality_Manager", "outputs": ["independent assurance recommendation", "residual open risk", "named human release or certification decision", "reopen conditions"]},
+        {"id": "operation_and_learning", "mode": "parallel", "lanes": [{"id": "operations", "roles": ["Release_and_Integration_Manager"], "output": "monitoring, field feedback and operational configuration"}, {"id": "incident_assurance", "roles": ["Safety_and_Compliance_Engineer", "Security_Operations_and_Incident_Response_Engineer"], "output": "incident, corrective action and affected-gate assessment"}, {"id": "controlled_learning", "roles": ["Role_Skill_Evolution_Manager"], "output": "sanitised KPI and lesson export without product evidence"}]}
+      ]
+    },
+    "built_environment": {
+      "role_profile": "built_environment_delivery",
+      "outcome": "A phase-gated, coordinated built-environment package. It scales from renovation and a single-family house to multi-family and multi-building work; regulated design and structural approval remain human professional responsibilities.",
+      "stages": [
+        {"id": "project_profile", "mode": "sequential", "accountable_role": "Built_Environment_Architect", "outputs": ["jurisdiction and contract boundary", "project type and scale", "accountable humans", "approval and data boundary", "site, supplier and constrained-resource flow-plan trigger"]},
+        {"id": "existing_condition", "mode": "sequential", "accountable_role": "Built_Environment_Architect", "outputs": ["versioned CAD/BIM baseline", "existing-condition evidence", "measured versus assumed register", "site constraints"]},
+        {"id": "information_governance", "mode": "sequential", "accountable_role": "Built_Environment_Architect", "outputs": ["versioned information-requirements register", "exchange purpose and IFC/profile decision", "IDS-ready testable subset", "delivery acceptance and change controls"]},
+        {"id": "design_lanes", "mode": "parallel", "lanes": [{"id": "design", "roles": ["Built_Environment_Architect", "Interior_and_Exterior_Design_Manager"], "output": "buildable design alternatives"}, {"id": "engineering", "roles": ["Civil_Engineer", "Structural_Engineer"], "output": "review inputs, assumptions, and structural risks"}, {"id": "cost_and_execution", "roles": ["Proposal_and_Solution_Estimator", "Procurement_and_Sourcing_Manager"], "output": "cost range, procurement and sequencing implications"}]},
+        {"id": "model_production_and_resolution", "mode": "sequential", "accountable_role": "Built_Environment_Architect", "outputs": ["internally validated model revision", "IFC exchange and validation evidence", "BCF issues or controlled issue-register fallback", "resolved exceptions"]},
+        {"id": "phase_gate", "mode": "gate", "accountable_role": "Construction_Site_Quality_Inspector", "outputs": ["coordination findings", "hold points and acceptance evidence", "human professional sign-off needs", "next-stage decision"]},
+        {"id": "construction_learning", "mode": "sequential", "accountable_role": "Construction_Site_Quality_Inspector", "outputs": ["constraint and change log", "sanitised learning export", "defect and handover evidence when applicable"]}
+      ]
+    },
+    "service_operation": {
+      "role_profile": "service_operation_delivery",
+      "outcome": "A measured operational change that protects reliability while allowing delivery to continue.",
+      "stages": [
+        {"id": "objective", "mode": "sequential", "accountable_role": "Product_Owner", "outputs": ["service objective", "indicator", "error or quality budget", "owner", "capacity and constrained-resource plan when applicable"]},
+        {"id": "observe_and_improve", "mode": "parallel", "lanes": [{"id": "operations", "roles": ["DevOps_Engineer"], "output": "telemetry and change proposal"}, {"id": "quality", "roles": ["Quality_Manager"], "output": "quality trend and regression evidence"}, {"id": "customer", "roles": ["Client_Success_and_Change_Manager"], "output": "customer impact and communication need"}]},
+        {"id": "release_or_stabilise", "mode": "gate", "accountable_role": "Release_and_Integration_Manager", "outputs": ["continue, limit, or pause changes", "recovery owner", "learning export"]}
+      ]
+    }
+  }
+}

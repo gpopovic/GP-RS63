@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "LOG-EVO-EXAMPLE-001",
+  "project_workspace_reference": "EXTERNAL-PROJECT-WORKSPACE-REFERENCE",
+  "task_class": "CONTROLLED_SOFTWARE_INCREMENT",
+  "process_owner": "Release_and_Integration_Manager",
+  "experiment_owner": "Continuous_Improvement_Architect",
+  "independent_auditor": "Process_and_Quality_Auditor",
+  "quality_guardrail_owner": "Quality_Manager",
+  "economic_reviewer": "Finance_and_Risk_Controller",
+  "human_decision_reference": "NOT_APPROVED",
+  "minimum_comparable_periods": 3,
+  "comparable_period_references": ["FLOW-PERIOD-001", "FLOW-PERIOD-002", "FLOW-PERIOD-003"],
+  "trial_scope": "One comparable low-consequence queue; production routing remains unchanged.",
+  "uncontrolled_high_consequence_work": false,
+  "time_cap_hours": 20.0,
+  "cost_cap_currency": "EUR",
+  "cost_cap_amount": 1000.0,
+  "mutated_control_family": "queue_weights",
+  "champion_vector": {
+    "wip_capacity": 2,
+    "buffer_target_work_items": 3,
+    "queue_weights": {
+      "delay_exposure": 0.25,
+      "dependency_unlock": 0.25,
+      "aging": 0.20,
+      "readiness": 0.15,
+      "setup_efficiency": 0.15
+    },
+    "batch_size": 1,
+    "cache_prefetch": false
+  },
+  "challenger_vector": {
+    "wip_capacity": 2,
+    "buffer_target_work_items": 3,
+    "queue_weights": {
+      "delay_exposure": 0.25,
+      "dependency_unlock": 0.30,
+      "aging": 0.20,
+      "readiness": 0.15,
+      "setup_efficiency": 0.10
+    },
+    "batch_size": 1,
+    "cache_prefetch": false
+  },
+  "objective_vector": [
+    {"name": "first_pass_acceptance", "direction": "MAXIMISE", "protected_guardrail": true, "formula_reference": "KPI-FPA-001", "unit": "ratio", "source_reference": "INDEPENDENT-ACCEPTANCE-LOG"},
+    {"name": "escaped_defect_severity", "direction": "MINIMISE", "protected_guardrail": true, "formula_reference": "KPI-ESCAPE-001", "unit": "severity-weighted rate", "source_reference": "DEFECT-REGISTER"},
+    {"name": "lead_time", "direction": "MINIMISE", "protected_guardrail": false, "formula_reference": "KPI-LEAD-001", "unit": "hours", "source_reference": "ALM-FLOW-HISTORY"},
+    {"name": "total_assurance_and_delivery_cost", "direction": "MINIMISE", "protected_guardrail": false, "formula_reference": "KPI-COST-001", "unit": "EUR per accepted output", "source_reference": "APPROVED-COST-LEDGER"},
+    {"name": "human_attention_cost", "direction": "MINIMISE", "protected_guardrail": false, "formula_reference": "KPI-ATTENTION-001", "unit": "review hours", "source_reference": "APPROVED-EFFORT-RECORD"},
+    {"name": "recovery_and_exit_readiness", "direction": "MAXIMISE", "protected_guardrail": false, "formula_reference": "KPI-RECOVERY-001", "unit": "accepted evidence ratio", "source_reference": "RECOVERY-EVIDENCE-REGISTER"}
+  ],
+  "cost_aspects": [
+    "delay_exposure",
+    "lifecycle_tco",
+    "rework_recovery",
+    "compute_tool_energy",
+    "human_attention",
+    "opportunity_resilience_exit"
+  ],
+  "stop_conditions": [
+    "any protected guardrail regression",
+    "mandatory nonconformity or critical escape",
+    "cost or time cap exhausted",
+    "sample comparability or data lineage fails",
+    "starvation or unsafe queue behaviour detected"
+  ],
+  "rollback_reference": "RESTORE-CHAMPION-LOG-EVO-001",
+  "status": "PROPOSED",
+  "automatic_activation": false,
+  "status_note": "Example proposal only; the champion remains active and no queue rule is changed."
+}

@@ -1,0 +1,22 @@
+{
+  "workspace_id": "Systemverbund-Roto-Silenta-6-3",
+  "profile_version": "0.1-DRAFT",
+  "profile_status": "DRAFT_NOT_APPROVED",
+  "domain_profile_id": "MEDICAL_DEVICE",
+  "governance_split": {"organization_and_engineering_process": "AUTOMOTIVE_SPICE_4_1", "product_acceptance": "MEDICAL_AND_LIFE_SCIENCE"},
+  "engineering_process_model": {"name": "Automotive SPICE", "version": "4.1", "source_status": "OFFICIAL_RELEASE_VERIFIED", "project_applicability": "PENDING_HUMAN_APPROVAL"},
+  "engineering_abstraction_level": "SYSTEM",
+  "process_scope_candidates": ["SYS.1", "SYS.2", "SYS.3", "SYS.4", "SYS.5", "VAL.1", "SUP.8", "SUP.9", "SUP.10", "MAN.3", "MAN.5"],
+  "process_capability_target": "NOT_ASSESSED",
+  "platform_dependency": {"workspace": "BZS", "strategy": "ONE_BINARY", "required_identity": ["binary_sha256", "parameter_package_id", "parameter_package_hash"]},
+  "jurisdictions_and_markets": ["VERIFY_AND_RECORD"],
+  "medical_acceptance": {
+    "status": "DRAFT_NOT_APPROVED",
+    "intended_use_and_classification": "NEEDS_EVIDENCE",
+    "candidate_sources": ["Applicable MDR or IVDR law by market and intended use", "ISO 13485", "ISO 14971", "IEC 62304 when applicable", "IEC 61010-1 and IEC 61010-2-020:2026 applicability to be approved"],
+    "release_rule": "Release requires medical verification and intended-use validation of the exact BZS binary, parameters, hardware and product configuration.",
+    "final_approval": "NAMED_HUMAN_MEDICAL_QUALITY_AND_PRODUCT_AUTHORITIES"
+  },
+  "human_approval_authorities": ["System Product Owner to be named", "Medical domain authority to be named", "Quality Manager"],
+  "domain_human_approval": "Pending"
+}

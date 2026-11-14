@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "meetings": [
+    {
+      "id": "biweekly_feature_investment_review",
+      "cadence": "biweekly and on material decision",
+      "chair": "Product_Owner",
+      "participants": ["Product_Improvement_and_Insights_Manager", "Market_Intelligence_and_Opportunity_Analyst", "Proposal_and_Solution_Estimator", "Unit_Economics_and_Financial_Planning_Analyst", "Software_Architect", "Quality_Manager", "Commercial_Strategy_Auditor"],
+      "purpose": "Evaluate new feature, product, and improvement options before material delivery capacity is committed.",
+      "required_inputs": ["problem evidence", "customer or market signal", "benefit hypothesis", "cost range", "risk and compliance assessment", "feasibility and dependency view", "success measure"],
+      "required_outputs": ["option decision", "discovery actions", "backlog recommendation", "stop conditions", "owners", "assumptions"]
+    },
+    {
+      "id": "monthly_agility_communication_alm_review",
+      "cadence": "monthly",
+      "chair": "Communication_Operations_and_Effectiveness_Manager",
+      "participants": ["Scrum_Master_and_Agile_Facilitator", "ALM_and_Jira_Product_Administrator", "Product_Owner", "Cross_Border_Delivery_Manager", "Quality_Manager", "Role_Skill_Evolution_Manager"],
+      "purpose": "Review feature-team flow, meeting effectiveness, communication load, ALM data quality, reporting needs, and improvement experiments.",
+      "required_inputs": ["flow indicators", "communication KPI scorecard", "ALM data-quality report", "meeting decision records", "workflow change requests"],
+      "required_outputs": ["impediment actions", "ALM pilot decisions", "communication experiments", "dashboard changes", "owners", "review dates"]
+    },
+    {
+      "id": "weekly_executive_business_review",
+      "cadence": "weekly",
+      "chair": "Founder_Operating_System_Advisor",
+      "participants": ["Business_Model_and_Venture_Architect", "Business_Development_and_Account_Director", "Commercial_and_Pricing_Manager", "Finance_and_Risk_Controller", "Cross_Border_Delivery_Manager"],
+      "purpose": "Review demand, delivery capacity, commercial performance, cash risks, and strategic decisions.",
+      "required_inputs": ["pipeline", "delivery forecast", "margin forecast", "cash forecast", "top risks"],
+      "required_outputs": ["decisions", "owners", "due dates", "risks", "assumptions", "escalations"]
+    },
+    {
+      "id": "weekly_delivery_quality_review",
+      "cadence": "weekly",
+      "chair": "Cross_Border_Delivery_Manager",
+      "participants": ["India_Delivery_Lead", "System_Architect", "Release_and_Integration_Manager", "Quality_Manager", "Software_Test_Engineer", "Configuration_Manager"],
+      "purpose": "Review delivery commitments, integration, test evidence, blockers, rework, and release readiness.",
+      "required_inputs": ["milestone status", "dependency map", "quality evidence", "release risks"],
+      "required_outputs": ["delivery decisions", "corrective actions", "owners", "quality escalations"]
+    },
+    {
+      "id": "monthly_legal_risk_compliance_review",
+      "cadence": "monthly and event-triggered",
+      "chair": "General_Counsel_and_Legal_Department_Lead",
+      "participants": ["Commercial_Contracts_Counsel", "Privacy_and_Data_Protection_Officer", "Employment_and_Workforce_Compliance_Officer", "Workforce_and_Operational_Effectiveness_Analyst", "Ethics_and_Responsible_Business_Officer", "Financial_Crime_and_Sanctions_Compliance_Officer", "Process_and_Quality_Auditor", "Dispute_and_Claims_Manager"],
+      "purpose": "Review legal obligations, contract deviations, data flows, workforce risk, control exceptions, and disputes.",
+      "required_inputs": ["legal risk register", "contract obligations", "data-flow exceptions", "workforce issues", "audit findings"],
+      "required_outputs": ["legal actions", "control actions", "matter owners", "deadlines", "escalations"]
+    },
+    {
+      "id": "event_triggered_regulatory_change_review",
+      "cadence": "event-triggered for material regulatory change",
+      "chair": "General_Counsel_and_Legal_Department_Lead",
+      "participants": ["Product_Owner", "Configuration_Manager", "Quality_Manager", "Founder_Operating_System_Advisor", "Public_Affairs_and_Policy_Manager", "Ethics_and_Responsible_Business_Officer", "Privacy_and_Data_Protection_Officer", "Security_Operations_and_Incident_Response_Engineer", "Finance_and_Risk_Controller"],
+      "purpose": "Assess a material rule change affecting products, customers, contracts, operations, or country activity and prepare a company-leadership decision with controlled implementation.",
+      "required_inputs": ["dated source record", "legal interpretation or explicit uncertainty", "affected product and customer inventory", "privacy security safety financial and delivery impact", "options with cost timing and risk", "proposed communication and verification plan"],
+      "required_outputs": ["recorded positions and challenges", "leadership decision request", "approved implementation or contingency plan", "owners and due dates", "verification and customer communication actions", "REGULATORY_CHANGE_LOG.csv entry reference"]
+    },
+    {
+      "id": "monthly_treasury_capital_review",
+      "cadence": "monthly",
+      "chair": "Banking_and_Treasury_Manager",
+      "participants": ["Capital_Allocation_and_Investment_Analyst", "Finance_and_Risk_Controller", "Unit_Economics_and_Financial_Planning_Analyst", "Investment_and_Counterparty_Risk_Auditor", "Commercial_Strategy_Auditor"],
+      "purpose": "Review cash, collections, banking exposure, investment cases, limits, counterparty risk, and capital priorities.",
+      "required_inputs": ["cash forecast", "collections status", "bank exposure", "investment cases", "risk limits"],
+      "required_outputs": ["capital recommendations", "limit exceptions", "risk actions", "owners", "review dates"]
+    },
+    {
+      "id": "monthly_marketing_sales_review",
+      "cadence": "monthly",
+      "chair": "Marketing_Strategy_and_Brand_Manager",
+      "participants": ["Demand_Generation_and_Digital_Marketing_Manager", "Product_Marketing_and_Go_To_Market_Manager", "Sales_Operations_and_CRM_Manager", "Business_Development_and_Account_Director", "Portfolio_and_Offer_Manager", "Commercial_and_Pricing_Manager"],
+      "purpose": "Review market evidence, demand quality, pipeline conversion, offer claims, launch readiness, and commercial learning.",
+      "required_inputs": ["market signals", "campaign scorecard", "pipeline hygiene", "win-loss evidence", "claim register"],
+      "required_outputs": ["growth decisions", "campaign actions", "sales enablement actions", "claim corrections", "owners"]
+    },
+    {
+      "id": "monthly_procurement_product_operations_review",
+      "cadence": "monthly and event-triggered",
+      "chair": "Procurement_and_Sourcing_Manager",
+      "participants": ["Product_and_Inventory_Operations_Manager", "Supplier_Quality_and_Receiving_Inspector", "Supplier_and_Partner_Auditor", "Bookkeeping_and_Financial_Operations_Manager", "Finance_and_Risk_Controller", "Operational_Quality_Inspector"],
+      "purpose": "Review demand plans, supplier risk, accepted receipts, stock or fulfilment evidence, operational quality, and cash or control exceptions.",
+      "required_inputs": ["demand plan", "supplier scorecard", "inspection evidence", "inventory or fulfilment status", "purchase and payment exceptions"],
+      "required_outputs": ["sourcing decisions", "supplier actions", "quality containment", "control actions", "owners"]
+    },
+    {
+      "id": "quarterly_capability_and_technology_review",
+      "cadence": "quarterly and event-triggered",
+      "chair": "Role_Skill_Evolution_Manager",
+      "participants": ["Model_Quality_Observer", "Security_Assurance_Auditor", "Process_and_Quality_Auditor", "Privacy_and_Data_Protection_Officer", "Continuous_Improvement_Architect"],
+      "purpose": "Review role, skill, process, model, and MCP evidence; decide what to keep, trial, revise, retire, or escalate.",
+      "required_inputs": ["KPI trends", "lesson exports", "candidate assessments", "security and privacy findings", "technology watch"],
+      "required_outputs": ["trial decisions", "retirements", "improvement experiments", "rollback plans", "owners"]
+    },
+    {
+      "id": "event_triggered_corp_builder_control_board",
+      "cadence": "event-triggered for proposed Company OS changes",
+      "chair": "Founder_Operating_System_Advisor",
+      "participants": ["Role_Skill_Evolution_Manager", "Continuous_Improvement_Architect", "Model_Quality_Observer", "Quality_Manager", "Security_Assurance_Auditor", "Privacy_and_Data_Protection_Officer", "Process_and_Quality_Auditor"],
+      "purpose": "Independently assess a proposed Company OS change before an authorised human decides whether to reject it, request rework, authorise a controlled trial, or approve controlled implementation.",
+      "required_inputs": ["identified configuration item", "current baseline", "problem and evidence", "proposed change", "affected roles processes data and tools", "KPI or acceptance test", "risk impact and cost", "trial plan", "rollback route", "requested decision"],
+      "required_outputs": ["REJECT REWORK TRIAL or REQUEST_HUMAN_APPROVAL recommendation", "independent challenge report", "evidence gaps and required tests", "dissent", "owners and review date", "configuration-record requirements", "explicit statement that no automatic mutation is authorised"]
+    },
+    {
+      "id": "quarterly_portfolio_governance_review",
+      "cadence": "quarterly",
+      "chair": "Business_Model_and_Venture_Architect",
+      "participants": ["Portfolio_and_Offer_Manager", "Market_Intelligence_and_Opportunity_Analyst", "Unit_Economics_and_Financial_Planning_Analyst", "Commercial_Strategy_Auditor", "Strategic_Red_Team", "Role_Skill_Evolution_Manager"],
+      "purpose": "Decide which offers and business-model hypotheses to grow, redesign, stop, or investigate.",
+      "required_inputs": ["offer scorecards", "market evidence", "unit economics", "audit findings", "capability gaps"],
+      "required_outputs": ["portfolio decisions", "experiments", "retirements", "investment priorities", "owners"]
+    },
+    {
+      "id": "feature_team_sprint_planning",
+      "cadence": "per sprint or iteration",
+      "chair": "Scrum_Master_and_Agile_Facilitator",
+      "participants": ["Product_Owner", "Requirements_Engineer", "System_Architect", "Code_Executor", "Software_Test_Engineer", "Quality_Manager"],
+      "purpose": "Turn a ready, ordered feature slice into a realistic sprint goal and evidence-backed plan without bypassing the Product Owner, architecture, or quality responsibilities.",
+      "required_inputs": ["ordered backlog items", "acceptance criteria", "definition of ready and done", "capacity and dependency view", "architecture constraints", "quality or test constraints"],
+      "required_outputs": ["sprint goal", "selected work", "dependency actions", "quality evidence plan", "risks", "owners", "unready items returned for clarification"]
+    },
+    {
+      "id": "feature_team_sprint_review",
+      "cadence": "per sprint or iteration",
+      "chair": "Product_Owner",
+      "participants": ["Requirements_Engineer", "Code_Executor", "Software_Test_Engineer", "Quality_Manager", "Scrum_Master_and_Agile_Facilitator"],
+      "purpose": "Inspect a usable increment, evidence, customer feedback, and backlog implications without turning the review into an approval substitute for independent release gates.",
+      "required_inputs": ["sprint goal", "demonstrable increment", "acceptance and test evidence", "quality status", "customer feedback or explicit absence", "backlog changes"],
+      "required_outputs": ["accepted learning", "backlog changes", "release gate status", "risks", "owners", "open evidence gaps"]
+    },
+    {
+      "id": "feature_team_retrospective",
+      "cadence": "per sprint or iteration",
+      "chair": "Scrum_Master_and_Agile_Facilitator",
+      "participants": ["Product_Owner", "Requirements_Engineer", "Code_Executor", "Software_Test_Engineer", "Quality_Manager", "Communication_Operations_and_Effectiveness_Manager"],
+      "purpose": "Improve flow, quality, collaboration, and communication with a small number of owned experiments.",
+      "required_inputs": ["sprint outcome", "flow and quality evidence", "impediments", "communication-load evidence", "previous experiments"],
+      "required_outputs": ["one to three improvement experiments", "owners", "measurement method", "review date", "escalations"]
+    },
+    {
+      "id": "customer_delivery_steering",
+      "cadence": "per material customer decision or agreed reporting cadence",
+      "chair": "Client_Success_and_Change_Manager",
+      "participants": ["Business_Development_and_Account_Director", "Product_Owner", "Cross_Border_Delivery_Manager", "Quality_Manager", "Finance_and_Risk_Controller"],
+      "purpose": "Review contractual delivery outcomes, decisions, risks, changes, and customer communication without exposing internal-only commercial detail.",
+      "required_inputs": ["approved customer status pack", "commitments and evidence", "change requests", "quality and delivery risks", "customer decisions required"],
+      "required_outputs": ["customer decision record", "owned actions", "approved communication", "change or escalation route", "next checkpoint"]
+    },
+    {
+      "id": "event_triggered_sow_review",
+      "cadence": "before a material Statement of Work commitment or amendment",
+      "chair": "Business_Development_and_Account_Director",
+      "participants": ["Proposal_and_Solution_Estimator", "Commercial_and_Pricing_Manager", "Commercial_Contracts_Counsel", "Cross_Border_Delivery_Manager", "Finance_and_Risk_Controller", "Quality_Manager", "Privacy_and_Data_Protection_Officer", "Security_Assurance_Auditor"],
+      "purpose": "Assess scope, delivery feasibility, price and margin, commercial and legal terms, quality evidence, data obligations, and risk before a Statement of Work is offered or amended.",
+      "required_inputs": ["customer need and scope", "assumptions and exclusions", "cost and price rationale", "delivery and capacity view", "contract terms", "quality acceptance approach", "privacy and security assessment", "risks and contingencies"],
+      "required_outputs": ["offer or amendment recommendation", "commercial assumptions and exclusions", "margin and risk guardrails", "required approvals", "negotiation points", "stop conditions"]
+    },
+    {
+      "id": "event_triggered_change_control_board",
+      "cadence": "before a material product, process, baseline, data, tool, or delivery change",
+      "chair": "Configuration_Manager",
+      "participants": ["Product_Owner", "System_Architect", "Quality_Manager", "Security_Assurance_Auditor", "Privacy_and_Data_Protection_Officer", "General_Counsel_and_Legal_Department_Lead", "Finance_and_Risk_Controller", "ALM_and_Jira_Product_Administrator"],
+      "purpose": "Assess a material change against the approved baseline and decide whether it is rejected, reworked, trialled, or submitted for accountable human approval.",
+      "required_inputs": ["change record", "affected baseline", "reason and evidence", "impact on scope cost timing quality security privacy legal and traceability", "test or trial plan", "rollback route"],
+      "required_outputs": ["change recommendation", "dissent and evidence gaps", "approval requirements", "implementation and verification plan", "rollback condition", "owners and review date"]
+    },
+    {
+      "id": "nexus_integration_review",
+      "cadence": "per integrated increment when Nexus is approved for the product",
+      "chair": "Scrum_Master_and_Agile_Facilitator",
+      "participants": ["Product_Owner", "System_Architect", "Release_and_Integration_Manager", "Quality_Manager", "Configuration_Manager", "ALM_and_Jira_Product_Administrator"],
+      "purpose": "Resolve multi-team integration dependencies for one product increment. SAFe portfolio and value-flow decisions remain authoritative where SAFe and Nexus conflict.",
+      "required_inputs": ["integrated increment status", "cross-team dependency map", "integration and test evidence", "configuration baseline", "release risks", "SAFe decision references where applicable"],
+      "required_outputs": ["integration decision", "owned dependency actions", "release recommendation or block", "evidence gaps", "SAFe escalation if required"]
+    },
+    {
+      "id": "event_triggered_crisis_command",
+      "cadence": "event-triggered for a material security, delivery, quality, legal, or continuity incident",
+      "chair": "Founder_Operating_System_Advisor",
+      "participants": ["Security_Operations_and_Incident_Response_Engineer", "Privacy_and_Data_Protection_Officer", "General_Counsel_and_Legal_Department_Lead", "Cross_Border_Delivery_Manager", "Quality_Manager", "Release_and_Integration_Manager", "Finance_and_Risk_Controller", "Communication_Operations_and_Effectiveness_Manager"],
+      "purpose": "Establish a factual incident position, contain harm, decide accountable actions, and route material decisions without suppressing independent legal, privacy, security, or quality concerns.",
+      "required_inputs": ["incident facts and time line", "affected scope and data classification", "current containment status", "customer or contractual obligations", "quality and delivery impact", "known uncertainty"],
+      "required_outputs": ["incident decision record", "containment and recovery actions", "owners and decision deadlines", "customer and authority communication route", "evidence preservation actions", "next review or leadership escalation"]
+    }
+  ]
+}

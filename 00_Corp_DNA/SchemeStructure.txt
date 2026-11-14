@@ -1,0 +1,35 @@
+C:\Triton_AI_Corp\
+├── 01_Governance_and_Strategy/       <-- Company, EOS/OKRs, Legal, Finance
+│   ├── EOS_OKRs/                      <-- Quoter Targets, KPIs, Rocks
+│   ├── Legal_Templates/               <-- NDAs, Contracts, AGBs
+│   └── Finance_and_Pricing/           <-- Hourlies, Calculations
+│
+├── 02_Organization_and_Roles/         <-- Core (Agnostic: Human & KI)
+│   ├── Roles_Descriptions/            <-- Each Role as .md (Requirements, Architect, etc.)
+│   ├── Internal_Work_Assists/         <-- My Trio: Correktor, Trainer, Improver
+│   └── Workflows_and_SOPs/            <-- Workflow & Proces description
+│       ├── Software_Engineering/      <-- ASPICE-conform SW-Proces
+│       ├── Civil_and_Structural/      <-- Statik, Bauantrag, HOAI-Phasen
+│       └── Design_and_UX/             <-- Brand Guidelines, Figma-Flows
+│
+├── 03_Knowledge_Base_RAG/             <-- Wissen & Normen (For KI-Context & Humans)
+│   ├── Standards_and_Norms/           <-- DIN-Norms, EIC, ASPICE-Specs, ISO
+│   ├── Code_Snippets_and_Templates/   <-- Clean-Code-Sample, Architectures
+│   └── Statics_and_Physics_Formulas/  <-- Formulas, Construction physics-Regeln
+│
+├── 04_Execution_Engine/               <-- Technical Runtime Environment
+│   ├── LangGraph_Pipelines/           <-- My KI-Multi-Agenta-Graphs
+│   	├── .env                       <-- LangSmith-API-Keys
+│   	├── master_graph.py            <-- Main-Script of my Company
+│   	└── nodes/                     <-- Single Agentic-Logics (Requirements, Validator, etc.)
+│   ├── Prompts_and_SystemInstructions/<-- MD-Prompts for LLMs / LiteLLM, Python Nodes for reading .md roles
+│   ├── Automatic_Validators/          <-- Linter, Unit-Tests, Statik-Check-Skripte
+│   └── Docker_Environments/           <-- Container-Setups (Frozen Environments)
+│
+├── 05_Human_Interface_and_Ops/        <-- Interfaces for Human & Approvals
+│   ├── Task_Boards/                   <-- Kanban / Jira / Markdown-Boards
+│   └── Manual_Quality_Gates/          <-- Formulars for human Sign-offs / Review
+│
+└── 06_Projects_and_Clients/           <-- Operative Daily Biz (Customer data)
+    ├── Internal_R_and_D/              <-- Own Research & Prototypes
+    └── External_Clients/              <-- Customer Projects (sorted according Customer/Projecta)

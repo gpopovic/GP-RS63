@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Separate preparation, challenge, human approval, execution and reconciliation for material finance decisions.",
+  "special_authorities": ["ACCOUNTABLE_HUMAN", "QUALIFIED_EXTERNAL_ADVISER", "AUTHORISED_HUMAN_BANK_OPERATOR"],
+  "decisions": [
+    {
+      "id": "routine_payment",
+      "prepare": ["Bookkeeping_and_Financial_Operations_Manager"],
+      "challenge": [],
+      "approve": ["ACCOUNTABLE_HUMAN"],
+      "execute": ["AUTHORISED_HUMAN_BANK_OPERATOR"],
+      "reconcile": ["Bookkeeping_and_Financial_Operations_Manager"],
+      "independence_rule": "No identity may prepare, approve, execute and reconcile the same payment end to end; risk-based independent sampling provides a compensating review where staffing is limited."
+    },
+    {
+      "id": "recipient_or_bank_detail_change",
+      "prepare": ["Bookkeeping_and_Financial_Operations_Manager"],
+      "challenge": ["Financial_Crime_and_Sanctions_Compliance_Officer"],
+      "approve": ["ACCOUNTABLE_HUMAN"],
+      "execute": ["AUTHORISED_HUMAN_BANK_OPERATOR"],
+      "reconcile": ["Bookkeeping_and_Financial_Operations_Manager"],
+      "independence_rule": "No identity may prepare, approve, execute and reconcile the same item end to end; new or changed bank details require independent out-of-band verification."
+    },
+    {
+      "id": "treasury_or_reserve_policy",
+      "prepare": ["Banking_and_Treasury_Manager"],
+      "challenge": ["Finance_and_Risk_Controller"],
+      "approve": ["ACCOUNTABLE_HUMAN"],
+      "execute": [],
+      "reconcile": ["Finance_and_Risk_Controller"],
+      "independence_rule": "The policy owner cannot self-approve a limit or treat an unapproved reserve estimate as free cash."
+    },
+    {
+      "id": "capital_allocation_or_investment",
+      "prepare": ["Capital_Allocation_and_Investment_Analyst"],
+      "challenge": ["Banking_and_Treasury_Manager", "Investment_and_Counterparty_Risk_Auditor"],
+      "approve": ["ACCOUNTABLE_HUMAN"],
+      "execute": ["AUTHORISED_HUMAN_BANK_OPERATOR"],
+      "reconcile": ["Bookkeeping_and_Financial_Operations_Manager"],
+      "independence_rule": "The recommending analyst cannot approve, execute or independently audit the same allocation."
+    },
+    {
+      "id": "project_price_or_financial_commitment",
+      "prepare": ["Commercial_and_Pricing_Manager", "Unit_Economics_and_Financial_Planning_Analyst"],
+      "challenge": ["Finance_and_Risk_Controller", "Commercial_Strategy_Auditor"],
+      "approve": ["ACCOUNTABLE_HUMAN"],
+      "execute": [],
+      "reconcile": ["Finance_and_Risk_Controller"],
+      "independence_rule": "Relationship pricing, urgency or pipeline value cannot bypass the approved stop line or contract authority."
+    },
+    {
+      "id": "tax_position_filing_or_related_party_item",
+      "prepare": ["Tax_Readiness_and_Accounting_Assurance_Officer", "Bookkeeping_and_Financial_Operations_Manager"],
+      "challenge": ["Finance_and_Risk_Controller", "QUALIFIED_EXTERNAL_ADVISER"],
+      "approve": ["ACCOUNTABLE_HUMAN"],
+      "execute": ["QUALIFIED_EXTERNAL_ADVISER"],
+      "reconcile": ["Bookkeeping_and_Financial_Operations_Manager"],
+      "independence_rule": "AI output is not a binding tax position; jurisdiction, period, evidence and related-party conflict must be explicit."
+    }
+  ]
+}

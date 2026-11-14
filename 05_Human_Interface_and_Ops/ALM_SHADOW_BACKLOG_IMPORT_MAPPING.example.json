@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Starting map for a sandbox import; the ALM and Jira Product Administrator must approve the tenant-specific mapping before use.",
+  "field_mapping": {
+    "ID": "external_id",
+    "Type": "issue_type",
+    "Title": "summary",
+    "Outcome": "description",
+    "Owner": "assignee",
+    "Status": "status",
+    "Parent": "parent",
+    "Links": "issue_links",
+    "Acceptance_DoD": "acceptance_criteria",
+    "Source": "source_reference",
+    "Last_Confirmed_Date": "last_confirmed_date"
+  },
+  "type_mapping": {
+    "Epic": "Epic",
+    "Feature": "Feature",
+    "Story": "Story",
+    "Task": "Task",
+    "Defect": "Bug",
+    "Test": "Test",
+    "Evidence": "Evidence",
+    "Risk": "Risk",
+    "Decision": "Decision"
+  },
+  "status_mapping": {
+    "Proposed": "To Do",
+    "Ready": "To Do",
+    "In Progress": "In Progress",
+    "Blocked": "Blocked",
+    "In Review": "In Review",
+    "Done": "Done",
+    "Cancelled": "Cancelled"
+  }
+}

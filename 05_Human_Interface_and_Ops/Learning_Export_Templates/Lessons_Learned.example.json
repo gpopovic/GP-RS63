@@ -1,0 +1,21 @@
+{
+  "workspace_id": "Ralja_House",
+  "period_start": "2026-08-16",
+  "period_end": "2026-08-16",
+  "data_classification": "ANONYMISED_AGGREGATE",
+  "owner": "Project Lead",
+  "aggregation_method": "One independently reviewed CAD-baseline decision package.",
+  "evidence_references": ["RALJA-CAD-BASELINE-001"],
+  "lessons": [
+    {
+      "id": "RALJA-LL-001",
+      "harness_id": "ralja_existing_house_renovation",
+      "context": "CAD baseline reconciliation",
+      "outcome": "Record after a completed, independently reviewed package.",
+      "contributing_factors": ["Example only"],
+      "recommendation": "Keep, trial, promote, rollback, or retire one defined change.",
+      "confidence": "LOW",
+      "evidence_references": ["RALJA-CAD-BASELINE-001"]
+    }
+  ]
+}

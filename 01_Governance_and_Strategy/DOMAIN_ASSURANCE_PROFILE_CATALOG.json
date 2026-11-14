@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Candidate domain adapters for the Regulated Engineering Assurance Kernel. Entries are not active applicability decisions.",
+  "activation_requires": [
+    "named external product workspace",
+    "intended use and product boundary",
+    "jurisdiction and market profile",
+    "current authoritative source register with edition and licence status",
+    "domain terminology and lifecycle mapping",
+    "safety, risk or assurance classification scheme",
+    "required reviewer independence and human approval authorities",
+    "toolchain and tool-qualification expectations",
+    "project data-flow and AI-processing boundary",
+    "Quality Manager and accountable domain-human approval"
+  ],
+  "profiles": [
+    {
+      "id": "AUTOMOTIVE",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Safety_and_Compliance_Engineer",
+      "candidate_source_families": ["Automotive SPICE", "functional safety", "automotive cybersecurity", "customer-specific requirements"],
+      "special_controls": ["variant and supplier traceability", "system-software-hardware allocation", "safety and cybersecurity co-engineering", "AUTOSAR release/schema/toolchain adapter when applicable"]
+    },
+    {
+      "id": "INDUSTRIAL_AUTOMATION",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Safety_and_Compliance_Engineer",
+      "candidate_source_families": ["industrial functional safety", "industrial automation security", "programmable-controller languages and execution", "industrial interoperability and engineering-information exchange"],
+      "special_controls": ["plant and operating-mode boundary", "controller and safety-controller separation", "cybersecurity zones and conduits", "write-disabled AI and connector boundary", "factory and site acceptance evidence"]
+    },
+    {
+      "id": "MEDICAL_DEVICE",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Safety_and_Compliance_Engineer",
+      "candidate_source_families": ["applicable medical-device law by market", "quality management", "risk management", "software lifecycle", "usability and post-market obligations"],
+      "special_controls": ["intended use and device classification", "clinical and usability evidence boundary", "post-market surveillance and vigilance"]
+    },
+    {
+      "id": "AEROSPACE",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Safety_and_Compliance_Engineer",
+      "candidate_source_families": ["certification-authority requirements", "aircraft and system development assurance", "software assurance", "airborne electronic hardware assurance"],
+      "special_controls": ["development assurance level", "strict review independence", "tool qualification and certification liaison"]
+    },
+    {
+      "id": "RAIL",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Safety_and_Compliance_Engineer",
+      "candidate_source_families": ["railway RAMS", "railway software", "signalling safety", "national and infrastructure-manager requirements"],
+      "special_controls": ["RAMS lifecycle", "safety integrity allocation", "independent safety assessment"]
+    },
+    {
+      "id": "MARINE",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Safety_and_Compliance_Engineer",
+      "candidate_source_families": ["flag-state requirements", "IMO and SOLAS instruments", "class-society rules", "marine cyber-risk and interface standards"],
+      "special_controls": ["ship type and operational profile", "class and flag approval", "yard, supplier, harbour and sea-trial evidence"]
+    },
+    {
+      "id": "BUILT_ENVIRONMENT",
+      "status": "TEMPLATE_NOT_ACTIVATED",
+      "accountable_role": "Built_Environment_Architect",
+      "candidate_source_families": ["national planning and building law", "structural and fire-safety rules", "contract and procurement regime", "BIM information management and openBIM standards"],
+      "special_controls": ["existing-condition evidence", "jurisdiction and professional-sign-off boundary", "permit, construction and handover stages"]
+    }
+  ]
+}

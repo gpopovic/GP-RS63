@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "meeting_id": "event_triggered_corp_builder_control_board",
+  "purpose": "Controlled multi-model review of proposed changes to the Triton Company OS.",
+  "model_lanes": [
+    {
+      "id": "builder",
+      "environment_key": "TRITON_CORP_BUILDER_MODEL",
+      "roles": [
+        "Founder_Operating_System_Advisor",
+        "Role_Skill_Evolution_Manager",
+        "Continuous_Improvement_Architect"
+      ]
+    },
+    {
+      "id": "controller",
+      "environment_key": "TRITON_CORP_BUILDER_CONTROLLER_MODEL",
+      "roles": [
+        "ROLE_Korrektor",
+        "Quality_Manager",
+        "Model_Quality_Observer",
+        "Security_Assurance_Auditor",
+        "Privacy_and_Data_Protection_Officer",
+        "Process_and_Quality_Auditor"
+      ]
+    }
+  ],
+  "human_approval_required_for": [
+    "new canonical role or role split",
+    "skill, MCP, model, routing, credential, or external provider change",
+    "data boundary or privacy/security control change",
+    "KPI, quality gate, audit independence, legal, finance, or workflow evidence change",
+    "any irreversible or material Company OS change"
+  ]
+}

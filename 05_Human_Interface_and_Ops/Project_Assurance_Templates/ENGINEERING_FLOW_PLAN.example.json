@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "FLOW-EXAMPLE-001",
+  "project_workspace_reference": "EXTERNAL-PROJECT-WORKSPACE-REFERENCE",
+  "task_class": "CONTROLLED_SOFTWARE_INCREMENT",
+  "process_strength": "STANDARD",
+  "decision_owner": "Product_Owner",
+  "flow_owner": "Release_and_Integration_Manager",
+  "current_state": "INCOMING",
+  "artifact_inputs": [
+    {
+      "artifact_id": "INTERFACE-CONTRACT-001",
+      "version_or_baseline": "BASELINE-REFERENCE",
+      "source_reference": "PROJECT-ALM-REFERENCE",
+      "classification": "INTERNAL",
+      "integrity_reference": "HASH-OR-APPROVED-INTEGRITY-EVIDENCE",
+      "readiness_status": "PENDING",
+      "acceptance_condition": "Approved interface contract is available in the external project workspace.",
+      "owner": "Configuration_Manager"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "predecessor": "INTERFACE-CONTRACT-001",
+      "successor": "IMPLEMENTATION-001",
+      "acceptance_reference": "INTERFACE-ACCEPTANCE-001"
+    }
+  ],
+  "constrained_resources": [
+    {
+      "resource_id": "PROJECT-TEST-RESOURCE",
+      "resource_owner": "DevOps_Engineer",
+      "wip_capacity": 1,
+      "queue_policy": "RISK_VALUE_WEIGHTED_PULL",
+      "priority_factors": ["safety_or_contract_priority", "consequence_of_delay", "readiness", "aging", "deadline"],
+      "reservation_reference": "NOT_RESERVED"
+    }
+  ],
+  "quarantine_required": true,
+  "candidate_area_reference": "PROJECT-CONTROLLED-CANDIDATE-AREA",
+  "early_checks": ["schema", "syntax", "secret_scan", "interface_compatibility"],
+  "release_manifest_reference": "NOT_RELEASED",
+  "failure_strategy": {
+    "containment_reference": "CONTAINMENT-PLAN-001",
+    "prevalidated_rollback_reference": "ROLLBACK-NOT-YET-VALIDATED",
+    "forward_recovery_allowed": true,
+    "recovery_authority": "Release_and_Integration_Manager"
+  },
+  "flow_metrics": ["readiness_failure_rate", "queue_age", "blocked_time", "lead_time", "first_pass_acceptance", "rework_effort", "cost_per_accepted_output"],
+  "evidence_references": ["PROJECT-FLOW-EVIDENCE-001"],
+  "status_note": "Example structure only; no resource is reserved and no release is approved."
+}

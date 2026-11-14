@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Single organisational index for canonical Triton roles, core assistants, and internal coaches.",
+  "operating_principles": [
+    "Every role receives the shared Collaboration Constitution at runtime.",
+    "Each role may act autonomously within its authority, support peers, challenge weak reasoning, propose improvement, and defend correct work with evidence.",
+    "Auditors and assurance roles remain independent from the work they audit."
+  ],
+  "departments": [
+    {
+      "id": "executive_strategy",
+      "name": "Executive Strategy and Organisational Learning",
+      "members": ["Executive_Steward_and_Operations_Guard", "Founder_Operating_System_Advisor", "Strategic_Red_Team", "Continuous_Improvement_Architect", "Learning_and_Transfer_Coach", "Role_Skill_Evolution_Manager", "Product_Improvement_and_Insights_Manager", "ROLE_Korrektor", "ROLE_Trainer", "ROLE_Improver"]
+    },
+    {
+      "id": "business_growth",
+      "name": "Business Model, Market, Marketing, Sales, Offers, and Customer Growth",
+      "members": ["Business_Model_and_Venture_Architect", "Market_Intelligence_and_Opportunity_Analyst", "Portfolio_and_Offer_Manager", "Marketing_Strategy_and_Brand_Manager", "Demand_Generation_and_Digital_Marketing_Manager", "Product_Marketing_and_Go_To_Market_Manager", "Sales_Operations_and_CRM_Manager", "Business_Development_and_Account_Director", "Proposal_and_Solution_Estimator", "Client_Success_and_Change_Manager", "Product_Owner"]
+    },
+    {
+      "id": "communication_agility_alm",
+      "name": "Communication, Agile Effectiveness, and ALM",
+      "members": ["Communication_Operations_and_Effectiveness_Manager", "Scrum_Master_and_Agile_Facilitator", "ALM_and_Jira_Product_Administrator"]
+    },
+    {
+      "id": "delivery_engineering",
+      "name": "Cross-Border Delivery and Engineering",
+      "members": ["Chief_Engineer_and_Systems_Architect", "Cross_Border_Delivery_Manager", "India_Delivery_Lead", "Requirements_Engineer", "System_Architect", "Software_Architect", "Code_Executor", "DevOps_Engineer", "Release_and_Integration_Manager", "Configuration_Manager"]
+    },
+    {
+      "id": "built_environment_delivery",
+      "name": "Built Environment Domain Delivery",
+      "members": ["Civil_Engineer", "Structural_Engineer", "Built_Environment_Architect", "Interior_and_Exterior_Design_Manager", "Construction_Site_Quality_Inspector"]
+    },
+    {
+      "id": "quality_assurance",
+      "name": "Quality, Safety, Security, and Independent Assurance",
+      "members": ["Software_Test_Engineer", "Code_Validator", "Quality_Manager", "Safety_and_Compliance_Engineer", "Security_Operations_and_Incident_Response_Engineer", "Security_Assurance_Auditor", "Process_and_Quality_Auditor", "Supplier_and_Partner_Auditor", "Supplier_Quality_and_Receiving_Inspector", "Operational_Quality_Inspector", "Internal_Control_and_Compliance_Inspector", "Privacy_and_Data_Protection_Officer", "Data_Escalation_Officer", "Model_Quality_Observer"]
+    },
+    {
+      "id": "legal_governance",
+      "name": "Legal, Corporate Governance, and Workforce",
+      "members": ["General_Counsel_and_Legal_Department_Lead", "Commercial_Contracts_Counsel", "Legal_and_Contract_Operations_Manager", "Corporate_Governance_and_Entity_Manager", "Employment_and_Workforce_Compliance_Officer", "Workforce_and_Operational_Effectiveness_Analyst", "Dispute_and_Claims_Manager"]
+    },
+    {
+      "id": "research_public_affairs_responsible_impact",
+      "name": "Research, Public Affairs, and Responsible Impact",
+      "members": ["Research_and_Product_Innovation_Director", "Public_Affairs_and_Policy_Manager", "Ethics_and_Responsible_Business_Officer", "Environmental_and_Sustainability_Manager", "Social_and_Humanitarian_Impact_Officer", "Organizational_Psychology_and_Human_Factors_Advisor"]
+    },
+    {
+      "id": "finance_treasury",
+      "name": "Commercial Control, Finance, Treasury, and Capital Allocation",
+      "members": ["Commercial_and_Pricing_Manager", "Unit_Economics_and_Financial_Planning_Analyst", "Finance_and_Risk_Controller", "Bookkeeping_and_Financial_Operations_Manager", "Tax_Readiness_and_Accounting_Assurance_Officer", "Commercial_Strategy_Auditor", "Banking_and_Treasury_Manager", "Capital_Allocation_and_Investment_Analyst", "Investment_and_Counterparty_Risk_Auditor", "Financial_Crime_and_Sanctions_Compliance_Officer"]
+    },
+    {
+      "id": "procurement_product_operations",
+      "name": "Procurement and Product Operations",
+      "members": ["Procurement_and_Sourcing_Manager", "Product_and_Inventory_Operations_Manager"]
+    },
+    {
+      "id": "ai_systems_embodied_intelligence",
+      "name": "AI Systems, Frontier Research, and Embodied Intelligence",
+      "members": [
+        "Lead_AI_Research_Scientist",
+        "Embodied_AI_and_Robotics_Engineer",
+        "Model_Training_and_Optimization_Engineer"
+      ]
+    }
+  ]
+}

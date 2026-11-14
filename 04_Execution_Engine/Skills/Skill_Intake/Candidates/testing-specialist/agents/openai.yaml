@@ -1,0 +1,4 @@
+interface:
+  display_name: "Testing Specialist (Trial)"
+  short_description: "Design traceable, reliable tests"
+  default_prompt: "Use $testing-specialist to design tests for this requirement."
